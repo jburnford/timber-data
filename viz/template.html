@@ -226,6 +226,7 @@ footer.credit a { color:var(--ink-2); }
       <div class="li"><span class="dot" style="border:1.6px solid var(--port-out);background:none"></span>Origin ports (departures)</div>
       <div class="li"><svg width="26" height="8"><path d="M1 6 Q13 -2 25 6" stroke="var(--flow)" stroke-width="2.5" fill="none" opacity=".7"/></svg>shipments (width = count)</div>
       <div class="hintline">drag to pan · scroll to zoom · click a port</div>
+      <div class="hintline">showing 1874 + odd years · 1877 omitted (London lists aggregated)</div>
     </div>
     <div id="tooltip"></div>
     <aside id="panel" aria-label="port detail">
@@ -255,15 +256,14 @@ footer.credit a { color:var(--ink-2); }
         <button aria-pressed="true" data-mode="share">share</button>
         <button aria-pressed="false" data-mode="abs">count</button>
       </div>
-      <label style="font-size:12px;color:var(--ink-2);display:flex;gap:5px;align-items:center">
-        <input type="checkbox" id="oddOnly" checked> odd years only
-      </label>
     </div>
     <svg id="areachart" role="img" aria-label="stacked area chart of supply regions over time"></svg>
     <div class="legendrow" id="areaLegend"></div>
-    <p class="note">Even years 1876&ndash;1892 are nearly absent from the photographed volumes;
-      the odd-year series is the honest one. Counts are shipments &mdash; cargo
-      quantities in the OCR are unreliable and are never summed.</p>
+    <p class="note">Years shown: 1874 and odd years 1875&ndash;1899. Even years after 1875
+      are nearly absent from the photographed volumes, and 1877 is excluded because
+      LONDON&rsquo;s lists that year used an aggregated format that omits individual
+      ships. Counts are shipments &mdash; cargo quantities in the OCR are unreliable
+      and are never summed.</p>
   </div>
 </section>
 
@@ -276,8 +276,9 @@ footer.credit a { color:var(--ink-2); }
       long reach of pitch pine.</p>
     <div class="chipbar" id="cmpChips" style="margin-bottom:14px"></div>
     <div class="cmp-grid" id="cmpGrid"></div>
-    <p class="note">Flows aggregate all years within each era. Circles are ports sized by
-      shipments; arcs are origin&rarr;destination routes.</p>
+    <p class="note">Flows aggregate the displayed years (1874 + odd years; 1877 omitted)
+      within each era. Circles are ports sized by shipments; arcs are
+      origin&rarr;destination routes.</p>
   </div>
 </section>
 </main>
@@ -297,7 +298,12 @@ const DATA = /*__DATA__*/{};
 /* ============ shared helpers ============ */
 const $ = s => document.querySelector(s);
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
-const YEARS = []; for (let y=DATA.years[0]; y<=DATA.years[1]; y++) YEARS.push(y);
+/* Curated display years: solid coverage only. Even years 1876-1900 are nearly
+   absent (volumes photographed every other year); 1877 is excluded because
+   LONDON's aggregated format leaves it at 0.7% of arrivals vs a true ~13%. */
+const YEARS = [1874, 1875, 1879, 1881, 1883, 1885, 1887, 1889,
+               1891, 1893, 1895, 1897, 1899];
+const YEAR_SET = new Set(YEARS);
 const FORMS = DATA.forms;                    // top forms + 'other'
 const PORTS = DATA.ports;                    // [name, lat, lon, region]
 const fmt = n => n.toLocaleString('en-GB');
@@ -328,7 +334,7 @@ function routesFor(fi, y) {           // y === 0 → all years
                             .map(r => [r[0], r[1], r[4]]);
   else {
     const agg = new Map();
-    for (const r of DATA.routes) if (r[2] === fi) {
+    for (const r of DATA.routes) if (r[2] === fi && YEAR_SET.has(r[3])) {
       const kk = r[0] * 4096 + r[1];
       agg.set(kk, (agg.get(kk) || 0) + r[4]);
     }
@@ -345,14 +351,14 @@ function portSizes(fi, y) {           // Map(port -> [in, out])
   const bump = (p, slot, n) => {
     let e = m.get(p); if (!e) m.set(p, e = [0, 0]); e[slot] += n;
   };
-  for (const r of DATA.imports) if (r[1] === fi && (!y || r[2] === y)) bump(r[0], 0, r[3]);
-  for (const r of DATA.exports) if (r[1] === fi && (!y || r[2] === y)) bump(r[0], 1, r[3]);
+  for (const r of DATA.imports) if (r[1] === fi && (y ? r[2] === y : YEAR_SET.has(r[2]))) bump(r[0], 0, r[3]);
+  for (const r of DATA.exports) if (r[1] === fi && (y ? r[2] === y : YEAR_SET.has(r[2]))) bump(r[0], 1, r[3]);
   portSizeCache.set(k, m);
   return m;
 }
 function yearTotals(fi) {
   const t = Object.fromEntries(YEARS.map(y => [y, 0]));
-  for (const r of DATA.imports) if (r[1] === fi) t[r[2]] += r[3];
+  for (const r of DATA.imports) if (r[1] === fi && YEAR_SET.has(r[2])) t[r[2]] += r[3];
   return t;
 }
 
@@ -506,10 +512,20 @@ function chipbar(el, onpick, includeAll = true) {
   if (includeAll) mk('all cargo', -1);
   const CHIP_N = 8;
   FORMS.slice(0, CHIP_N).forEach((f, i) => mk(f, i));
+  const MANUF = new Set(['doors', 'mouldings', 'flooring', 'matchboards',
+    'joinery', 'woodware', 'handles', 'spokes', 'splints', 'shooks', 'blocks',
+    'bobbins', 'trellis', 'oars', 'gun stocks', 'treenails', 'boathooks',
+    'crowntrees', 'hoops', 'palings', 'wood pulp', 'headings', 'boxboards']);
+  const rest = FORMS.map((f, i) => [f, i]).slice(CHIP_N);
+  const opt = ([f, i]) => `<option value="${i}">${f}</option>`;
+  const alpha = (a, b) => a[0].localeCompare(b[0]);
+  const fin = rest.filter(x => MANUF.has(x[0])).sort(alpha);
+  const raw = rest.filter(x => !MANUF.has(x[0])).sort(alpha);
   const sel = document.createElement('select');
   sel.className = 'formsel';
   sel.innerHTML = '<option value="">more…</option>' +
-    FORMS.slice(CHIP_N).map((f, i) => `<option value="${i + CHIP_N}">${f}</option>`).join('');
+    `<optgroup label="finished goods">${fin.map(opt).join('')}</optgroup>` +
+    `<optgroup label="sawn, hewn &amp; raw">${raw.map(opt).join('')}</optgroup>`;
   sel.onchange = () => { if (sel.value !== '') onpick(+sel.value); };
   el.appendChild(sel);
   return el;
@@ -661,7 +677,7 @@ function fillPanel(p) {
   const agg = new Map();
   for (const r of DATA.routes) {
     if (r[2] !== curForm) continue;
-    if (curYear && r[3] !== curYear) continue;
+    if (curYear ? r[3] !== curYear : !YEAR_SET.has(r[3])) continue;
     if (r[0] === p) agg.set(r[1], (agg.get(r[1]) || 0) + r[4]);
     else if (r[1] === p) agg.set(r[0], (agg.get(r[0]) || 0) + r[4]);
   }
@@ -670,10 +686,11 @@ function fillPanel(p) {
     `<tr><td>${PORTS[q][0]}</td><td>${fmt(n)}</td></tr>`).join('') ||
     '<tr><td class="muted" colspan="2">no linked routes in view</td></tr>';
   /* forms */
+  const inView = y => curYear ? y === curYear : YEAR_SET.has(y);
   const fAgg = new Map();
-  for (const r of DATA.imports) if (r[0] === p && r[1] >= 0 && (!curYear || r[2] === curYear))
+  for (const r of DATA.imports) if (r[0] === p && r[1] >= 0 && inView(r[2]))
     fAgg.set(r[1], (fAgg.get(r[1]) || 0) + r[3]);
-  for (const r of DATA.exports) if (r[0] === p && r[1] >= 0 && (!curYear || r[2] === curYear))
+  for (const r of DATA.exports) if (r[0] === p && r[1] >= 0 && inView(r[2]))
     fAgg.set(r[1], (fAgg.get(r[1]) || 0) + r[3]);
   const ftop = [...fAgg].sort((a, b) => b[1] - a[1]).slice(0, 6);
   $('#pForms').innerHTML = ftop.map(([fi, n]) =>
@@ -697,14 +714,11 @@ $('#modeToggle').querySelectorAll('button').forEach(b => b.onclick = () => {
     x.setAttribute('aria-pressed', String(x === b)));
   drawArea();
 });
-$('#oddOnly').onchange = drawArea;
-
 function drawArea() {
   const svg = $('#areachart');
   const W = svg.clientWidth || 900, H = svg.clientHeight || 420;
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
-  const oddOnly = $('#oddOnly').checked;
-  const yrs = YEARS.filter(y => !oddOnly || y % 2 === 1 || y === 1874);
+  const yrs = YEARS;
   /* region totals per year for curForm, based on origin of routed shipments */
   const tot = {};
   for (const y of yrs) tot[y] = Object.fromEntries(REGIONS.map(r => [r, 0]));
@@ -796,7 +810,7 @@ function drawArea() {
 }
 
 /* ============ compare view ============ */
-const ERAS = [['1874–1881', 1874, 1881], ['1883–1889', 1883, 1889], ['1891–1900', 1891, 1900]];
+const ERAS = [['1874–1881', 1874, 1881], ['1883–1889', 1883, 1889], ['1891–1899', 1891, 1899]];
 const cmpMaps = [];
 function buildCompare() {
   const grid = $('#cmpGrid'); grid.innerHTML = ''; cmpMaps.length = 0;
@@ -814,7 +828,7 @@ function eraRows(fi, y0, y1) {
   const k = `${fi}|${y0}-${y1}`;
   if (eraCache.has(k)) return eraCache.get(k);
   const agg = new Map();
-  for (const r of DATA.routes) if (r[2] === fi && r[3] >= y0 && r[3] <= y1) {
+  for (const r of DATA.routes) if (r[2] === fi && r[3] >= y0 && r[3] <= y1 && YEAR_SET.has(r[3])) {
     const kk = r[0] * 4096 + r[1];
     agg.set(kk, (agg.get(kk) || 0) + r[4]);
   }
@@ -832,19 +846,21 @@ function drawCompare() {
     routeCache.set(kR, eraRows(fi, y0, y1));
     if (!portSizeCache.has(kP)) {
       const pm = new Map();
+      const inEra = y => y >= y0 && y <= y1 && YEAR_SET.has(y);
       const bump = (p, slot, n) => { let e = pm.get(p); if (!e) pm.set(p, e = [0, 0]); e[slot] += n; };
-      for (const r of DATA.imports) if (r[1] === fi && r[2] >= y0 && r[2] <= y1) bump(r[0], 0, r[3]);
-      for (const r of DATA.exports) if (r[1] === fi && r[2] >= y0 && r[2] <= y1) bump(r[0], 1, r[3]);
+      for (const r of DATA.imports) if (r[1] === fi && inEra(r[2])) bump(r[0], 0, r[3]);
+      for (const r of DATA.exports) if (r[1] === fi && inEra(r[2])) bump(r[0], 1, r[3]);
       portSizeCache.set(kP, pm);
     }
     m.draw(fi, `${y0}-${y1}`);
     /* caption: era total + top origins */
     let tot = 0;
     const oAgg = new Map();
-    for (const r of DATA.exports) if (r[1] === fi && r[2] >= y0 && r[2] <= y1) {
+    const inEra = y => y >= y0 && y <= y1 && YEAR_SET.has(y);
+    for (const r of DATA.exports) if (r[1] === fi && inEra(r[2])) {
       oAgg.set(r[0], (oAgg.get(r[0]) || 0) + r[3]);
     }
-    for (const r of DATA.imports) if (r[1] === fi && r[2] >= y0 && r[2] <= y1) tot += r[3];
+    for (const r of DATA.imports) if (r[1] === fi && inEra(r[2])) tot += r[3];
     const top = [...oAgg].sort((a, b) => b[1] - a[1]).slice(0, 3);
     card.querySelector('.tot').textContent =
       `${fmt(tot)} shipments${fi >= 0 ? ' of ' + FORMS[fi] : ''}`;

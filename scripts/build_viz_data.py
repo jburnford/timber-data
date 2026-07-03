@@ -19,7 +19,8 @@ from collections import Counter
 from pathlib import Path
 
 BASE = Path('/home/jic823/timber_data')
-TOP_FORMS = 14
+TOP_FORMS = None   # None = keep every commodity form; the tail (doors,
+                   # mouldings, joinery...) carries the finished-goods story
 
 
 def year_of(source_file):
@@ -105,7 +106,7 @@ def main():
 
     top = [fm for fm, _ in form_count.most_common(TOP_FORMS)]
     fidx = {fm: i for i, fm in enumerate(top)}
-    OTHER = len(top)
+    OTHER = len(top)   # unreachable when TOP_FORMS is None (all forms indexed)
 
     for o, dst, y, forms in rows:
         fset = {fidx.get(fm, OTHER) for fm in forms} or set()
@@ -132,7 +133,7 @@ def main():
                       round(lon, 3) if lon is not None else None, region])
 
     out = {
-        'forms': top + ['other'],
+        'forms': top + (['other'] if TOP_FORMS else []),
         'years': [1874, 1900],
         'ports': ports,
         'routes': [[pidx[o], pidx[d], fi, y, n] for (o, d, fi, y), n in sorted(routes.items())],
