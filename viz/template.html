@@ -312,9 +312,10 @@ $('#themeBtn').onclick = () => {
   redrawAll();
 };
 
-/* mercator projection to unit space */
-const mercY = lat => Math.log(Math.tan(Math.PI/4 + (lat*Math.PI/180)/2));
-function proj(lon, lat) { return [lon, -mercY(lat)]; }
+/* mercator projection to unit space (both axes in radians) */
+const RAD = Math.PI / 180;
+const mercY = lat => Math.log(Math.tan(Math.PI/4 + (lat*RAD)/2));
+function proj(lon, lat) { return [lon * RAD, -mercY(lat)]; }
 
 /* index routes/imports/exports by (form, year) lazily */
 const routeCache = new Map(), portSizeCache = new Map();
@@ -459,15 +460,23 @@ function makeMap(canvas, opts = {}) {
       M._portPx.push([x, yy, Math.max(r, 7), p, inN, outN]);
     }
     ctx.globalAlpha = 1;
-    /* labels for biggest ports */
-    const big = M._portPx.slice().sort((a, b) => (b[4] + b[5]) - (a[4] + a[5])).slice(0, opts.labels ?? 9);
+    /* labels for biggest ports — greedy collision skip */
+    const big = M._portPx.slice().sort((a, b) => (b[4] + b[5]) - (a[4] + a[5]));
     ctx.font = '600 10.5px system-ui, sans-serif';
     ctx.fillStyle = css('--ink-2');
     ctx.strokeStyle = css('--sea'); ctx.lineWidth = 3; ctx.lineJoin = 'round';
+    const placed = [];
+    const want = opts.labels ?? 9;
     for (const [x, yy, r, p] of big) {
+      if (placed.length >= want) break;
       const nm = PORTS[p][0];
-      ctx.strokeText(nm, x + r + 3, yy + 3.5);
-      ctx.fillText(nm, x + r + 3, yy + 3.5);
+      const w = ctx.measureText(nm).width;
+      const lx = x + r + 3, ly = yy + 3.5;
+      if (placed.some(([px, py, pw]) => Math.abs(py - ly) < 13 && lx < px + pw + 8 && px < lx + w + 8))
+        continue;
+      ctx.strokeText(nm, lx, ly);
+      ctx.fillText(nm, lx, ly);
+      placed.push([lx, ly, w]);
     }
   };
   M.portAt = function (mx, my) {
