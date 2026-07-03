@@ -1,0 +1,867 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Timber Web — British Timber Imports 1874–1900</title>
+<style>
+:root {
+  --sea:#f3f1e8; --land:#e3dcc6; --coast:#a49e88; --graticule:#e6e1d2;
+  --panel:#fbf9f2; --panel-edge:rgba(38,35,28,.14);
+  --ink:#26231c; --ink-2:#5d594c; --ink-3:#8d887a;
+  --grid:#dcd7c6; --flow:#b85c1e; --flow-glow:#8a4212;
+  --port-in:#b85c1e; --port-out:#5d594c;
+  --chip:#ece8da; --chip-on:#26231c; --chip-on-ink:#f3f1e8;
+  --c1:#2a78d6; --c2:#1baf7a; --c3:#eda100; --c4:#008300;
+  --c5:#4a3aa7; --c6:#e34948; --c7:#e87ba4; --c8:#eb6834;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --sea:#10151f; --land:#1d2433; --coast:#39445c; --graticule:#1a2130;
+  --panel:#161c29; --panel-edge:rgba(242,239,230,.14);
+  --ink:#f2efe6; --ink-2:#b4b0a3; --ink-3:#7d7a6f;
+  --grid:#242b3b; --flow:#e08a3c; --flow-glow:#f2b271;
+  --port-in:#e08a3c; --port-out:#b4b0a3;
+  --chip:#232b3c; --chip-on:#f2efe6; --chip-on-ink:#10151f;
+  --c1:#3987e5; --c2:#199e70; --c3:#c98500; --c4:#008300;
+  --c5:#9085e9; --c6:#e66767; --c7:#d55181; --c8:#d95926;
+}}
+:root[data-theme="light"] {
+  --sea:#f3f1e8; --land:#e3dcc6; --coast:#a49e88; --graticule:#e6e1d2;
+  --panel:#fbf9f2; --panel-edge:rgba(38,35,28,.14);
+  --ink:#26231c; --ink-2:#5d594c; --ink-3:#8d887a;
+  --grid:#dcd7c6; --flow:#b85c1e; --flow-glow:#8a4212;
+  --port-in:#b85c1e; --port-out:#5d594c;
+  --chip:#ece8da; --chip-on:#26231c; --chip-on-ink:#f3f1e8;
+  --c1:#2a78d6; --c2:#1baf7a; --c3:#eda100; --c4:#008300;
+  --c5:#4a3aa7; --c6:#e34948; --c7:#e87ba4; --c8:#eb6834;
+}
+:root[data-theme="dark"] {
+  --sea:#10151f; --land:#1d2433; --coast:#39445c; --graticule:#1a2130;
+  --panel:#161c29; --panel-edge:rgba(242,239,230,.14);
+  --ink:#f2efe6; --ink-2:#b4b0a3; --ink-3:#7d7a6f;
+  --grid:#242b3b; --flow:#e08a3c; --flow-glow:#f2b271;
+  --port-in:#e08a3c; --port-out:#b4b0a3;
+  --chip:#232b3c; --chip-on:#f2efe6; --chip-on-ink:#10151f;
+  --c1:#3987e5; --c2:#199e70; --c3:#c98500; --c4:#008300;
+  --c5:#9085e9; --c6:#e66767; --c7:#d55181; --c8:#d95926;
+}
+* { box-sizing:border-box; margin:0; }
+html,body { height:100%; }
+body {
+  background:var(--sea); color:var(--ink);
+  font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;
+  display:flex; flex-direction:column; overflow:hidden;
+}
+.serif { font-family:"Iowan Old Style",Georgia,"Times New Roman",serif; }
+header {
+  display:flex; align-items:baseline; gap:20px; flex-wrap:wrap;
+  padding:10px 18px 8px; border-bottom:1px solid var(--panel-edge);
+  background:var(--panel); z-index:30;
+}
+header h1 { font-family:"Iowan Old Style",Georgia,serif; font-size:19px; font-weight:600; letter-spacing:.2px; }
+header h1 .amp { color:var(--flow); }
+header .sub { color:var(--ink-3); font-size:12px; }
+nav { display:flex; gap:2px; margin-left:auto; }
+nav button {
+  border:0; background:none; color:var(--ink-2); font:600 13px system-ui,sans-serif;
+  padding:6px 12px; cursor:pointer; border-radius:6px;
+}
+nav button:hover { color:var(--ink); background:var(--chip); }
+nav button[aria-selected="true"] { background:var(--chip-on); color:var(--chip-on-ink); }
+nav button:focus-visible, .chip:focus-visible, button:focus-visible, select:focus-visible {
+  outline:2px solid var(--flow); outline-offset:2px;
+}
+#themeBtn { border:1px solid var(--panel-edge); background:none; color:var(--ink-2);
+  border-radius:6px; padding:5px 9px; cursor:pointer; font-size:12px; margin-left:8px; }
+main { flex:1; position:relative; min-height:0; }
+section.view { position:absolute; inset:0; display:none; }
+section.view.on { display:block; }
+
+/* ---------- map view ---------- */
+#mapWrap { position:absolute; inset:0; }
+#map { position:absolute; inset:0; width:100%; height:100%; cursor:grab; }
+#map.dragging { cursor:grabbing; }
+.controls {
+  position:absolute; top:12px; left:12px; right:12px; display:flex; gap:8px;
+  align-items:flex-start; pointer-events:none; z-index:10; flex-wrap:wrap;
+}
+.chipbar { display:flex; gap:5px; flex-wrap:wrap; pointer-events:auto; max-width:min(720px,80vw); }
+.chip {
+  border:1px solid var(--panel-edge); background:var(--panel); color:var(--ink-2);
+  border-radius:14px; padding:4px 11px; font:600 12px system-ui,sans-serif; cursor:pointer;
+}
+.chip:hover { color:var(--ink); }
+.chip[aria-pressed="true"] { background:var(--chip-on); color:var(--chip-on-ink); border-color:var(--chip-on); }
+select.formsel {
+  border:1px solid var(--panel-edge); background:var(--panel); color:var(--ink-2);
+  border-radius:14px; padding:4px 8px; font:600 12px system-ui,sans-serif; pointer-events:auto;
+}
+.timebar {
+  position:absolute; left:50%; transform:translateX(-50%); bottom:14px;
+  background:var(--panel); border:1px solid var(--panel-edge); border-radius:10px;
+  padding:10px 14px 7px; display:flex; gap:10px; align-items:flex-end; z-index:10;
+  box-shadow:0 2px 12px rgba(0,0,0,.10);
+}
+.timebar .yearlab { font-family:Georgia,serif; font-size:26px; min-width:86px; text-align:right;
+  font-variant-numeric:tabular-nums; line-height:1; }
+.timebar .yearlab small { display:block; font:600 10px system-ui,sans-serif; color:var(--ink-3);
+  letter-spacing:.6px; text-transform:uppercase; margin-top:3px; }
+.strip { display:flex; align-items:flex-end; gap:2px; height:46px; }
+.strip button {
+  width:12px; border:0; padding:0; cursor:pointer; background:var(--grid);
+  border-radius:2px 2px 0 0; min-height:3px; position:relative;
+}
+.strip button:hover { background:var(--ink-3); }
+.strip button[aria-pressed="true"] { background:var(--flow); }
+.tb-btns { display:flex; flex-direction:column; gap:5px; }
+.tb-btns button {
+  border:1px solid var(--panel-edge); background:none; color:var(--ink-2); border-radius:6px;
+  font:600 11px system-ui,sans-serif; padding:4px 9px; cursor:pointer; white-space:nowrap;
+}
+.tb-btns button:hover { color:var(--ink); background:var(--chip); }
+.tb-btns button[aria-pressed="true"] { background:var(--chip-on); color:var(--chip-on-ink); }
+#tooltip {
+  position:absolute; pointer-events:none; z-index:20; display:none;
+  background:var(--panel); border:1px solid var(--panel-edge); border-radius:8px;
+  padding:8px 11px; font-size:12px; max-width:240px; box-shadow:0 3px 14px rgba(0,0,0,.16);
+}
+#tooltip b { font-family:Georgia,serif; font-size:14px; display:block; margin-bottom:2px; }
+#tooltip .muted { color:var(--ink-3); }
+#tooltip .row { display:flex; justify-content:space-between; gap:14px;
+  font-variant-numeric:tabular-nums; }
+#panel {
+  position:absolute; top:0; right:0; bottom:0; width:300px; max-width:85vw;
+  background:var(--panel); border-left:1px solid var(--panel-edge); z-index:15;
+  transform:translateX(100%); transition:transform .22s ease; padding:16px 16px 20px;
+  overflow-y:auto;
+}
+@media (prefers-reduced-motion: reduce) { #panel { transition:none; } }
+#panel.open { transform:none; }
+#panel h2 { font-family:"Iowan Old Style",Georgia,serif; font-size:21px; margin-bottom:1px; }
+#panel .reg { color:var(--ink-3); font-size:12px; margin-bottom:12px; }
+#panel h3 { font:700 10.5px system-ui,sans-serif; letter-spacing:.8px; text-transform:uppercase;
+  color:var(--ink-3); margin:15px 0 6px; }
+#panel table { width:100%; border-collapse:collapse; font-size:12.5px; }
+#panel td { padding:2.5px 0; border-bottom:1px solid var(--grid); }
+#panel td:last-child { text-align:right; font-variant-numeric:tabular-nums; color:var(--ink-2); }
+#panel .close { position:absolute; top:10px; right:12px; border:0; background:none;
+  color:var(--ink-3); font-size:17px; cursor:pointer; padding:4px; }
+#panel .close:hover { color:var(--ink); }
+#spark { width:100%; height:60px; margin-top:2px; }
+.maplegend {
+  position:absolute; left:12px; bottom:14px; z-index:9; background:var(--panel);
+  border:1px solid var(--panel-edge); border-radius:8px; padding:8px 12px; font-size:11.5px;
+  color:var(--ink-2); display:flex; flex-direction:column; gap:4px;
+}
+.maplegend .li { display:flex; align-items:center; gap:7px; }
+.dot { width:9px; height:9px; border-radius:50%; }
+.hintline { color:var(--ink-3); font-size:10.5px; margin-top:2px; }
+
+/* ---------- shift view ---------- */
+#shift { overflow-y:auto; }
+.shift-inner { max-width:960px; margin:0 auto; padding:26px 20px 60px; }
+.shift-inner h2 { font-family:"Iowan Old Style",Georgia,serif; font-size:24px; text-wrap:balance; }
+.shift-inner .lede { color:var(--ink-2); max-width:64ch; margin:6px 0 18px; }
+.shift-controls { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:14px; }
+.toggle { display:flex; border:1px solid var(--panel-edge); border-radius:14px; overflow:hidden; }
+.toggle button { border:0; background:var(--panel); color:var(--ink-2); font:600 12px system-ui,sans-serif;
+  padding:4px 12px; cursor:pointer; }
+.toggle button[aria-pressed="true"] { background:var(--chip-on); color:var(--chip-on-ink); }
+#areachart { width:100%; height:420px; background:var(--panel); border:1px solid var(--panel-edge);
+  border-radius:10px; }
+.legendrow { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; font-size:12px; color:var(--ink-2); }
+.legendrow .li { display:flex; gap:6px; align-items:center; }
+.legendrow .sw { width:10px; height:10px; border-radius:3px; }
+.note { color:var(--ink-3); font-size:12px; margin-top:14px; max-width:70ch; }
+
+/* ---------- compare view ---------- */
+#compare { overflow-y:auto; }
+.cmp-inner { max-width:1240px; margin:0 auto; padding:26px 20px 60px; }
+.cmp-inner h2 { font-family:"Iowan Old Style",Georgia,serif; font-size:24px; }
+.cmp-inner .lede { color:var(--ink-2); max-width:66ch; margin:6px 0 16px; }
+.cmp-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(310px,1fr)); gap:16px; }
+.cmp-card { background:var(--panel); border:1px solid var(--panel-edge); border-radius:10px;
+  padding:12px 12px 10px; }
+.cmp-card h3 { font-family:Georgia,serif; font-size:16px; font-weight:600; }
+.cmp-card .tot { color:var(--ink-3); font-size:11.5px; margin-bottom:6px;
+  font-variant-numeric:tabular-nums; }
+.cmp-card canvas { width:100%; height:300px; border-radius:6px; background:var(--sea); }
+.cmp-card ol { margin:8px 0 0 18px; font-size:12.5px; color:var(--ink-2); }
+.cmp-card ol b { color:var(--ink); font-weight:600; }
+footer.credit {
+  padding:6px 18px; font-size:11px; color:var(--ink-3);
+  border-top:1px solid var(--panel-edge); background:var(--panel);
+  display:flex; gap:14px; flex-wrap:wrap;
+}
+footer.credit a { color:var(--ink-2); }
+@media (max-width:720px) {
+  .timebar { left:8px; right:8px; transform:none; overflow-x:auto; }
+  header .sub { display:none; }
+}
+</style>
+
+<header>
+  <h1>The Timber Web <span class="amp">&middot;</span> 1874&ndash;1900</h1>
+  <span class="sub serif">158,918 cargoes from the <i>Timber Trades Journal</i> import lists</span>
+  <nav role="tablist" aria-label="views">
+    <button role="tab" aria-selected="true" data-view="mapview">Flow map</button>
+    <button role="tab" aria-selected="false" data-view="shift">The great shift</button>
+    <button role="tab" aria-selected="false" data-view="compare">Three eras</button>
+  </nav>
+  <button id="themeBtn" title="Toggle theme">◐</button>
+</header>
+
+<main>
+<section class="view on" id="mapview">
+  <div id="mapWrap">
+    <canvas id="map"></canvas>
+    <div class="controls"><div class="chipbar" id="chips"></div></div>
+    <div class="timebar">
+      <div class="yearlab"><span id="yearNum">Σ</span><small id="yearSub">all years</small></div>
+      <div class="strip" id="yearStrip" role="group" aria-label="pick a year"></div>
+      <div class="tb-btns">
+        <button id="allBtn" aria-pressed="true">Σ all years</button>
+        <button id="playBtn" aria-pressed="false">▶ play</button>
+      </div>
+    </div>
+    <div class="maplegend" id="mapLegend">
+      <div class="li"><span class="dot" style="background:var(--port-in)"></span>British &amp; Irish ports (arrivals)</div>
+      <div class="li"><span class="dot" style="border:1.6px solid var(--port-out);background:none"></span>Origin ports (departures)</div>
+      <div class="li"><svg width="26" height="8"><path d="M1 6 Q13 -2 25 6" stroke="var(--flow)" stroke-width="2.5" fill="none" opacity=".7"/></svg>shipments (width = count)</div>
+      <div class="hintline">drag to pan · scroll to zoom · click a port</div>
+    </div>
+    <div id="tooltip"></div>
+    <aside id="panel" aria-label="port detail">
+      <button class="close" id="panelClose" aria-label="close">✕</button>
+      <h2 id="pName"></h2>
+      <div class="reg" id="pReg"></div>
+      <h3 id="sparkTitle">Shipments by year</h3>
+      <canvas id="spark"></canvas>
+      <h3>Top partners</h3>
+      <table id="pPartners"></table>
+      <h3>Top cargoes</h3>
+      <table id="pForms"></table>
+    </aside>
+  </div>
+</section>
+
+<section class="view" id="shift">
+  <div class="shift-inner">
+    <h2>Where Britain&rsquo;s timber came from</h2>
+    <p class="lede">Each band is a supply region&rsquo;s share of recorded timber shipments
+      to British and Irish ports. Pick a cargo to watch its geography move &mdash;
+      pit props hold to France and the Baltic while manufactured goods concentrate
+      in Scandinavia.</p>
+    <div class="shift-controls">
+      <div class="chipbar" id="shiftChips"></div>
+      <div class="toggle" id="modeToggle">
+        <button aria-pressed="true" data-mode="share">share</button>
+        <button aria-pressed="false" data-mode="abs">count</button>
+      </div>
+      <label style="font-size:12px;color:var(--ink-2);display:flex;gap:5px;align-items:center">
+        <input type="checkbox" id="oddOnly" checked> odd years only
+      </label>
+    </div>
+    <svg id="areachart" role="img" aria-label="stacked area chart of supply regions over time"></svg>
+    <div class="legendrow" id="areaLegend"></div>
+    <p class="note">Even years 1876&ndash;1892 are nearly absent from the photographed volumes;
+      the odd-year series is the honest one. Counts are shipments &mdash; cargo
+      quantities in the OCR are unreliable and are never summed.</p>
+  </div>
+</section>
+
+<section class="view" id="compare">
+  <div class="cmp-inner">
+    <h2>Three eras, one trade</h2>
+    <p class="lede">The same map drawn for three periods. Use the cargo chips to
+      see each commodity&rsquo;s supply field shift &mdash; the rise of the
+      Scandinavian trade, the pit-prop pipeline into the coal ports, the
+      long reach of pitch pine.</p>
+    <div class="chipbar" id="cmpChips" style="margin-bottom:14px"></div>
+    <div class="cmp-grid" id="cmpGrid"></div>
+    <p class="note">Flows aggregate all years within each era. Circles are ports sized by
+      shipments; arcs are origin&rarr;destination routes.</p>
+  </div>
+</section>
+</main>
+
+<footer class="credit">
+  <span>Source: <i>Timber Trades Journal</i> weekly imports, OCR&rsquo;d &amp; parsed 2025&ndash;26.</span>
+  <span>Counts of shipments, never quantities.</span>
+  <a href="https://github.com/jburnford/timber-data" target="_blank" rel="noopener">data &amp; pipeline on GitHub</a>
+</footer>
+
+<script>
+const LAND = /*__LAND__*/[];
+const DATA = /*__DATA__*/{};
+</script>
+<script>
+'use strict';
+/* ============ shared helpers ============ */
+const $ = s => document.querySelector(s);
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const YEARS = []; for (let y=DATA.years[0]; y<=DATA.years[1]; y++) YEARS.push(y);
+const FORMS = DATA.forms;                    // top forms + 'other'
+const PORTS = DATA.ports;                    // [name, lat, lon, region]
+const fmt = n => n.toLocaleString('en-GB');
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* theme toggle */
+$('#themeBtn').onclick = () => {
+  const r = document.documentElement;
+  const dark = matchMedia('(prefers-color-scheme: dark)');
+  const cur = r.dataset.theme || (dark.matches ? 'dark' : 'light');
+  r.dataset.theme = cur === 'dark' ? 'light' : 'dark';
+  redrawAll();
+};
+
+/* mercator projection to unit space */
+const mercY = lat => Math.log(Math.tan(Math.PI/4 + (lat*Math.PI/180)/2));
+function proj(lon, lat) { return [lon, -mercY(lat)]; }
+
+/* index routes/imports/exports by (form, year) lazily */
+const routeCache = new Map(), portSizeCache = new Map();
+function key(fi, y) { return fi + '|' + y; }
+function routesFor(fi, y) {           // y === 0 → all years
+  const k = key(fi, y);
+  if (routeCache.has(k)) return routeCache.get(k);
+  let rows;
+  if (y) rows = DATA.routes.filter(r => r[2] === fi && r[3] === y)
+                            .map(r => [r[0], r[1], r[4]]);
+  else {
+    const agg = new Map();
+    for (const r of DATA.routes) if (r[2] === fi) {
+      const kk = r[0] * 4096 + r[1];
+      agg.set(kk, (agg.get(kk) || 0) + r[4]);
+    }
+    rows = [...agg].map(([kk, n]) => [kk >> 12, kk & 4095, n]);
+  }
+  rows.sort((a, b) => a[2] - b[2]);
+  routeCache.set(k, rows);
+  return rows;
+}
+function portSizes(fi, y) {           // Map(port -> [in, out])
+  const k = key(fi, y);
+  if (portSizeCache.has(k)) return portSizeCache.get(k);
+  const m = new Map();
+  const bump = (p, slot, n) => {
+    let e = m.get(p); if (!e) m.set(p, e = [0, 0]); e[slot] += n;
+  };
+  for (const r of DATA.imports) if (r[1] === fi && (!y || r[2] === y)) bump(r[0], 0, r[3]);
+  for (const r of DATA.exports) if (r[1] === fi && (!y || r[2] === y)) bump(r[0], 1, r[3]);
+  portSizeCache.set(k, m);
+  return m;
+}
+function yearTotals(fi) {
+  const t = Object.fromEntries(YEARS.map(y => [y, 0]));
+  for (const r of DATA.imports) if (r[1] === fi) t[r[2]] += r[3];
+  return t;
+}
+
+/* ============ map engine (reused by compare) ============ */
+function makeMap(canvas, opts = {}) {
+  const ctx = canvas.getContext('2d');
+  const M = {
+    canvas, ctx, scale: 1, tx: 0, ty: 0, w: 0, h: 0,
+    interactive: opts.interactive !== false,
+    focusPort: null, hoverPort: null,
+  };
+  M.resize = function () {
+    const r = canvas.getBoundingClientRect();
+    const dpr = devicePixelRatio || 1;
+    canvas.width = r.width * dpr; canvas.height = r.height * dpr;
+    M.w = r.width; M.h = r.height; M.dpr = dpr;
+  };
+  M.fit = function (lon0, lat0, lon1, lat1, pad = 0.04) {
+    const [x0, y1] = proj(lon0, lat0), [x1, y0] = proj(lon1, lat1);
+    const sw = M.w * (1 - pad * 2) / (x1 - x0), sh = M.h * (1 - pad * 2) / (y1 - y0);
+    M.scale = Math.min(sw, sh);
+    M.tx = M.w / 2 - M.scale * (x0 + x1) / 2;
+    M.ty = M.h / 2 - M.scale * (y0 + y1) / 2;
+  };
+  M.toScreen = (lon, lat) => {
+    const [x, y] = proj(lon, lat);
+    return [x * M.scale + M.tx, y * M.scale + M.ty];
+  };
+  M.draw = function (fi, y) {
+    const { ctx } = M; const dpr = M.dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, M.w, M.h);
+    ctx.fillStyle = css('--sea'); ctx.fillRect(0, 0, M.w, M.h);
+    /* graticule */
+    ctx.strokeStyle = css('--graticule'); ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (let lon = -100; lon <= 45; lon += 10) {
+      const [x] = M.toScreen(lon, 40); ctx.moveTo(x, 0); ctx.lineTo(x, M.h);
+    }
+    for (let lat = 10; lat <= 70; lat += 10) {
+      const [, yy] = M.toScreen(0, lat); ctx.moveTo(0, yy); ctx.lineTo(M.w, yy);
+    }
+    ctx.stroke();
+    /* land */
+    ctx.fillStyle = css('--land'); ctx.strokeStyle = css('--coast');
+    ctx.lineWidth = 0.8;
+    ctx.beginPath();
+    for (const poly of LAND) {
+      const ring = poly.r;
+      let [x, yy] = M.toScreen(ring[0][0], ring[0][1]);
+      ctx.moveTo(x, yy);
+      for (let i = 1; i < ring.length; i++) {
+        [x, yy] = M.toScreen(ring[i][0], ring[i][1]); ctx.lineTo(x, yy);
+      }
+      ctx.closePath();
+    }
+    ctx.fill(); ctx.stroke();
+    /* flows */
+    const rows = routesFor(fi, y);
+    let maxN = 1; for (const r of rows) if (r[2] > maxN) maxN = r[2];
+    const flow = css('--flow');
+    ctx.lineCap = 'round';
+    const focus = M.focusPort;
+    for (const [o, d, n] of rows) {
+      const P = PORTS[o], Q = PORTS[d];
+      if (P[1] == null || Q[1] == null) continue;
+      const dim = focus != null && o !== focus && d !== focus;
+      const [x1, y1] = M.toScreen(P[2], P[1]);
+      const [x2, y2] = M.toScreen(Q[2], Q[1]);
+      const w = 0.6 + 5.5 * Math.sqrt(n / maxN);
+      ctx.strokeStyle = flow;
+      ctx.globalAlpha = dim ? 0.04 : Math.min(0.62, 0.14 + 0.5 * Math.sqrt(n / maxN));
+      ctx.lineWidth = w;
+      const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+      const dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy) || 1;
+      const bow = Math.min(60, len * 0.18);
+      ctx.beginPath(); ctx.moveTo(x1, y1);
+      ctx.quadraticCurveTo(mx - dy / len * bow, my + dx / len * bow, x2, y2);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+    /* ports */
+    const sizes = portSizes(fi, y);
+    let maxP = 1; for (const [, v] of sizes) maxP = Math.max(maxP, v[0] + v[1]);
+    const pin = css('--port-in'), pout = css('--port-out'), sea = css('--sea');
+    M._portPx = [];
+    for (const [p, [inN, outN]] of sizes) {
+      const port = PORTS[p];
+      if (port[1] == null) continue;
+      const [x, yy] = M.toScreen(port[2], port[1]);
+      if (x < -20 || x > M.w + 20 || yy < -20 || yy > M.h + 20) continue;
+      const r = 2 + 11 * Math.sqrt((inN + outN) / maxP);
+      const isDest = inN >= outN;
+      const dim = focus != null && p !== focus;
+      ctx.globalAlpha = dim ? 0.25 : 1;
+      ctx.beginPath(); ctx.arc(x, yy, r, 0, 7);
+      if (isDest) {
+        ctx.fillStyle = pin; ctx.fill();
+        ctx.lineWidth = 1; ctx.strokeStyle = sea; ctx.stroke();
+      } else {
+        ctx.fillStyle = sea; ctx.globalAlpha = dim ? 0.15 : 0.75; ctx.fill();
+        ctx.globalAlpha = dim ? 0.25 : 1;
+        ctx.lineWidth = 1.6; ctx.strokeStyle = pout; ctx.stroke();
+      }
+      M._portPx.push([x, yy, Math.max(r, 7), p, inN, outN]);
+    }
+    ctx.globalAlpha = 1;
+    /* labels for biggest ports */
+    const big = M._portPx.slice().sort((a, b) => (b[4] + b[5]) - (a[4] + a[5])).slice(0, opts.labels ?? 9);
+    ctx.font = '600 10.5px system-ui, sans-serif';
+    ctx.fillStyle = css('--ink-2');
+    ctx.strokeStyle = css('--sea'); ctx.lineWidth = 3; ctx.lineJoin = 'round';
+    for (const [x, yy, r, p] of big) {
+      const nm = PORTS[p][0];
+      ctx.strokeText(nm, x + r + 3, yy + 3.5);
+      ctx.fillText(nm, x + r + 3, yy + 3.5);
+    }
+  };
+  M.portAt = function (mx, my) {
+    let best = null, bd = 14;
+    for (const e of M._portPx || []) {
+      const d = Math.hypot(e[0] - mx, e[1] - my) - Math.min(e[2], 10);
+      if (d < bd) { bd = d; best = e; }
+    }
+    return best;
+  };
+  return M;
+}
+
+/* ============ main map view ============ */
+const map = makeMap($('#map'), { labels: 9 });
+let curForm = -1, curYear = 0, playing = false, playTimer = null;
+
+function chipbar(el, onpick, includeAll = true) {
+  el.innerHTML = '';
+  const mk = (label, fi) => {
+    const b = document.createElement('button');
+    b.className = 'chip'; b.textContent = label; b.dataset.fi = fi;
+    b.setAttribute('aria-pressed', String(fi === curForm));
+    b.onclick = () => onpick(fi);
+    el.appendChild(b);
+  };
+  if (includeAll) mk('all cargo', -1);
+  const CHIP_N = 8;
+  FORMS.slice(0, CHIP_N).forEach((f, i) => mk(f, i));
+  const sel = document.createElement('select');
+  sel.className = 'formsel';
+  sel.innerHTML = '<option value="">more…</option>' +
+    FORMS.slice(CHIP_N).map((f, i) => `<option value="${i + CHIP_N}">${f}</option>`).join('');
+  sel.onchange = () => { if (sel.value !== '') onpick(+sel.value); };
+  el.appendChild(sel);
+  return el;
+}
+function syncChips() {
+  document.querySelectorAll('.chipbar .chip').forEach(b =>
+    b.setAttribute('aria-pressed', String(+b.dataset.fi === curForm)));
+  document.querySelectorAll('.chipbar select').forEach(s => {
+    s.value = curForm >= 8 ? String(curForm) : '';
+  });
+}
+function pickForm(fi) {
+  curForm = fi; syncChips(); buildStrip(); redrawAll();
+}
+chipbar($('#chips'), pickForm);
+chipbar($('#shiftChips'), pickForm);
+chipbar($('#cmpChips'), pickForm);
+
+/* year strip */
+function buildStrip() {
+  const el = $('#yearStrip'); el.innerHTML = '';
+  const tot = yearTotals(curForm);
+  const max = Math.max(...Object.values(tot), 1);
+  for (const y of YEARS) {
+    const b = document.createElement('button');
+    b.title = `${y}: ${fmt(tot[y])} shipments`;
+    b.style.height = Math.max(3, 42 * tot[y] / max) + 'px';
+    b.setAttribute('aria-pressed', String(y === curYear));
+    b.setAttribute('aria-label', `${y}`);
+    b.onclick = () => setYear(y);
+    el.appendChild(b);
+  }
+}
+function setYear(y) {
+  curYear = y;
+  $('#yearNum').textContent = y || 'Σ';
+  $('#yearSub').textContent = y ? 'year' : 'all years';
+  $('#allBtn').setAttribute('aria-pressed', String(!y));
+  [...$('#yearStrip').children].forEach((b, i) =>
+    b.setAttribute('aria-pressed', String(YEARS[i] === y)));
+  drawMain();
+  if (panelPort != null) fillPanel(panelPort);
+}
+$('#allBtn').onclick = () => { stopPlay(); setYear(0); };
+$('#playBtn').onclick = () => playing ? stopPlay() : startPlay();
+function startPlay() {
+  playing = true; $('#playBtn').textContent = '❚❚ pause';
+  $('#playBtn').setAttribute('aria-pressed', 'true');
+  let i = curYear ? YEARS.indexOf(curYear) : -1;
+  const step = () => {
+    i = (i + 1) % YEARS.length;
+    setYear(YEARS[i]);
+    playTimer = setTimeout(step, reduceMotion ? 1400 : 750);
+  };
+  step();
+}
+function stopPlay() {
+  playing = false; clearTimeout(playTimer);
+  $('#playBtn').textContent = '▶ play';
+  $('#playBtn').setAttribute('aria-pressed', 'false');
+}
+
+function drawMain() { map.focusPort = panelPort; map.draw(curForm, curYear); }
+
+/* pan / zoom / hover / click */
+let drag = null;
+const cv = $('#map');
+cv.addEventListener('pointerdown', e => {
+  drag = { x: e.clientX, y: e.clientY, tx: map.tx, ty: map.ty, moved: false };
+  cv.setPointerCapture(e.pointerId); cv.classList.add('dragging');
+});
+cv.addEventListener('pointermove', e => {
+  const r = cv.getBoundingClientRect();
+  const mx = e.clientX - r.left, my = e.clientY - r.top;
+  if (drag) {
+    const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (Math.hypot(dx, dy) > 3) drag.moved = true;
+    map.tx = drag.tx + dx; map.ty = drag.ty + dy;
+    drawMain(); return;
+  }
+  const hit = map.portAt(mx, my);
+  const tip = $('#tooltip');
+  if (hit) {
+    const [, , , p, inN, outN] = hit;
+    tip.style.display = 'block';
+    tip.style.left = Math.min(mx + 14, map.w - 250) + 'px';
+    tip.style.top = (my + 12) + 'px';
+    const port = PORTS[p];
+    tip.innerHTML = `<b>${port[0]}</b><span class="muted">${port[3]}</span>
+      <div class="row"><span>arrivals</span><span>${fmt(inN)}</span></div>
+      <div class="row"><span>departures</span><span>${fmt(outN)}</span></div>
+      <div class="muted" style="margin-top:3px">click for detail</div>`;
+    cv.style.cursor = 'pointer';
+  } else { tip.style.display = 'none'; cv.style.cursor = drag ? 'grabbing' : 'grab'; }
+});
+cv.addEventListener('pointerup', e => {
+  cv.classList.remove('dragging');
+  const wasDrag = drag && drag.moved; drag = null;
+  if (wasDrag) return;
+  const r = cv.getBoundingClientRect();
+  const hit = map.portAt(e.clientX - r.left, e.clientY - r.top);
+  if (hit) openPanel(hit[3]); else closePanel();
+});
+cv.addEventListener('pointerleave', () => { $('#tooltip').style.display = 'none'; });
+cv.addEventListener('wheel', e => {
+  e.preventDefault();
+  const r = cv.getBoundingClientRect();
+  const mx = e.clientX - r.left, my = e.clientY - r.top;
+  const f = Math.exp(-e.deltaY * 0.0016);
+  map.tx = mx - (mx - map.tx) * f;
+  map.ty = my - (my - map.ty) * f;
+  map.scale *= f;
+  drawMain();
+}, { passive: false });
+
+/* port detail panel */
+let panelPort = null;
+function openPanel(p) { panelPort = p; fillPanel(p); $('#panel').classList.add('open'); drawMain(); }
+function closePanel() {
+  if (panelPort == null) return;
+  panelPort = null; $('#panel').classList.remove('open'); drawMain();
+}
+$('#panelClose').onclick = closePanel;
+function fillPanel(p) {
+  const port = PORTS[p];
+  $('#pName').textContent = port[0];
+  $('#pReg').textContent = port[3] + (curForm >= 0 ? ` · ${FORMS[curForm]}` : '') +
+    (curYear ? ` · ${curYear}` : ' · all years');
+  /* sparkline: shipments touching this port per year (current form) */
+  const per = Object.fromEntries(YEARS.map(y => [y, 0]));
+  for (const r of DATA.imports) if (r[0] === p && r[1] === curForm) per[r[2]] += r[3];
+  for (const r of DATA.exports) if (r[0] === p && r[1] === curForm) per[r[2]] += r[3];
+  const sc = $('#spark'), sctx = sc.getContext('2d');
+  const dpr = devicePixelRatio || 1, W = sc.clientWidth || 268, H = 60;
+  sc.width = W * dpr; sc.height = H * dpr; sctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  sctx.clearRect(0, 0, W, H);
+  const vals = YEARS.map(y => per[y]);
+  const mx = Math.max(...vals, 1), bw = W / YEARS.length;
+  YEARS.forEach((y, i) => {
+    const h = Math.max(vals[i] ? 2 : 0, (H - 14) * vals[i] / mx);
+    sctx.fillStyle = (y === curYear) ? css('--flow') : css('--grid');
+    if (!curYear) sctx.fillStyle = css('--flow');
+    sctx.fillRect(i * bw + 1, H - 12 - h, bw - 2, h);
+  });
+  sctx.fillStyle = css('--ink-3'); sctx.font = '9px system-ui,sans-serif';
+  sctx.fillText('1874', 0, H - 2);
+  sctx.fillText('1900', W - 24, H - 2);
+  /* partners */
+  const agg = new Map();
+  for (const r of DATA.routes) {
+    if (r[2] !== curForm) continue;
+    if (curYear && r[3] !== curYear) continue;
+    if (r[0] === p) agg.set(r[1], (agg.get(r[1]) || 0) + r[4]);
+    else if (r[1] === p) agg.set(r[0], (agg.get(r[0]) || 0) + r[4]);
+  }
+  const top = [...agg].sort((a, b) => b[1] - a[1]).slice(0, 6);
+  $('#pPartners').innerHTML = top.map(([q, n]) =>
+    `<tr><td>${PORTS[q][0]}</td><td>${fmt(n)}</td></tr>`).join('') ||
+    '<tr><td class="muted" colspan="2">no linked routes in view</td></tr>';
+  /* forms */
+  const fAgg = new Map();
+  for (const r of DATA.imports) if (r[0] === p && r[1] >= 0 && (!curYear || r[2] === curYear))
+    fAgg.set(r[1], (fAgg.get(r[1]) || 0) + r[3]);
+  for (const r of DATA.exports) if (r[0] === p && r[1] >= 0 && (!curYear || r[2] === curYear))
+    fAgg.set(r[1], (fAgg.get(r[1]) || 0) + r[3]);
+  const ftop = [...fAgg].sort((a, b) => b[1] - a[1]).slice(0, 6);
+  $('#pForms').innerHTML = ftop.map(([fi, n]) =>
+    `<tr><td>${FORMS[fi]}</td><td>${fmt(n)}</td></tr>`).join('') ||
+    '<tr><td class="muted" colspan="2">—</td></tr>';
+}
+
+/* ============ shift view (stacked area) ============ */
+const REGIONS = ['Scandinavia', 'Russia & Baltic', 'Germany & Prussia',
+  'France & Low Countries', 'Iberia & Mediterranean', 'British North America',
+  'USA & Gulf', 'Britain & Ireland', 'Other'];
+const RCOLOR = ['--c2', '--c1', '--c5', '--c8', '--c3', '--c6', '--c7', '--c4', '--ink-3'];
+const regionOf = p => {
+  const r = PORTS[p][3];
+  return REGIONS.includes(r) ? r : 'Other';
+};
+let shiftMode = 'share';
+$('#modeToggle').querySelectorAll('button').forEach(b => b.onclick = () => {
+  shiftMode = b.dataset.mode;
+  $('#modeToggle').querySelectorAll('button').forEach(x =>
+    x.setAttribute('aria-pressed', String(x === b)));
+  drawArea();
+});
+$('#oddOnly').onchange = drawArea;
+
+function drawArea() {
+  const svg = $('#areachart');
+  const W = svg.clientWidth || 900, H = svg.clientHeight || 420;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  const oddOnly = $('#oddOnly').checked;
+  const yrs = YEARS.filter(y => !oddOnly || y % 2 === 1 || y === 1874);
+  /* region totals per year for curForm, based on origin of routed shipments */
+  const tot = {};
+  for (const y of yrs) tot[y] = Object.fromEntries(REGIONS.map(r => [r, 0]));
+  for (const r of DATA.exports) {
+    if (r[1] !== curForm) continue;
+    if (!(r[2] in tot)) continue;
+    tot[r[2]][regionOf(r[0])] += r[3];
+  }
+  const padL = 46, padR = 150, padT = 16, padB = 30;
+  const iw = W - padL - padR, ih = H - padT - padB;
+  const sums = yrs.map(y => REGIONS.reduce((a, r) => a + tot[y][r], 0));
+  const maxSum = Math.max(...sums, 1);
+  const X = i => padL + iw * i / (yrs.length - 1);
+  let out = '';
+  /* grid */
+  const gridN = 4;
+  for (let g = 0; g <= gridN; g++) {
+    const yy = padT + ih * g / gridN;
+    const lab = shiftMode === 'share'
+      ? `${100 - g * 100 / gridN}%` : fmt(Math.round(maxSum * (1 - g / gridN)));
+    out += `<line x1="${padL}" x2="${W - padR}" y1="${yy}" y2="${yy}"
+      stroke="var(--grid)" stroke-width="1"/>
+      <text x="${padL - 6}" y="${yy + 4}" text-anchor="end" font-size="10.5"
+      fill="var(--ink-3)" font-variant-numeric="tabular-nums">${lab}</text>`;
+  }
+  /* stacked series, bottom-up */
+  const stacks = yrs.map((y, i) => {
+    const s = sums[i] || 1;
+    let acc = 0;
+    return REGIONS.map(r => {
+      const v = tot[y][r];
+      const v2 = shiftMode === 'share' ? v / s : v / maxSum;
+      const seg = [acc, acc + v2]; acc += v2; return seg;
+    });
+  });
+  const Y = v => padT + ih * (1 - v);
+  REGIONS.forEach((r, ri) => {
+    let top = '', bot = '';
+    yrs.forEach((y, i) => {
+      top += `${i ? 'L' : 'M'}${X(i).toFixed(1)},${Y(stacks[i][ri][1]).toFixed(1)}`;
+    });
+    for (let i = yrs.length - 1; i >= 0; i--) {
+      bot += `L${X(i).toFixed(1)},${Y(stacks[i][ri][0]).toFixed(1)}`;
+    }
+    out += `<path d="${top}${bot}Z" fill="var(${RCOLOR[ri]})" opacity="0.86"
+      stroke="var(--sea)" stroke-width="1.2"><title>${r}</title></path>`;
+    /* direct label at right edge if band is thick enough */
+    const last = stacks[yrs.length - 1][ri];
+    if ((last[1] - last[0]) * ih > 13) {
+      const ly = Y((last[0] + last[1]) / 2);
+      out += `<text x="${W - padR + 8}" y="${ly + 4}" font-size="11.5" font-weight="600"
+        fill="var(--ink)">${r}</text>
+        <line x1="${W - padR + 1}" x2="${W - padR + 6}" y1="${ly}" y2="${ly}"
+        stroke="var(${RCOLOR[ri]})" stroke-width="3"/>`;
+    }
+  });
+  /* x labels */
+  yrs.forEach((y, i) => {
+    if (y % 4 === 1 || y === 1874) out += `<text x="${X(i)}" y="${H - 8}" text-anchor="middle"
+      font-size="10.5" fill="var(--ink-3)" font-variant-numeric="tabular-nums">${y}</text>`;
+  });
+  /* hover crosshair */
+  out += `<rect id="areaHit" x="${padL}" y="${padT}" width="${iw}" height="${ih}"
+    fill="transparent"/>`;
+  svg.innerHTML = out;
+  const legend = $('#areaLegend');
+  legend.innerHTML = REGIONS.map((r, i) =>
+    `<span class="li"><span class="sw" style="background:var(${RCOLOR[i]})"></span>${r}</span>`).join('');
+  /* crosshair tooltip via title-less custom layer */
+  const hit = svg.querySelector('#areaHit');
+  hit.addEventListener('mousemove', e => {
+    const box = svg.getBoundingClientRect();
+    const relX = (e.clientX - box.left) * (W / box.width);
+    const i = Math.round((relX - padL) / iw * (yrs.length - 1));
+    if (i < 0 || i >= yrs.length) return;
+    const y = yrs[i];
+    const rows = REGIONS.map((r, ri) => [r, tot[y][r], ri])
+      .filter(x => x[1] > 0).sort((a, b) => b[1] - a[1]).slice(0, 6);
+    const tip = $('#tooltip');
+    tip.style.display = 'block';
+    const mainR = $('#shift').getBoundingClientRect();
+    tip.style.left = Math.min(e.clientX - mainR.left + 14, mainR.width - 250) + 'px';
+    tip.style.top = (e.clientY - mainR.top + 14) + 'px';
+    $('#shift').appendChild(tip);
+    tip.innerHTML = `<b>${y}</b>` + rows.map(([r, v, ri]) =>
+      `<div class="row"><span><span class="dot" style="display:inline-block;background:var(${RCOLOR[ri]});width:8px;height:8px;border-radius:2px;margin-right:5px"></span>${r}</span><span>${fmt(v)}</span></div>`).join('');
+  });
+  hit.addEventListener('mouseleave', () => { $('#tooltip').style.display = 'none'; });
+}
+
+/* ============ compare view ============ */
+const ERAS = [['1874–1881', 1874, 1881], ['1883–1889', 1883, 1889], ['1891–1900', 1891, 1900]];
+const cmpMaps = [];
+function buildCompare() {
+  const grid = $('#cmpGrid'); grid.innerHTML = ''; cmpMaps.length = 0;
+  for (const [label, y0, y1] of ERAS) {
+    const card = document.createElement('div'); card.className = 'cmp-card';
+    card.innerHTML = `<h3>${label}</h3><div class="tot"></div><canvas></canvas><ol></ol>`;
+    grid.appendChild(card);
+    const m = makeMap(card.querySelector('canvas'), { interactive: false, labels: 5 });
+    cmpMaps.push({ m, card, y0, y1 });
+  }
+  drawCompare();
+}
+const eraCache = new Map();
+function eraRows(fi, y0, y1) {
+  const k = `${fi}|${y0}-${y1}`;
+  if (eraCache.has(k)) return eraCache.get(k);
+  const agg = new Map();
+  for (const r of DATA.routes) if (r[2] === fi && r[3] >= y0 && r[3] <= y1) {
+    const kk = r[0] * 4096 + r[1];
+    agg.set(kk, (agg.get(kk) || 0) + r[4]);
+  }
+  const rows = [...agg].map(([kk, n]) => [kk >> 12, kk & 4095, n]).sort((a, b) => a[2] - b[2]);
+  eraCache.set(k, rows);
+  return rows;
+}
+function drawCompare() {
+  for (const { m, card, y0, y1 } of cmpMaps) {
+    m.resize();
+    m.fit(-72, 35, 32, 66);
+    /* monkey-patch per-era data through the cache keys */
+    const fi = curForm;
+    const kR = key(fi, `${y0}-${y1}`), kP = key(fi, `${y0}-${y1}`);
+    routeCache.set(kR, eraRows(fi, y0, y1));
+    if (!portSizeCache.has(kP)) {
+      const pm = new Map();
+      const bump = (p, slot, n) => { let e = pm.get(p); if (!e) pm.set(p, e = [0, 0]); e[slot] += n; };
+      for (const r of DATA.imports) if (r[1] === fi && r[2] >= y0 && r[2] <= y1) bump(r[0], 0, r[3]);
+      for (const r of DATA.exports) if (r[1] === fi && r[2] >= y0 && r[2] <= y1) bump(r[0], 1, r[3]);
+      portSizeCache.set(kP, pm);
+    }
+    m.draw(fi, `${y0}-${y1}`);
+    /* caption: era total + top origins */
+    let tot = 0;
+    const oAgg = new Map();
+    for (const r of DATA.exports) if (r[1] === fi && r[2] >= y0 && r[2] <= y1) {
+      oAgg.set(r[0], (oAgg.get(r[0]) || 0) + r[3]);
+    }
+    for (const r of DATA.imports) if (r[1] === fi && r[2] >= y0 && r[2] <= y1) tot += r[3];
+    const top = [...oAgg].sort((a, b) => b[1] - a[1]).slice(0, 3);
+    card.querySelector('.tot').textContent =
+      `${fmt(tot)} shipments${fi >= 0 ? ' of ' + FORMS[fi] : ''}`;
+    card.querySelector('ol').innerHTML = top.map(([p, n]) =>
+      `<li><b>${PORTS[p][0]}</b> — ${fmt(n)}</li>`).join('');
+  }
+}
+
+/* ============ tabs, resize, boot ============ */
+document.querySelectorAll('nav [role=tab]').forEach(b => b.onclick = () => {
+  document.querySelectorAll('nav [role=tab]').forEach(x =>
+    x.setAttribute('aria-selected', String(x === b)));
+  document.querySelectorAll('section.view').forEach(s =>
+    s.classList.toggle('on', s.id === b.dataset.view));
+  $('#tooltip').style.display = 'none';
+  if (b.dataset.view === 'mapview') $('#mapWrap').appendChild($('#tooltip'));
+  redrawAll();
+});
+function redrawAll() {
+  const view = document.querySelector('section.view.on').id;
+  if (view === 'mapview') { map.resize(); if (!map._fitted) { map.fit(-72, 35, 32, 66); map._fitted = true; } drawMain(); }
+  if (view === 'shift') drawArea();
+  if (view === 'compare') buildCompare();
+}
+addEventListener('resize', () => { redrawAll(); });
+buildStrip();
+setYear(0);
+redrawAll();
+</script>
