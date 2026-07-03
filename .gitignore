@@ -1,0 +1,17 @@
+# Pipeline intermediates — regenerable from OCR via scripts/ (see CLAUDE.md).
+# The OCR corpus itself is distributed as a release asset, not committed.
+ocr_results/
+classification/
+parsed/
+deduped/
+normalized/
+parsed_v1_backup/
+
+# local cruft
+*.log
+*:Zone.Identifier
+__pycache__/
+*.pyc
+classify_pid.txt
+kg/_build_csv/
+*.lbdb.wal

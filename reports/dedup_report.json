@@ -1,0 +1,29 @@
+{
+  "total_records": 165941,
+  "kept": 158918,
+  "removed_duplicates": 7023,
+  "removed_empty_husks": 0,
+  "files_with_duplicates": 323,
+  "worst_files": {
+    "19. p. 339-341 - Imports - May 9 1885 -Timber Trades Journal 1885_p003": 2315,
+    "10. p. 100-103 - Imports - August 8 1885 - Timber Trades Journal 1885_p001": 1374,
+    "11. 171-173 - September 15 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 5 1877_p002": 1372,
+    "18830825p.145_p002": 57,
+    "13. p. 197-200 - October 16 1875 - Timber Trades Journal Vol. 3 1875_p002": 48,
+    "18830609p.398_p002": 43,
+    "18831013p.275_p003": 39,
+    "21. p. 296-300 - Imports - October 24 1885 - Timber Trades Journal 1885_p004": 35,
+    "18830929p.235_p005": 34,
+    "4. p. 86-87 - Imports - January 24 1885 Timber Trades Journal 1885_p002": 34,
+    "18970821p.267_p001": 32,
+    "2. p. 26-28 - May 15 1875 - Imports of Timber, &c. - Timber Trades Journal Vol. 3 1875_p001": 31,
+    "13. p. 193-195 - October 17 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p002": 29,
+    "18990909p.294_p002": 25,
+    "18911017p.4": 24,
+    "19. p. 488-489 - Imports - May 7 1887 - Timber Trades Journal 1887_p002": 24,
+    "13. p. 153-155 - Imports - August 29 1885 - Timber Trades Journal 1885_p003": 21,
+    "18970529p.909_p001": 21,
+    "18990722p.89": 21,
+    "18950504p.758_p002": 19
+  }
+}

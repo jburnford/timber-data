@@ -1,0 +1,2701 @@
+{
+  "summary": {
+    "total_files": 2039,
+    "total_shipments": 159939,
+    "total_contaminated_records": 35403,
+    "contamination_by_type": {
+      "cargo_in_ship_name": 16959,
+      "quantity_in_ship_name": 6965,
+      "date_in_ship_name": 3657,
+      "long_ship_name": 5678,
+      "consignee_in_origin": 949,
+      "unusual_chars_in_ship_name": 1195
+    }
+  },
+  "cargo_in_ship_name": {
+    "total": 16959,
+    "unique_values": 447,
+    "samples": [
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "7e48c08b-dc1f-46dc-a69b-d4ef5be4139f",
+        "raw_text": "cedar-Crossfield & Co.",
+        "value": "cedar",
+        "keywords_found": [
+          "cedar"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "1e71fe8b-9a6f-4803-be7b-9c400aec5257",
+        "raw_text": "2,767 pcs. 2,803 lds. pine",
+        "value": "2,767 pcs. 2,803 lds. pine",
+        "keywords_found": [
+          "pcs.",
+          "lds.",
+          "pine"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "06b304a1-d547-410b-8d9a-8ac67dba9808",
+        "raw_text": "timber, 2,215 lds. deals-",
+        "value": "timber, 2,215 lds. deals-",
+        "keywords_found": [
+          "deals",
+          "timber",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "de7d0839-2a98-4201-90a0-debbb67df782",
+        "raw_text": "deals, battens, and boards-Allan Bros.",
+        "value": "deals, battens, and boards",
+        "keywords_found": [
+          "deals",
+          "boards",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "2e13ee40-08cc-411e-8d92-e6faac87849f",
+        "raw_text": "deals, battens, and boards-Allan Bros.",
+        "value": "deals, battens, and boards",
+        "keywords_found": [
+          "deals",
+          "boards",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "e39ae39c-1088-40df-97cc-296ade5e96ff",
+        "raw_text": "boards",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "fe0a90d5-dd2b-417f-b2a4-eceb638ebbd2",
+        "raw_text": "boards",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "65bfac9e-e5b7-460d-a94f-f98fc7dfacbc",
+        "raw_text": "battens, and boards-Jewson & Sons",
+        "value": "battens, and boards",
+        "keywords_found": [
+          "boards",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "da293d3c-3f47-4fad-a477-e6c96b3fb637",
+        "raw_text": "& Son; 43 lds. sawn fir-W. H. Ewen",
+        "value": "& Son; 43 lds. sawn fir",
+        "keywords_found": [
+          "lds.",
+          "fir",
+          "sawn"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "a68d1cb3-edfa-43e5-a8f9-c5978654cb09",
+        "raw_text": "battens, and boards-J. S. Penny",
+        "value": "battens, and boards",
+        "keywords_found": [
+          "boards",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "53e5b5e6-f90f-4c1d-8ce3-47ffd8e5cf23",
+        "raw_text": "lumber, 83 pcs. oak lumber-Vincent &",
+        "value": "lumber, 83 pcs. oak lumber",
+        "keywords_found": [
+          "pcs.",
+          "oak"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "09f8c06a-4179-4e55-8ae9-31190bfbe8f7",
+        "raw_text": "Co. ; 3,196 pcs. oak lumber,",
+        "value": "Co. ; 3,196 pcs. oak lumber,",
+        "keywords_found": [
+          "pcs.",
+          "oak"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "6e9a793a-c53c-48ad-9be2-7d8f4d29c375",
+        "raw_text": "2,151 pcs. pine lumber-Taylor & Low",
+        "value": "2,151 pcs. pine lumber",
+        "keywords_found": [
+          "pcs.",
+          "pine"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "d72f8385-27c1-4a2b-82f6-6068be73beea",
+        "raw_text": "Bros. ; 32 walnut logs",
+        "value": "Bros. ; 32 walnut logs",
+        "keywords_found": [
+          "logs",
+          "walnut"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "511fedef-f364-49fb-837d-0918d7dadf48",
+        "raw_text": "22 555 deals, battens, and boards-",
+        "value": "22 555 deals, battens, and boards-",
+        "keywords_found": [
+          "deals",
+          "boards",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "e6607a3b-4d0b-4773-92c8-1d1e1beae7fa",
+        "raw_text": "boards-Watson & Todd",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "0204ae2b-085f-417e-8fe8-28d999d04830",
+        "raw_text": "Hooper & Co. ; 2,895 deals, boards, and",
+        "value": "Hooper & Co. ; 2,895 deals, boards, and",
+        "keywords_found": [
+          "deals",
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "71338e94-75a7-457c-8d39-c82cdf87540f",
+        "raw_text": "J. S. Fry & Sons ; 1,895 deals-",
+        "value": "J. S. Fry & Sons ; 1,895 deals-",
+        "keywords_found": [
+          "deals"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "e9fa2bbb-61fe-46a2-bda8-58a1e855e195",
+        "raw_text": "Fancy (s) - Bordeaux - 1,400 lds. pitwood-",
+        "value": "Fancy  - Bordeaux - 1,400 lds. pitwood-",
+        "keywords_found": [
+          "lds.",
+          "pitwood"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "a1c7bd0e-fba6-45f5-9c6c-3887a201fd46",
+        "raw_text": "Newport Pitwood Co.",
+        "value": "Newport Pitwood Co.",
+        "keywords_found": [
+          "pitwood"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "6b4d2ca6-6f15-452b-942b-a082fe1125e3",
+        "raw_text": "fir-A. Capelle",
+        "value": "fir",
+        "keywords_found": [
+          "fir"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "54688487-2d59-4e67-9936-b357259eccef",
+        "raw_text": "Pitwood Co.",
+        "value": "Pitwood Co.",
+        "keywords_found": [
+          "pitwood"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "cb39563a-4d89-421c-adfa-68341bb0d1f2",
+        "raw_text": "Thomas & Co.; 110 lds. sawn fir,",
+        "value": "Thomas & Co.; 110 lds. sawn fir,",
+        "keywords_found": [
+          "lds.",
+          "fir",
+          "sawn"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "c4864316-a817-4ed1-bb5f-70c64cd2a9a8",
+        "raw_text": "hewn fir, 118 lds. hewn oak and",
+        "value": "hewn fir, 118 lds. hewn oak and",
+        "keywords_found": [
+          "lds.",
+          "oak",
+          "fir",
+          "hewn"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "c54f8a14-47a7-4db1-aafc-a7873556d7cf",
+        "raw_text": "elm-Alexanders & Co.",
+        "value": "elm",
+        "keywords_found": [
+          "elm"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "91a3420c-9380-4b90-bc75-72dc9f3bc832",
+        "raw_text": "sawn fir-C. Jones & Sons",
+        "value": "sawn fir",
+        "keywords_found": [
+          "fir",
+          "sawn"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "2fdaa6fb-1581-4442-bd3b-5315e64f7efe",
+        "raw_text": "boards-Watts & Co.",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "61e470d0-b0a6-404e-8d3b-59874a2c47df",
+        "raw_text": "staves-J. C. Isaacs; 63 lds. staves-N.",
+        "value": "staves",
+        "keywords_found": [
+          "staves"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "ecba00e6-b94e-40c5-8e5a-50d01f78b903",
+        "raw_text": "Inch; 56 lds. staves-Phillips Bros.",
+        "value": "Inch; 56 lds. staves",
+        "keywords_found": [
+          "staves",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "62bcc216-a5d0-4de4-bae9-8a530aa8d718",
+        "raw_text": "1,286 lds. deals-T. Adams & Sons",
+        "value": "1,286 lds. deals",
+        "keywords_found": [
+          "deals",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "e380eb35-eebf-4545-a71a-61662e709824",
+        "raw_text": "boards-W. J. Gardner",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "8507c07f-1f74-450b-9399-d4cee35f620a",
+        "raw_text": "13 Zetland (s) Rafso-1,122 lds. deals-T. Adams",
+        "value": "13 Zetland  Rafso-1,122 lds. deals",
+        "keywords_found": [
+          "deals",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "e72664fc-ac7b-4de0-ab9c-b44e86d7721b",
+        "raw_text": "Ashbee, Sons, & Co.",
+        "value": "Ashbee, Sons, & Co.",
+        "keywords_found": [
+          "ash"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "386d9891-d631-4ec1-8b40-1d04584a5d1d",
+        "raw_text": "boards-Illingworth, Ingham, & Co.",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "515736c0-eb63-4ac8-b8d6-6e3b5582344e",
+        "raw_text": "sleepers-W. Christie & Co. ; 103 lds. hewn",
+        "value": "sleepers",
+        "keywords_found": [
+          "sleepers"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "69ab74ba-300e-4a39-a7ba-56ae456a871d",
+        "raw_text": "fir-Bennetts & Co.",
+        "value": "fir",
+        "keywords_found": [
+          "fir"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "ccedb0ae-a57a-4f61-b90b-ec7f53d7e622",
+        "raw_text": "Wilson, Sons, & Co.; 35 lds. slating laths-",
+        "value": "Wilson, Sons, & Co.; 35 lds. slating laths-",
+        "keywords_found": [
+          "laths",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "62e0350c-e29c-4649-8b92-8d39eaa0a9a8",
+        "raw_text": "Knotts & Baker; 14 lds. laths-S Ellis; 172",
+        "value": "Knotts & Baker; 14 lds. laths",
+        "keywords_found": [
+          "laths",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "d8fadef4-74cb-405a-9994-9a0c084efcd5",
+        "raw_text": "lds. battens-Bennetts & Co.",
+        "value": "lds. battens",
+        "keywords_found": [
+          "battens",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "7ec7ec1b-5ecd-49c9-9f08-5e067aa28ae4",
+        "raw_text": "battens, &c.-J. W. Shepherd & Co.",
+        "value": "battens, &c.",
+        "keywords_found": [
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "8701150c-b3d2-4bd2-b2a6-a0bee53ad39e",
+        "raw_text": "boards, and ends-Hewson, Chapman, & Co.",
+        "value": "boards, and ends",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "4c3a2af9-fddf-4657-b9fd-feb509e22265",
+        "raw_text": "283 lds. props, 177 lds. sleepers, 31 lds.",
+        "value": "283 lds. props, 177 lds. sleepers, 31 lds.",
+        "keywords_found": [
+          "sleepers",
+          "props",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "62f9a9c1-328f-4ad3-9cef-38b28f83219d",
+        "raw_text": "rails, 202 lds. posts, &c-T Barraclough",
+        "value": "rails, 202 lds. posts, &c",
+        "keywords_found": [
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "1d240d08-ffa3-47f4-a8c1-b596dec1c05e",
+        "raw_text": "battens, &c.-Pickford & Co.",
+        "value": "battens, &c.",
+        "keywords_found": [
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "398adf93-a2a9-45e4-bbaa-cbf36cddb428",
+        "raw_text": "lds. birch and alder-J. W. Baird & Co.",
+        "value": "lds. birch and alder",
+        "keywords_found": [
+          "lds.",
+          "birch"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "75b24235-05db-4e43-8655-ab3fddb954ad",
+        "raw_text": "14 lds. spars-Hessler & Co.",
+        "value": "14 lds. spars",
+        "keywords_found": [
+          "lds.",
+          "spars"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "412ac285-26d8-4caa-a5ea-cc5bdaf6ae8f",
+        "raw_text": "& Hassell; 2,502 lds. deals and boards-",
+        "value": "& Hassell; 2,502 lds. deals and boards-",
+        "keywords_found": [
+          "deals",
+          "boards",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "dedd24a4-7469-4171-a98c-0e34ac7f38eb",
+        "raw_text": "Cronstadt-861 lds. deals and",
+        "value": "Cronstadt-861 lds. deals and",
+        "keywords_found": [
+          "deals",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "dd6eb874-ec21-472c-9923-890f0ece9f9b",
+        "raw_text": "laths-Pickford & Co.",
+        "value": "laths",
+        "keywords_found": [
+          "laths"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "038752c6-4c55-4dd1-b1cc-a94bfa680cc0",
+        "raw_text": "and poles-T. Barraclough",
+        "value": "and poles",
+        "keywords_found": [
+          "poles"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "f8f197c7-dba6-4f36-9683-e29506f8c3b6",
+        "raw_text": "Tyri - Hernosand - 1,200 lds. pit props-",
+        "value": "Tyri - Hernosand - 1,200 lds. pit props-",
+        "keywords_found": [
+          "props",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "3d51d178-f967-412d-99d8-05305aa69c7f",
+        "raw_text": "boards-Pickford & Co.",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "941d9c20-b364-41ce-b4f0-783068d92dee",
+        "raw_text": "& Cooper; 9,920 pit props-Pyman, Bell,",
+        "value": "& Cooper; 9,920 pit props",
+        "keywords_found": [
+          "props"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "8594cb1b-f985-4858-b599-2fbb70d35824",
+        "raw_text": "timber, 3,700 bdls. box boards,",
+        "value": "timber, 3,700 bdls. box boards,",
+        "keywords_found": [
+          "boards",
+          "timber"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "36afb972-1e75-4b2b-b5fa-25badc0cd031",
+        "raw_text": "3,232 poles-T. W. Allen",
+        "value": "3,232 poles",
+        "keywords_found": [
+          "poles"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "2274be3a-e878-4306-9dbb-2455596674c4",
+        "raw_text": "timber-Hy. Smith & Son",
+        "value": "timber",
+        "keywords_found": [
+          "timber"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "69ace756-c85b-46d4-83f8-e5fa79ef304c",
+        "raw_text": "squares, 71,643 deals, &c.-Hollis Bros.",
+        "value": "squares, 71,643 deals, &c.",
+        "keywords_found": [
+          "deals"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "a9e99cd6-62a1-4b34-bfe5-f60db65b0ac9",
+        "raw_text": "bdls. laths-Henry Smith & Co.",
+        "value": "bdls. laths",
+        "keywords_found": [
+          "laths"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "aca88549-5c35-4a06-99c0-01bef31c339f",
+        "raw_text": "2,626 pit props-Roberts & Cooper",
+        "value": "2,626 pit props",
+        "keywords_found": [
+          "props"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "3d81936c-c18f-4e6f-ad82-ca26f311b941",
+        "raw_text": "pine ends, 3,920 pine boards-Wade,",
+        "value": "pine ends, 3,920 pine boards",
+        "keywords_found": [
+          "boards",
+          "pine"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "b59c4ac1-ac85-4729-9fc5-f34cca854626",
+        "raw_text": "timber-Horsley, Smith, & Co.",
+        "value": "timber",
+        "keywords_found": [
+          "timber"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "8b0176fd-2fcc-4229-8439-d2d4eef94d35",
+        "raw_text": "Master; 110,305 deals, &c.",
+        "value": "Master; 110,305 deals, &c.",
+        "keywords_found": [
+          "deals"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "6b87e626-c9c3-45f4-9db4-5a904d419841",
+        "raw_text": "boards-G. Mason",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "eeb48faa-7b90-414b-b15e-851fc9fce0d1",
+        "raw_text": "and battens, & lds. poles-Penney &",
+        "value": "and battens, & lds. poles",
+        "keywords_found": [
+          "battens",
+          "lds.",
+          "poles"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "1fcd46fe-6ceb-4d3d-83c8-89d6dec8cb43",
+        "raw_text": "11 Zelotais Onega-392 lds. deals-",
+        "value": "11 Zelotais Onega-392 lds. deals-",
+        "keywords_found": [
+          "deals",
+          "lds."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "f03f3c9a-28d3-4f8b-98bb-f531a5d64aa0",
+        "raw_text": "Sept. 13 Oakmore (s)-Montreal-1,217 deals",
+        "value": "Sept. 13 Oakmore",
+        "keywords_found": [
+          "oak"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "03c8056b-c7a6-4a78-9aa7-7c276c6ca68b",
+        "raw_text": "and boards-Robert Cox & Co. ; 6,400",
+        "value": "and boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "279c36cc-0641-442b-97d1-eb4ea1ce2782",
+        "raw_text": "ends, 860 boards, 1,217 deals and",
+        "value": "ends, 860 boards, 1,217 deals and",
+        "keywords_found": [
+          "deals",
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "5ceda85c-9ed9-479b-8ba6-3de85f6dc3b2",
+        "raw_text": "boards-Robt. Cox & Co.",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "ac24b3cd-577d-485b-ad05-c0143ae13207",
+        "raw_text": "legs Lloyd Lumber Co. ; 3,565 deals,",
+        "value": "legs Lloyd Lumber Co. ; 3,565 deals,",
+        "keywords_found": [
+          "deals"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "eb0ee1c4-4421-4efb-b916-0f5a59677672",
+        "raw_text": "and tboards, 18 1/2 deals, 5,101 pcs. &",
+        "value": "and tboards, 18 1/2 deals, 5,101 pcs. &",
+        "keywords_found": [
+          "deals",
+          "boards",
+          "pcs."
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "c792d663-a6f2-4560-87fc-cf51a6b648b7",
+        "raw_text": "3,565 deal ends, 596 oak scantlings-",
+        "value": "3,565 deal ends, 596 oak scantlings-",
+        "keywords_found": [
+          "oak"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "31325dc3-1bce-49d6-9761-65075e5fbbf3",
+        "raw_text": "boards-Duncan, Ewing, & Co. ; 2,949",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "7738e580-6414-4147-8c10-927427763fdd",
+        "raw_text": "birch lumber.",
+        "value": "birch lumber.",
+        "keywords_found": [
+          "birch"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "01106609-0563-4319-830c-a1c8dd3aebcd",
+        "raw_text": "and battens, 6,887 scantlings-W. M.",
+        "value": "and battens, 6,887 scantlings",
+        "keywords_found": [
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "2fb2b725-2a70-4a65-9a92-e90654dae0d2",
+        "raw_text": "fir half-sleepers R Grand & Co.",
+        "value": "fir half-sleepers R Grand & Co.",
+        "keywords_found": [
+          "sleepers",
+          "fir"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "ca5a7557-79f4-47d2-93d3-0afcd71de408",
+        "raw_text": "planks, 248 birch ends, 9,300 deals,",
+        "value": "planks, 248 birch ends, 9,300 deals,",
+        "keywords_found": [
+          "deals",
+          "planks",
+          "birch"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "ff50b382-8d7f-4a71-aff9-fd64b109ae59",
+        "raw_text": "battens, 1,676 scantlings, 11,709 boards,",
+        "value": "battens, 1,676 scantlings, 11,709 boards,",
+        "keywords_found": [
+          "boards",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "d386bb79-0210-4071-8546-647e8a750e80",
+        "raw_text": "13,980 boards-Farnworth & Jardine",
+        "value": "13,980 boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "93c1043b-418f-4f55-8651-bf7b213f55d0",
+        "raw_text": "22,890 planks, 798 ends-Farnworth &",
+        "value": "22,890 planks, 798 ends",
+        "keywords_found": [
+          "planks"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "80d7676e-510b-46c9-af39-9a73ca07f120",
+        "raw_text": "boards-D. Roberts, Sons, & Co. ; 1,194",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "11dafbad-3182-4729-9086-387972273d81",
+        "raw_text": "birch, 481 pcs. oak, 604 pcs. pine,",
+        "value": "birch, 481 pcs. oak, 604 pcs. pine,",
+        "keywords_found": [
+          "pcs.",
+          "oak",
+          "pine",
+          "birch"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "09bf6d84-aab2-4642-afc4-9545fb9ea6fb",
+        "raw_text": "pine, 1,838 pcs. waney pine, 27 pcs.",
+        "value": "pine, 1,838 pcs. waney pine, 27 pcs.",
+        "keywords_found": [
+          "pcs.",
+          "pine"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "abdd2997-87fe-48e6-a99b-319babe0c91e",
+        "raw_text": "pine, 27 pcs. waney pine, 37,992",
+        "value": "pine, 27 pcs. waney pine, 37,992",
+        "keywords_found": [
+          "pcs.",
+          "pine"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "fe08ac0a-2e2e-424b-9f41-08733520a223",
+        "raw_text": "dual ends, 37,992 spruce boards-",
+        "value": "dual ends, 37,992 spruce boards-",
+        "keywords_found": [
+          "boards",
+          "spruce"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "6f43067b-c28b-4664-bb06-4e32ef52a0f8",
+        "raw_text": "spruce boards",
+        "value": "spruce boards",
+        "keywords_found": [
+          "boards",
+          "spruce"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "3c020adf-4093-48be-9ff1-b879e9a29126",
+        "raw_text": "pine timber",
+        "value": "pine timber",
+        "keywords_found": [
+          "timber",
+          "pine"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "0346fdf3-cad3-428a-8ec4-dcc6ea5d148c",
+        "raw_text": "and battens, 8,580 scantlings, 1,987",
+        "value": "and battens, 8,580 scantlings, 1,987",
+        "keywords_found": [
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "3c296f3a-d7e1-49fb-8778-a3544232cbf9",
+        "raw_text": "boards, 122 scantlings, 971 boards-",
+        "value": "boards, 122 scantlings, 971 boards-",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "08b790e6-9b50-4cf5-9c33-4ddb748592d1",
+        "raw_text": "boards-W. M. Mackay",
+        "value": "boards",
+        "keywords_found": [
+          "boards"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "696b3134-4222-4fc9-a468-c9b321e0ba63",
+        "raw_text": "Cronstadt-6 lds. firewood-G. Gjertsen",
+        "value": "Cronstadt-6 lds. firewood",
+        "keywords_found": [
+          "lds.",
+          "fir"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "3a38d570-71e3-4de6-9c68-8b08ac983d6c",
+        "raw_text": "Wifstawarf-10,035 deals, battens, and boards-Wintringham & Son; 4,031 boards and ends-Seddon, Shephord, & Co.",
+        "value": "Wifstawarf-10,035 deals, battens, and boards",
+        "keywords_found": [
+          "deals",
+          "boards",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "6a0a7bcd-e6ee-42d8-b01c-4d5b7d635002",
+        "raw_text": "Helm-Sundswall-7,299 deals-S. Ellis",
+        "value": "Helm",
+        "keywords_found": [
+          "elm"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "bb56e136-fd10-4d87-bda2-4f511c15174a",
+        "raw_text": "Wilhelm I.-Cronstadt-13,828 deals and boards-R. Wade, Sons, & Co.",
+        "value": "Wilhelm I.",
+        "keywords_found": [
+          "elm"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "6bc9a377-f3c4-47eb-abba-8bdb7a842d35",
+        "raw_text": "Bride (s) Wyburg-67,848 deals, &c., 4 fms. firewood-Order",
+        "value": "Bride  Wyburg-67,848 deals, &c., 4 fms. firewood",
+        "keywords_found": [
+          "deals",
+          "fir"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "ade42290-9d80-4753-85db-a39b35482f0d",
+        "raw_text": "man & Hartenfeld; 288 pcs. ash, 30 pcs. birch, 3,385 birch props-Order",
+        "value": "man & Hartenfeld; 288 pcs. ash, 30 pcs. birch, 3,385 birch props",
+        "keywords_found": [
+          "props",
+          "pcs.",
+          "ash",
+          "birch"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "422fa00d-bc80-4fe9-9d02-9c5bea0a6b33",
+        "raw_text": "wood, 1,544 deals and battens-Order",
+        "value": "wood, 1,544 deals and battens",
+        "keywords_found": [
+          "deals",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "6c9be586-8e47-4d24-8309-3f0b733c8fcd",
+        "raw_text": "2,185 deals and battens-Order",
+        "value": "2,185 deals and battens",
+        "keywords_found": [
+          "deals",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "feac0554-908c-4f63-a110-2f12fcef6384",
+        "raw_text": "wood, 6,700 deals and battens-Order",
+        "value": "wood, 6,700 deals and battens",
+        "keywords_found": [
+          "deals",
+          "battens"
+        ]
+      },
+      {
+        "type": "cargo_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "24c2172f-eaf3-4caa-8fcb-367f2579b04d",
+        "raw_text": "and battens-Order",
+        "value": "and battens",
+        "keywords_found": [
+          "battens"
+        ]
+      }
+    ]
+  },
+  "date_in_ship_name": {
+    "total": 3657,
+    "samples": [
+      {
+        "type": "date_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "49e3dc31-b4a7-445f-8d58-01043d0726c5",
+        "raw_text": "8 Mary (s)-Archangel-6,842 deals,",
+        "value": "8 Mary",
+        "pattern_matched": "^\\d{1,2}\\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "2fe98397-c188-420b-a338-677861a5e865",
+        "raw_text": "23 Maritana-Riga-65 lds. lathwood-J. Savill",
+        "value": "23 Maritana",
+        "pattern_matched": "^\\d{1,2}\\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "b01d14d1-8a65-4169-8559-7a53e59a097c",
+        "raw_text": "May 19 Einigkart-Stettin-265 lds. timber-Thompson, Pattrick, & Woodwark",
+        "value": "May 19 Einigkart",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "08dd140a-184e-4374-a278-3794607ab41d",
+        "raw_text": "May 21 Asia-Memel-408 lds. timber and deals-Thompson",
+        "value": "May 21 Asia",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "5eab9c8f-138d-47cb-a609-6b940be607ab",
+        "raw_text": "May 31 Prima-Halifax-8,264 deals, battens, and boards-Graham & Co.",
+        "value": "May 31 Prima",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "c291a966-2bd2-44cf-a74e-bbc62772083b",
+        "raw_text": "May 30 Rosalie Athurs-Dantzic-816 pcs. hewn fir, 37 pcs. hewn oak, 600 oak staves, 1,759 pcs. lathwood-Good Bros.",
+        "value": "May 30 Rosalie Athurs",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "bd4577ba-0f8e-4e6f-a656-7d2e866df044",
+        "raw_text": "May 30 Clark-Dieppe-3 cwt. veneers-Reeves",
+        "value": "May 30 Clark",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "74d489f6-0bd2-41c9-9dbb-b242ce9d707a",
+        "raw_text": "May 31 Blampied-Dieppe-48 cwt. veneers-Reeves",
+        "value": "May 31 Blampied",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "cd006a7b-e184-4860-9295-4fac05ddb10c",
+        "raw_text": "May 29 Jeanne - St. Malo-140 lds. pitwood, Jones, Heard, & Co.",
+        "value": "May 29 Jeanne - St. Malo-140 lds. pitwood, Jones, Heard, & Co.",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "dda185a3-587d-408b-8552-a34e86bef895",
+        "raw_text": "May 30 Vigilant-St. Malo-75 lds. pitwood-Jones",
+        "value": "May 30 Vigilant",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "7315948b-b258-45ba-adbb-8be94fc13be3",
+        "raw_text": "May 31 Marie et Anna-Paimpol-105 lds. pitwood-Newport Pitwood Co.",
+        "value": "May 31 Marie et Anna",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "9678a9e0-25de-457c-ba79-295af65cdf5b",
+        "raw_text": "May 29 Henning-Fredrikshald-20,000 battens and boards-Geo. Hammond & Co.",
+        "value": "May 29 Henning",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "53999e15-3353-483e-99c2-54fc7031cc59",
+        "raw_text": "May 31 Ansgar-Christiania-5,945 spars-Tagart",
+        "value": "May 31 Ansgar",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "5ed65a78-d5fb-41a1-a452-e3cbb566e126",
+        "raw_text": "May 29 Falken-Fredrikstadt-36,784 boards-Beves & Co.",
+        "value": "May 29 Falken",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "807159d4-2a36-4674-b7f3-81e45e764b2f",
+        "raw_text": "May 28 Ottilie-Dantzic-679 pcs. hewn fir-A. Haddon",
+        "value": "May 28 Ottilie",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "e9eb3392-0b5b-46db-86ce-34a6ff1d1153",
+        "raw_text": "May 29 Nestor-Stettin-1,281 pcs. hewn fir, 63 pcs. hewn oak, 45 lds. lathwood-Driver",
+        "value": "May 29 Nestor",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "9d66f2d5-6c15-4337-9764-21a1a07764dc",
+        "raw_text": "May 29 Garibaldi-Christiansand-6,468 props, 13,150 splits-Rayner & Moller",
+        "value": "May 29 Garibaldi",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "3dcbc2a9-33b1-4db5-af64-b81e724d185b",
+        "raw_text": "May 30 Irodsoen-Holmestrand-8,612 props-Moller",
+        "value": "May 30 Irodsoen",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "59fe1d0a-66a0-4f9f-8f11-b4277f58f83d",
+        "raw_text": "May 30 E. F. Thompson-Fredrikstadt-21,849 props-Rayner & Moller",
+        "value": "May 30 E. F. Thompson",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "48c9b855-fc31-4fb5-9193-d18768dacc7c",
+        "raw_text": "May 30 Alpha-Holmestrand-20,690 props-Moller",
+        "value": "May 30 Alpha",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "de7c12d1-5284-46ea-b3ee-48588ad02a6d",
+        "raw_text": "May 31 Bjarke-Oscarshamn-17,042 hewn props-Rayner & Moller",
+        "value": "May 31 Bjarke",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "5ec4bcf4-4443-4cda-b928-92a8be00b007",
+        "raw_text": "May 29 Eugenie-Quimper-90 lds. pitwood-Jones, Heard, & Co.",
+        "value": "May 29 Eugenie",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "66bfd8f7-b1dc-40a5-a35a-86e7e39ad6e5",
+        "raw_text": "May 29 Semiramis-Redon-195 lds. pitwood-Jones",
+        "value": "May 29 Semiramis",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "4d06464e-cadc-4f95-a7b9-423301e5d339",
+        "raw_text": "May 29 Marie Joseph-Bordeaux-130 lds. pitwood-Williams & Davies",
+        "value": "May 29 Marie Joseph",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "ea1095da-2624-4f35-b3dd-cffe5acdf43b",
+        "raw_text": "May 30 Nymphe-St. Valery-2,565 props-Mouchel",
+        "value": "May 30 Nymphe",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "972cb482-c1ec-452d-b6ad-25c4af7fd714",
+        "raw_text": "May 30 Marie Emilie-Pont l'Abb\u00e9-70 lds. pitwood-Jones & Co.",
+        "value": "May 30 Marie Emilie",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "6821c7ff-4821-4d1a-8ad3-8e673e04d6f4",
+        "raw_text": "May 30 Alexis-Redon-165 lds. pitwood-Jones & Co.",
+        "value": "May 30 Alexis",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "27ee65e9-9aa8-493d-9f59-6b0e895ba7a6",
+        "raw_text": "May 30 Sleipner (s)-Gothenburg-quantity deals, battens, boards, props, and sleepers-Order",
+        "value": "May 30 Sleipner",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "c118f3f0-918c-43f5-9f2b-8a3dbd8ba80a",
+        "raw_text": "May 31 Triton (s)-Gothenburg-quantity pit-props, sleepers, deals, and battens-Pyman",
+        "value": "May 31 Triton",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "de5df321-2303-457c-91c6-03495fc2bb26",
+        "raw_text": "May 30 Bernhard-Dantzig-1,054 pcs. hewn fir, 189 sleepers-English Bros.",
+        "value": "May 30 Bernhard",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "49e8ebbf-9653-47cf-b6f3-2b32bd14a917",
+        "raw_text": "May 29 City of Rotterdam-1,400 bdls. wood hoops-J. C. Pinkerton",
+        "value": "May 29 City of Rotterdam-1,400 bdls. wood hoops",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "159776a1-4c04-4357-9569-1b437c4be1db",
+        "raw_text": "May 30 Sylvia-Drammen-82,210 boards-J. Browne",
+        "value": "May 30 Sylvia",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "89927bfa-90fe-47ff-a787-ee3ac5523654",
+        "raw_text": "May 29 Eugenie-Quimper-90 lds. pitwood-Jones, Heard, & Co.",
+        "value": "May 29 Eugenie",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "4a1a5535-937c-4e23-8ae9-27fe9e1e8e3b",
+        "raw_text": "May 29 Semiramis-Redon-195 lds. pitwood-Jones",
+        "value": "May 29 Semiramis",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "e3370dee-84bd-4485-90f6-aaab0cf3e1e2",
+        "raw_text": "May 29 Marie Joseph-Bordeaux-130 lds. pitwood-Williams & Davies",
+        "value": "May 29 Marie Joseph",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "dc78dc3f-e89c-4c90-9711-a1dd0b3bd0ca",
+        "raw_text": "May 30 Nymphe-St. Valery-2,565 props-Mouchel",
+        "value": "May 30 Nymphe",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "f67a48aa-a542-4c65-8c5f-b6745405b347",
+        "raw_text": "May 30 Marie Emilie-Pont l'Abb\u00e9-70 lds. pitwood-Jones & Co.",
+        "value": "May 30 Marie Emilie",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "d574bc29-39a4-484d-a19e-72818570d96c",
+        "raw_text": "May 30 Alexis-Redon-165 lds. pitwood-Jones & Co.",
+        "value": "May 30 Alexis",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "85ced215-42f7-45eb-b632-86f1643f5eea",
+        "raw_text": "May 30 Sleipner (s)-Gothenburg-quantity deals, battens, boards, props, and sleepers-Order",
+        "value": "May 30 Sleipner",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "738a4f11-8f80-4323-8403-7a39571773d9",
+        "raw_text": "May 31 Triton (s)-Gothenburg-quantity pit-props, sleepers, deals, and battens-Pyman",
+        "value": "May 31 Triton",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "2598babc-3c67-4afd-9380-7fc30c976652",
+        "raw_text": "May 30 Bernhard-Dantzig-1,054 pcs. hewn fir, 189 sleepers-English Bros.",
+        "value": "May 30 Bernhard",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "0a9dc869-c3ea-4726-8e01-752690d86242",
+        "raw_text": "May 29 City of Rotterdam-1,400 bdls. wood hoops-J. C. Pinkerton",
+        "value": "May 29 City of Rotterdam-1,400 bdls. wood hoops",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "924f0f60-20d0-4024-924a-b2893932665f",
+        "raw_text": "May 30 Sylvia-Drammen-82,210 boards-J. Browne",
+        "value": "May 30 Sylvia",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "1dcc78cf-cb66-4058-b9d3-fb82c8d81c80",
+        "raw_text": "May 31 Waaga-Apalachicola-135 pcs. hewn pitch pine, 459 pcs. sawn pitch pine, 369 pitch pine deals-J. M. McClelland",
+        "value": "May 31 Waaga",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "157274c1-2184-4249-9049-684cbcad8942",
+        "raw_text": "May 30 Amy-Christiania-14,972 pit-props-J. L. Johansen & Co.",
+        "value": "May 30 Amy",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18971211p.845_p001_parsed.json",
+        "record_id": "2056ad27-1e0a-455f-be1b-832c27347cdd",
+        "raw_text": "Dec 2 Worsley (s)-Brevig-13 lds. p rs and oars-Great Grimsby Ice Co",
+        "value": "Dec 2 Worsley",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "ad33a482-6ce5-465b-b19e-cbf08164bd76",
+        "raw_text": "9 Martello (s)-New York-1,580 pcs. oak, 3,900",
+        "value": "9 Martello",
+        "pattern_matched": "^\\d{1,2}\\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18950608p.925_parsed.json",
+        "record_id": "bb3f1245-68eb-442e-9570-6bba8789842b",
+        "raw_text": "May 29 State of Georgia-Montreal-246 lds. pine deals-R. Millar & Sons ; 41 lds. fir splints-Cobden Match Manufacturing Co. ; 50 lds. hewn birch, 81 lds. yellow pine deals-J. Burt & Son ; 45 lds. hewn ",
+        "value": "May 29 State of Georgia",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18950608p.925_parsed.json",
+        "record_id": "b35cfb34-6cc1-4872-9a43-d3f718925910",
+        "raw_text": "May 28 Immanuel-Horter-160 lds. props-Rennie, Bryson, & Co.",
+        "value": "May 28 Immanuel",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      },
+      {
+        "type": "date_in_ship_name",
+        "file": "18950608p.925_parsed.json",
+        "record_id": "fd108b00-702f-4cba-9bee-f8e966833761",
+        "raw_text": "May 29 Wellpark-Windau-985 lds. sleeper blocks, 67 lds. sleepers-W. Christie & Co.",
+        "value": "May 29 Wellpark",
+        "pattern_matched": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\.?\\s*\\d"
+      }
+    ]
+  },
+  "quantity_in_ship_name": {
+    "total": 6965,
+    "samples": [
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "1e71fe8b-9a6f-4803-be7b-9c400aec5257",
+        "raw_text": "2,767 pcs. 2,803 lds. pine",
+        "value": "2,767 pcs. 2,803 lds. pine",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "06b304a1-d547-410b-8d9a-8ac67dba9808",
+        "raw_text": "timber, 2,215 lds. deals-",
+        "value": "timber, 2,215 lds. deals-",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "da293d3c-3f47-4fad-a477-e6c96b3fb637",
+        "raw_text": "& Son; 43 lds. sawn fir-W. H. Ewen",
+        "value": "& Son; 43 lds. sawn fir",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "53e5b5e6-f90f-4c1d-8ce3-47ffd8e5cf23",
+        "raw_text": "lumber, 83 pcs. oak lumber-Vincent &",
+        "value": "lumber, 83 pcs. oak lumber",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "09f8c06a-4179-4e55-8ae9-31190bfbe8f7",
+        "raw_text": "Co. ; 3,196 pcs. oak lumber,",
+        "value": "Co. ; 3,196 pcs. oak lumber,",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "6e9a793a-c53c-48ad-9be2-7d8f4d29c375",
+        "raw_text": "2,151 pcs. pine lumber-Taylor & Low",
+        "value": "2,151 pcs. pine lumber",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "511fedef-f364-49fb-837d-0918d7dadf48",
+        "raw_text": "22 555 deals, battens, and boards-",
+        "value": "22 555 deals, battens, and boards-",
+        "pattern_matched": "^\\d+\\s+\\w+\\s+deals"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "e9fa2bbb-61fe-46a2-bda8-58a1e855e195",
+        "raw_text": "Fancy (s) - Bordeaux - 1,400 lds. pitwood-",
+        "value": "Fancy  - Bordeaux - 1,400 lds. pitwood-",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "cb39563a-4d89-421c-adfa-68341bb0d1f2",
+        "raw_text": "Thomas & Co.; 110 lds. sawn fir,",
+        "value": "Thomas & Co.; 110 lds. sawn fir,",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "c4864316-a817-4ed1-bb5f-70c64cd2a9a8",
+        "raw_text": "hewn fir, 118 lds. hewn oak and",
+        "value": "hewn fir, 118 lds. hewn oak and",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "ecba00e6-b94e-40c5-8e5a-50d01f78b903",
+        "raw_text": "Inch; 56 lds. staves-Phillips Bros.",
+        "value": "Inch; 56 lds. staves",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "62bcc216-a5d0-4de4-bae9-8a530aa8d718",
+        "raw_text": "1,286 lds. deals-T. Adams & Sons",
+        "value": "1,286 lds. deals",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "8507c07f-1f74-450b-9399-d4cee35f620a",
+        "raw_text": "13 Zetland (s) Rafso-1,122 lds. deals-T. Adams",
+        "value": "13 Zetland  Rafso-1,122 lds. deals",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "ccedb0ae-a57a-4f61-b90b-ec7f53d7e622",
+        "raw_text": "Wilson, Sons, & Co.; 35 lds. slating laths-",
+        "value": "Wilson, Sons, & Co.; 35 lds. slating laths-",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "62e0350c-e29c-4649-8b92-8d39eaa0a9a8",
+        "raw_text": "Knotts & Baker; 14 lds. laths-S Ellis; 172",
+        "value": "Knotts & Baker; 14 lds. laths",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "4c3a2af9-fddf-4657-b9fd-feb509e22265",
+        "raw_text": "283 lds. props, 177 lds. sleepers, 31 lds.",
+        "value": "283 lds. props, 177 lds. sleepers, 31 lds.",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "62f9a9c1-328f-4ad3-9cef-38b28f83219d",
+        "raw_text": "rails, 202 lds. posts, &c-T Barraclough",
+        "value": "rails, 202 lds. posts, &c",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "75b24235-05db-4e43-8655-ab3fddb954ad",
+        "raw_text": "14 lds. spars-Hessler & Co.",
+        "value": "14 lds. spars",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "412ac285-26d8-4caa-a5ea-cc5bdaf6ae8f",
+        "raw_text": "& Hassell; 2,502 lds. deals and boards-",
+        "value": "& Hassell; 2,502 lds. deals and boards-",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "dedd24a4-7469-4171-a98c-0e34ac7f38eb",
+        "raw_text": "Cronstadt-861 lds. deals and",
+        "value": "Cronstadt-861 lds. deals and",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "f8f197c7-dba6-4f36-9683-e29506f8c3b6",
+        "raw_text": "Tyri - Hernosand - 1,200 lds. pit props-",
+        "value": "Tyri - Hernosand - 1,200 lds. pit props-",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "1fcd46fe-6ceb-4d3d-83c8-89d6dec8cb43",
+        "raw_text": "11 Zelotais Onega-392 lds. deals-",
+        "value": "11 Zelotais Onega-392 lds. deals-",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "eb0ee1c4-4421-4efb-b916-0f5a59677672",
+        "raw_text": "and tboards, 18 1/2 deals, 5,101 pcs. &",
+        "value": "and tboards, 18 1/2 deals, 5,101 pcs. &",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "11dafbad-3182-4729-9086-387972273d81",
+        "raw_text": "birch, 481 pcs. oak, 604 pcs. pine,",
+        "value": "birch, 481 pcs. oak, 604 pcs. pine,",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "09bf6d84-aab2-4642-afc4-9545fb9ea6fb",
+        "raw_text": "pine, 1,838 pcs. waney pine, 27 pcs.",
+        "value": "pine, 1,838 pcs. waney pine, 27 pcs.",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "abdd2997-87fe-48e6-a99b-319babe0c91e",
+        "raw_text": "pine, 27 pcs. waney pine, 37,992",
+        "value": "pine, 27 pcs. waney pine, 37,992",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "696b3134-4222-4fc9-a468-c9b321e0ba63",
+        "raw_text": "Cronstadt-6 lds. firewood-G. Gjertsen",
+        "value": "Cronstadt-6 lds. firewood",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "ade42290-9d80-4753-85db-a39b35482f0d",
+        "raw_text": "man & Hartenfeld; 288 pcs. ash, 30 pcs. birch, 3,385 birch props-Order",
+        "value": "man & Hartenfeld; 288 pcs. ash, 30 pcs. birch, 3,385 birch props",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "b70663b7-ece1-4b7b-9b94-0e5676f206e6",
+        "raw_text": "staves, 52 pcs. timber-Order",
+        "value": "staves, 52 pcs. timber",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "cd006a7b-e184-4860-9295-4fac05ddb10c",
+        "raw_text": "May 29 Jeanne - St. Malo-140 lds. pitwood, Jones, Heard, & Co.",
+        "value": "May 29 Jeanne - St. Malo-140 lds. pitwood, Jones, Heard, & Co.",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "a9b86707-9b90-43e9-b3b5-06972c93c189",
+        "raw_text": "Porsgrund-130 lds. hewn fir-W.Pearson",
+        "value": "Porsgrund-130 lds. hewn fir",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "1b984921-8285-4024-8f99-452a2e98e3cc",
+        "raw_text": "slind & Co. ; from Bergqvara-30 lds.",
+        "value": "slind & Co. ; from Bergqvara-30 lds.",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "942cd9fa-39b6-41a2-b36e-3adfd116585f",
+        "raw_text": "lds. sawn timber, 40 lds. planks-Grom",
+        "value": "lds. sawn timber, 40 lds. planks",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "1229d317-c3ab-4d9e-a118-75d53cfd1a8e",
+        "raw_text": "Lynger-16,341 pit props, 1,668 pcs. round",
+        "value": "Lynger-16,341 pit props, 1,668 pcs. round",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "398d59f7-78a2-484b-a24f-9866cf20d8be",
+        "raw_text": "Co ; 487 pcs. lumber-Oliver & Sons ; 1,611",
+        "value": "Co ; 487 pcs. lumber",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "33bd405d-95cb-48dc-83c5-fc727c886086",
+        "raw_text": "7 lds. props-Bell, Harrison, & Co.",
+        "value": "7 lds. props",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "dc7fa0ba-8506-4a0d-a15f-8eb9af08b83c",
+        "raw_text": "lds. planed fir, 13 lds. battens, 3 lds.",
+        "value": "lds. planed fir, 13 lds. battens, 3 lds.",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "7b119162-8cda-4d63-b6db-d0bcf90bcea2",
+        "raw_text": "2 lds. spars-Symons, Martyn, & Co.",
+        "value": "2 lds. spars",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "deeb3b6e-b94e-41f8-b5eb-07c9ac876190",
+        "raw_text": "36 lds. hewn fir-Cole Bros.",
+        "value": "36 lds. hewn fir",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "9b5066d6-b5eb-426a-8f94-bc2e069dfabd",
+        "raw_text": "mouldings, 54 lds. firewood-Driver & Co.",
+        "value": "mouldings, 54 lds. firewood",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "9b085171-63a3-4f0c-ae4c-e16c8f50e835",
+        "raw_text": "lds. sawn fir, 10 lds. firewood-Tagart,",
+        "value": "lds. sawn fir, 10 lds. firewood",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "080103e4-f3f7-4eae-8df1-ada3502ca431",
+        "raw_text": "lds. planed fir, 24 lds. laths-J. Bovill & Co.",
+        "value": "lds. planed fir, 24 lds. laths",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "8d00350a-f925-48cf-a7e3-47de0da75fb0",
+        "raw_text": "beech, 40 lds. hewn oak-H. M. Moller",
+        "value": "beech, 40 lds. hewn oak",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "5fb48881-be06-473a-9924-0acc5c8bd26d",
+        "raw_text": "Christine - Uddevalla - 180 lds. hewn pit",
+        "value": "Christine - Uddevalla - 180 lds. hewn pit",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "b4133897-ea30-4441-be0b-e7ca7e9dfde9",
+        "raw_text": "8 Jonehild - Bergqvara - 345 lds. hewn pit",
+        "value": "8 Jonehild - Bergqvara - 345 lds. hewn pit",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "befa60d2-57ab-4d17-853f-44c71302c0e4",
+        "raw_text": "6 lds. battens, 43 lds. deals, 3 lds. spars-",
+        "value": "6 lds. battens, 43 lds. deals, 3 lds. spars-",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "7ac4d8ec-7102-4439-87c4-6f75d477a4f8",
+        "raw_text": "boards, 61 lds. firewood, 2 lds. spars-C.",
+        "value": "boards, 61 lds. firewood, 2 lds. spars",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "d9350be0-7ede-468e-bb84-c27a3ca4fca4",
+        "raw_text": "sawn balks, 287 lds. boards-J. F. Ranson",
+        "value": "sawn balks, 287 lds. boards",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "e330c83c-b547-418a-84f8-3e6c742e1de6",
+        "raw_text": "Edith - Gothenburg - 362 lds. battens and",
+        "value": "Edith - Gothenburg - 362 lds. battens and",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      },
+      {
+        "type": "quantity_in_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "33df17be-30fb-4170-89cc-ccfd541d55cf",
+        "raw_text": "1,168 lds. sawn pitch pine-J. P. Cory & Co.",
+        "value": "1,168 lds. sawn pitch pine",
+        "pattern_matched": "\\d+\\s*(pcs\\.|lds\\.|stds\\.|loads|pieces|tons|cwt\\.|fathoms)"
+      }
+    ]
+  },
+  "consignee_in_port": {
+    "total_origin": 949,
+    "total_destination": 0,
+    "unique_values": 195,
+    "samples": [
+      {
+        "type": "consignee_in_origin_port",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "3a38d570-71e3-4de6-9c68-8b08ac983d6c",
+        "raw_text": "Wifstawarf-10,035 deals, battens, and boards-Wintringham & Son; 4,031 boards and ends-Seddon, Shephord, & Co.",
+        "value": "Wintringham & Son; 4,031 boards and ends",
+        "pattern_matched": "& Son"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "637b7dd6-60fa-45d8-a2bd-89fceec38ef4",
+        "raw_text": "Tens-Order; Kemi-12,534 planks and battens from Uleaborg-21,144 planks-Lake Superior Order",
+        "value": "Order; Kemi",
+        "pattern_matched": "\\bOrder\\b"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "52d5fe5f-7544-41b8-91b2-715b7e99f115",
+        "raw_text": "boards-H. Dahl & Co. (s)-Gothenburg-2,185 deals, 1,544 deals and battens-Order",
+        "value": "H. Dahl & Co. (s)",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "693fc86a-de07-468e-9e23-a7bd82ac0926",
+        "raw_text": "timber-Morris & Co. (s)-Cronstadt-2,185 deals, 1,544 deals and battens-Order",
+        "value": "Morris & Co. (s)",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "9688080e-65e2-4541-9d53-0236bf0a3ea2",
+        "raw_text": "-Rose, Smith, & Co.; 2,185 deals, 1,544 deals and battens-Order",
+        "value": "Rose, Smith, & Co.; 2,185 deals, 1,544 deals and battens",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "fb213c51-0ccc-4960-9f6e-b3a418aae328",
+        "raw_text": "20,832 boards-Mearns & Co.; 2,185 deals, 1,544 deals and battens-Order",
+        "value": "Mearns & Co.; 2,185 deals, 1,544 deals and battens",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "a15ccf11-85c1-49bd-97e4-361fde3f662e",
+        "raw_text": "June 4 -P. Osbeck & Co.-Oscarshamn-7,596 pit-props-Order",
+        "value": "P. Osbeck & Co.",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "4aa85a6f-d30a-45c2-832f-f704408a58e9",
+        "raw_text": "June 5 Ben Carlscrona-Order-1,979 pit-props-John Bowes",
+        "value": "Order",
+        "pattern_matched": "\\bOrder\\b"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "e5af182a-3045-4a35-a0f8-066c65061b8a",
+        "raw_text": "June 4 -P. Osbeck & Co.-Oscarshamn-7,596 pit-props-Order",
+        "value": "P. Osbeck & Co.",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "09d63c1c-a5ae-40cf-a7c9-c242fe92fc49",
+        "raw_text": "June 5 Ben Carlscrona-Order-1,979 pit-props-John Bowes",
+        "value": "Order",
+        "pattern_matched": "\\bOrder\\b"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18880107p16-17_p001_parsed.json",
+        "record_id": "49426d07-8e12-4c23-b345-9b10d3140474",
+        "raw_text": "Romeo (s) - Gothenburg - 5,522 props-Wilson, Sons, & Co. ; 4,513 props-Pyman, Bell, & Co. ; 10,744 props-H. Smith & Co. ; 500 bdls. laths-Heaven & Kesterton ; 1,000 bdls. laths-Order",
+        "value": "Wilson, Sons, & Co. ; 4,513 props",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18950601p.889_p001_parsed.json",
+        "record_id": "e6c2d011-8afb-4116-adef-be49ad6ba4e1",
+        "raw_text": "Romeo (s) Gothenburg-11 bgs. bobbins-T. Wilson, Sons, & Co. ; 3,815 pit props-Chas. Wells & Co. ; 2,992 fencings-R. Wade, Sons, & Co. ; 1,700 bdls. laths-Heaven & Kesterton; 1,050 bdls. laths-Sanderso",
+        "value": "T. Wilson, Sons, & Co. ; 3,815 pit props",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "14. p. 207-209 - October 31 1874 - Imports of TImber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "record_id": "1fc9b0e7-f046-49ce-87ab-82ca39d9d903",
+        "raw_text": "October 26th. Nanna @ Minatitlan,\u2014348 logs mahogany, 26 log ends, J. Graham & Co. Louisa Ann Fanny @ Gothenburg,\u2014103 doz. deals, 207 doz. battens, With, Webster, & Co. ; 51,208 staves, Duus, Brown, & ",
+        "value": "Ros. & Co. M. Wood",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "14. p. 207-209 - October 31 1874 - Imports of TImber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "record_id": "f175324c-394b-4193-b656-17af2eb7fc61",
+        "raw_text": "October 25th. Berlandina B. Sieveking & Co. Edwin Fox @ Order.",
+        "value": "Order",
+        "pattern_matched": "\\bOrder\\b"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18831201p.406_p001_parsed.json",
+        "record_id": "bb9e3a4e-80b7-4032-bead-bab4dbedb4f3",
+        "raw_text": "23 Canute-42 pcs. hewn oak, 105 pcs. hewn fir -Watsons & Co. ; 51 pcs. hewn oak, 51 pcs. hewn unrated, 623 pcs. hewn fir, 981 pcs. sawn fir, 2,548 deals, 858 staves, 5 lds. lathwood-Alexanders & Co.",
+        "value": "Watsons & Co. ; 51 pcs. hewn oak, 51 pcs. hewn unrated, 623 pcs. hewn fir, 981 pcs. sawn fir, 2,548 deals, 858 staves, 5 lds. lathwood",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18990819p.199_p003_parsed.json",
+        "record_id": "8212cc2e-37da-45b9-8b53-3c9dc2312b09",
+        "raw_text": "Quebec-1,445 lds. hewn fir, 129 lds. fir deals &c., 203 lds. elm timber, 22 lds. ash timber-Wm. Briggs & Sons; 50 lds. hewn elm wood, 470 lds. hewn square pine, 31 lds. hewn fir wood, 100 lds. oak woo",
+        "value": "Wm. Briggs & Sons; 50 lds. hewn elm wood, 470 lds. hewn square pine, 31 lds. hewn fir wood, 100 lds. oak wood, 220 lds. hewn birch wood, 110 lds. waney board pine, 92 lds. fir deals",
+        "pattern_matched": "& Sons"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "11. 171-173 - September 15 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 5 1877_p002_parsed.json",
+        "record_id": "296a85ec-b775-44a9-9550-8d7e4e5f123a",
+        "raw_text": "Diamond @ Riga,\u20142,647 pcs. deals, H. Sheraton & Co. Baltic @ Oscarshamn,\u20146,404 pcs. props, C. Berve. Dania @ Gefle,\u20145,935 pcs. deals and boards. Awio @ Bjorneborg,\u201415,861 pcs. deals, battens, and boar",
+        "value": "2,647 pcs. deals, H. Sheraton & Co. Baltic @ Oscarshamn,",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18910815p.162_p002_parsed.json",
+        "record_id": "840fd45f-3bee-42ab-a1af-60aada6336be",
+        "raw_text": "Argyle (s) - Helsingfors- 12,540 deals-Sieveking, Droop, & Co.; 42,428 deals-Order",
+        "value": "Sieveking, Droop, & Co.; 42,428 deals",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18910815p.162_p002_parsed.json",
+        "record_id": "864d1a94-4540-4897-a38c-2034a0a5617d",
+        "raw_text": "Montana (s) - Baltimore-569 bdls. lumber-Cobbett & Co.; 2,319 pcs., 53 bls. lumber-W. Mallinson; 1,125 pcs. lumber-Churchill & Sim; 505 bdls., 6,539 pcs. lumber-Order; 7 bxs. mouldings-Boot's Pure Dru",
+        "value": "Cobbett & Co.; 2,319 pcs., 53 bls. lumber",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18910815p.162_p002_parsed.json",
+        "record_id": "273eabb6-5033-4c16-a146-154aea4f4caa",
+        "raw_text": "10 Oscar - Skien-19 fms. firewood-Duus, Brown, & Co.; 1,329 telegraph poles-Postmaster-General; 16 telegraph poles-Order",
+        "value": "Duus, Brown, & Co.; 1,329 telegraph poles",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "1. p. 13-14 - Imports - January 3 1885 - Timber Trades Journal 1885_p002_parsed.json",
+        "record_id": "5dda02c0-d3a8-4c32-a37e-d8a4554365a2",
+        "raw_text": "Devonia (s) - New York - 440 pcs. lumber-Brownlee & Co. ; 750 hd. staves, 7,200 pcs. claret staves-Order",
+        "value": "Brownlee & Co. ; 750 hd. staves, 7,200 pcs. claret staves",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "1. p. 13-14 - Imports - January 3 1885 - Timber Trades Journal 1885_p002_parsed.json",
+        "record_id": "f9020118-463d-431b-8632-f2574f242a7f",
+        "raw_text": "Fitzclarence (s) - Jamaica - 21 t. logwood-D. Caw & Co. ; 159 t. logwood, 4 logs mahogany-Order",
+        "value": "D. Caw & Co. ; 159 t. logwood, 4 logs mahogany",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18890615p.5_p001_parsed.json",
+        "record_id": "e52d11d5-9cdb-46d6-8ac6-604689a19999",
+        "raw_text": "Laguna de Fermincs-168 logs mahogany, 1 log ends-Singleton, Dunn, & Co. ; 15 log ends mahogany-Captain",
+        "value": "Singleton, Dunn, & Co. ; 15 log ends mahogany",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18991118p.611_p003_parsed.json",
+        "record_id": "98c893cc-3aaf-46cd-a476-801d4e781b54",
+        "raw_text": "deals-T. Adams & Sons, Ltd. ; 180 lds. battens and ends-Cox, Long & Co., Ltd.",
+        "value": "T. Adams & Sons, Ltd. ; 180 lds. battens and ends",
+        "pattern_matched": "& Sons"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18811029p.295_p002_parsed.json",
+        "record_id": "dd15aef1-2b86-4ae9-a718-162d5ca950b1",
+        "raw_text": "Idlewild (s) - Cronstadt-11,577 deals-Order ; 3,358 pcs. lathwood-J. Knights",
+        "value": "Order ; 3,358 pcs. lathwood",
+        "pattern_matched": "\\bOrder\\b"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18811029p.295_p002_parsed.json",
+        "record_id": "830915d1-005e-48f9-8ae9-4c6d45cd8332",
+        "raw_text": "24 Envoy (s) - Venice-4,429 walnut planks-Order ; 53 wainscot logs, 5,937 boards, 300 planks, 386 staves-S. Attanora ; 137,700 staves-Bailey & Leatham",
+        "value": "Order ; 53 wainscot logs, 5,937 boards, 300 planks, 386 staves",
+        "pattern_matched": "\\bOrder\\b"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18970130p.130_p001_parsed.json",
+        "record_id": "5a6a0f62-cf3d-4ed8-a1f1-24f0d48bff6a",
+        "raw_text": "25 Thule (s) Gothenburg-3,179 bdls. laths-Sharp, Cawthorn, & Co ; 424 bdls. mould-ings-W. R. Crow & Son ; 3,000 bdls. laths-Foy, Morgan, & Co. ; 2,000 bdls. box-boards, 8 bdls. mouldings, 209 bdls. jo",
+        "value": "Sharp, Cawthorn, & Co ; 424 bdls. mould-ings",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18840105p.14_p001_parsed.json",
+        "record_id": "1a0e4d21-a64c-47e3-8254-7d1b5596a9af",
+        "raw_text": "Hugin (s) - Gothenburg - 5,100 pit-props - Osbeck ; 1,000 bdls. laths-Griggs & Co. ; 3,549 bdls. laths, 12,747 staves, 38,557 bdls. boards-Order",
+        "value": "Griggs & Co. ; 3,549 bdls. laths, 12,747 staves, 38,557 bdls. boards",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18840105p.14_p001_parsed.json",
+        "record_id": "6239cb92-29f8-4ae9-ab5b-61813b969fd0",
+        "raw_text": "Baidar (s) - Gothenburg - 20,000 sleepers, splits, battens, and boards-Order ; qty. deals-Jameson",
+        "value": "Order ; qty. deals",
+        "pattern_matched": "\\bOrder\\b"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18971002p.479_p002_parsed.json",
+        "record_id": "731d7d34-8c33-4721-afd7-13ff54f7bc37",
+        "raw_text": "27 Thule (s) - Gothenburg-240 bdls. laths-Lampson & Co. ; 1,000 bdls. laths-Foy & Co. ; 4,563 wood blocks-Vigers Bros ; 4,000 doors-W. R. Crow & Son ; 3,968 bdls. boxboards, 1,593 bdls. mouldings, 60 ",
+        "value": "Lampson & Co. ; 1,000 bdls. laths",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18971002p.479_p002_parsed.json",
+        "record_id": "52e27258-aa30-46c3-8c05-ad8b55f4a425",
+        "raw_text": "27 Montezuma (s) - Montreal-2,104 pcs. pine-Messers. Ltd. ; 76 cs. boards, 13,183 deals, 4,780 pcs., 1 car. lumber, 1,600 doors, 25 logs, 420 bdls. shooks ; from Quebec-3,811 deals-Nutman & Son ; 28,1",
+        "value": "Messers. Ltd. ; 76 cs. boards, 13,183 deals, 4,780 pcs., 1 car. lumber, 1,600 doors, 25 logs, 420 bdls. shooks ; from Quebec",
+        "pattern_matched": "\\bLtd\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18890824p.162_p001_parsed.json",
+        "record_id": "d68fa44a-4c28-4b5b-9640-f31cf866faaf",
+        "raw_text": "Porsgrund-929 telegraph poles-J. P. O. Walker & Co. ; 10 lds. firewood-Forslind",
+        "value": "J. P. O. Walker & Co. ; 10 lds. firewood",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18990701p.1002_p001_parsed.json",
+        "record_id": "9b3ed417-9148-4312-a1f5-c23d4d3ea2dc",
+        "raw_text": "June 19 Statraad Broch - Christiana - 1,077 pcs. pit props-Order, and 1,077 pcs. pit props-W. Fullarton.",
+        "value": "Order, and 1,077 pcs. pit props",
+        "pattern_matched": "\\bOrder\\b"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18950831p.282_p003_parsed.json",
+        "record_id": "d47d8143-0f70-4fce-8de9-0e00a7d9d5d4",
+        "raw_text": "Aug. 26 Matlekovits (s) - Fiume - 1,929 oak planks-Torger & Co.; 204 oak logs, 218 oak planks, 347 oak boards-Kemeny",
+        "value": "Torger & Co.; 204 oak logs, 218 oak planks, 347 oak boards",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "record_id": "7b1495ee-d120-4487-9743-a2ca3f9eb93b",
+        "raw_text": "Thorsten (s) - Gothenburg - 4 cs. brush handles-Lithman & Co.; 1,000 birch blocks-Vigers Bros.; 71 pkgs. turned wood -Uloth & Co.; 23 pkgs. turned wood-Maxime & Co.; 50 doz. deals-Order",
+        "value": "Lithman & Co.; 1,000 birch blocks",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "record_id": "3adeae2d-d291-4b74-994e-f5c8f95c7e4f",
+        "raw_text": "Esras-Stockholm - 8,898 pit-props - Pyman, Bell, & Co.; 35,877 pit-props-Mitshel",
+        "value": "Stockholm - 8,898 pit-props - Pyman, Bell, & Co.; 35,877 pit-props",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "record_id": "166562dc-20ea-47f4-83cf-4ad3b2e1a557",
+        "raw_text": "5 Hedwig-Riga - 10,136 pit-props - Fife Iron & Coal-Co.",
+        "value": "Riga - 10,136 pit-props - Fife Iron & Coal",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18910307p.334_p001_parsed.json",
+        "record_id": "60b1c96a-6303-4e3f-a016-682a5c4203f7",
+        "raw_text": "Kvik Krageroe 1,198 props-Metcalfe, Simpson, & Co ; 1,668 pcs. mining timber-Wade",
+        "value": "Metcalfe, Simpson, & Co ; 1,668 pcs. mining timber",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18910307p.334_p001_parsed.json",
+        "record_id": "8cfddf84-1808-4c30-9ae2-16d2962e8941",
+        "raw_text": "53,660 oak staves, 974 crossing sleepers-Pickford & Co. ; 5,018 deals and battens-A. Livingston & Co.",
+        "value": "Pickford & Co. ; 5,018 deals and battens",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18910307p.334_p001_parsed.json",
+        "record_id": "48772cef-7a1f-4041-8054-dde97863e918",
+        "raw_text": "St. Olaf Porsgrund-2,477 pcs. square timber-R. Wade, Sons, & Co. ; 1,803 props-E. A. Casper & Co.",
+        "value": "R. Wade, Sons, & Co. ; 1,803 props",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18910307p.334_p001_parsed.json",
+        "record_id": "5cc16676-77e8-4775-9392-af529a781db2",
+        "raw_text": "Thurso (s) Christiania-159 cs. wood boards-Brown, Brough, & Co. ; 320 pkgs. staves-A. Hewitt ; 1,059 pkgs. boards-Nicks & Penton ; 2,282 boat hooks-Churchill",
+        "value": "Brown, Brough, & Co. ; 320 pkgs. staves",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "18810813p.114_p003_parsed.json",
+        "record_id": "484acbe0-7c95-4153-82a9-cb0c7f46f960",
+        "raw_text": "277 pcs. scantlings, 139 pcs. lumber\u2014Jas. Kennedy & Co. ; 2,700 hhd. staves\u2014Order",
+        "value": "Jas. Kennedy & Co. ; 2,700 hhd. staves",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "12. p. 221-222 - Imports - March 21 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "08486c0d-02be-4e7f-b9d4-18580800491b",
+        "raw_text": "18 Lassell (s) - New York - 2 cs. hubs, 2 cs. spokes, 3 cs. wheels-Pfeil, Stedall, & Co. ; 1,200 brl. staves-E. Chaloner & Co. ; 2,345 rollers-L. & N. W. Ry. Co. ; 905 maple rollers-Order",
+        "value": "Pfeil, Stedall, & Co. ; 1,200 brl. staves",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "12. p. 221-222 - Imports - March 21 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "91dfd89a-94ec-4aba-b184-a324975db3e5",
+        "raw_text": "Ousel (s)-Amsterdam - 4 pkgs. staves - J. G. Whyte & Co. ; from Rotterdam - 1,700 bdls. hoops-Wilson, Sons, & Co. ; 1,000 bdls. hoops-S. Schonstadt",
+        "value": "Amsterdam - 4 pkgs. staves - J. G. Whyte & Co. ; from Rotterdam - 1,700 bdls. hoops",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "12. p. 221-222 - Imports - March 21 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "6a8b1bfd-cede-4677-a3ce-70049c9f921e",
+        "raw_text": "Anna - Porsgrund - 44,621 boards-F. Briesemann & Co. ; 25 fms. firewood-Order",
+        "value": "F. Briesemann & Co. ; 25 fms. firewood",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "12. p. 221-222 - Imports - March 21 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "60c87063-3f56-41ab-b163-d543a5fd7402",
+        "raw_text": "Thorsten (s) - Gothenburg - 690 bdls. paving blocks-Vigers Bros. ; 43 pkgs. turned wood - J. W. Uloth ; 44 pkgs. turned wood -Maxime & Co. ; 150 doors-Messer & Co. ; 200 doors, 249 pkgs. joinery-W. R.",
+        "value": "Vigers Bros. ; 43 pkgs. turned wood - J. W. Uloth ; 44 pkgs. turned wood",
+        "pattern_matched": "\\bBros\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "12. p. 221-222 - Imports - March 21 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "50a27cfe-35c0-4e13-8255-9d5e5a36328c",
+        "raw_text": "16 Egyptian Monarch (s) - New York - 863 boards-Cobbett & Co. ; 2,059 pkgs. lumber -Order",
+        "value": "Cobbett & Co. ; 2,059 pkgs. lumber",
+        "pattern_matched": "& Co\\.?"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "12. p. 221-222 - Imports - March 21 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "8f4780e6-3fee-44db-b116-6ca9475eabd5",
+        "raw_text": "14 Laplace (s) - New York - 100 bdls. snaths-W. Marples & Son ; 978 maple rollers, 1,332 wooden rollers-Order",
+        "value": "W. Marples & Son ; 978 maple rollers, 1,332 wooden rollers",
+        "pattern_matched": "& Son"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "12. p. 221-222 - Imports - March 21 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "2e214d65-0bc4-4ee8-9f9c-be76c3008ed3",
+        "raw_text": "Republic (s) - New York - 14 cs. spokes-J. Gardner & Sons ; 65 cs. handles-Ismay, Imrie, & Co. ; 30 cs. spokes, 2,919 staves, 33 cs. handles-Order",
+        "value": "J. Gardner & Sons ; 65 cs. handles",
+        "pattern_matched": "& Sons"
+      },
+      {
+        "type": "consignee_in_origin_port",
+        "file": "12. p. 221-222 - Imports - March 21 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "83842cd9-c73d-4edd-ae74-c25325e7f68c",
+        "raw_text": "Uddevalla-764 bdls. mouldings-Tailby & Co. ; 928 bdls. mouldings, 102 battens, 25 crts. trelliswork-Gribble & Co. ; 1 cs. trelliswork-Order",
+        "value": "Tailby & Co. ; 928 bdls. mouldings, 102 battens, 25 crts. trelliswork",
+        "pattern_matched": "& Co\\.?"
+      }
+    ]
+  },
+  "other_issues": {
+    "long_ship_names": 5678,
+    "unusual_chars": 1195,
+    "samples": [
+      {
+        "type": "long_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "ccedb0ae-a57a-4f61-b90b-ec7f53d7e622",
+        "value": "Wilson, Sons, & Co.; 35 lds. slating laths-",
+        "length": 43,
+        "raw_text": "Wilson, Sons, & Co.; 35 lds. slating laths-"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "4c3a2af9-fddf-4657-b9fd-feb509e22265",
+        "value": "283 lds. props, 177 lds. sleepers, 31 lds.",
+        "length": 42,
+        "raw_text": "283 lds. props, 177 lds. sleepers, 31 lds."
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970918p.408_p001_parsed.json",
+        "record_id": "ff50b382-8d7f-4a71-aff9-fd64b109ae59",
+        "value": "battens, 1,676 scantlings, 11,709 boards,",
+        "length": 41,
+        "raw_text": "battens, 1,676 scantlings, 11,709 boards,"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "3a38d570-71e3-4de6-9c68-8b08ac983d6c",
+        "value": "Wifstawarf-10,035 deals, battens, and boards",
+        "length": 44,
+        "raw_text": "Wifstawarf-10,035 deals, battens, and boards-Wintringham & Son; 4,031 boards and ends-Seddon, Shephord, & Co."
+      },
+      {
+        "type": "long_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "6bc9a377-f3c4-47eb-abba-8bdb7a842d35",
+        "value": "Bride  Wyburg-67,848 deals, &c., 4 fms. firewood",
+        "length": 48,
+        "raw_text": "Bride (s) Wyburg-67,848 deals, &c., 4 fms. firewood-Order"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "ade42290-9d80-4753-85db-a39b35482f0d",
+        "value": "man & Hartenfeld; 288 pcs. ash, 30 pcs. birch, 3,385 birch props",
+        "length": 64,
+        "raw_text": "man & Hartenfeld; 288 pcs. ash, 30 pcs. birch, 3,385 birch props-Order"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "49ee1628-5796-49f0-8450-97604a5d6743",
+        "value": "Soderhamn-2,185 deals, 1,544 deals and battens",
+        "length": 46,
+        "raw_text": "Soderhamn-2,185 deals, 1,544 deals and battens-Order"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "8fbba22b-043d-4108-b4aa-2b7e5c047860",
+        "value": "Orient Wyborg-2,185 deals, 1,544 deals and battens",
+        "length": 50,
+        "raw_text": "Orient Wyborg-2,185 deals, 1,544 deals and battens-Order"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "7f42b9b9-f60d-4e64-91e7-30d69a2bf143",
+        "value": "son & Cotterall; 2,185 deals, 1,544 deals and battens",
+        "length": 53,
+        "raw_text": "son & Cotterall; 2,185 deals, 1,544 deals and battens-Order"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "ab57d965-2eb8-4f74-8d1b-10f9baddb954",
+        "value": "Norwegia Batsvik-2,185 deals, 1,544 deals and battens",
+        "length": 53,
+        "raw_text": "Norwegia Batsvik-2,185 deals, 1,544 deals and battens-Order"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "9e01ec6a-c81e-48a3-bd18-bd7e53df9fb7",
+        "value": "Prier, Wotton, & Co.; 2,185 deals, 1,544 deals and battens",
+        "length": 58,
+        "raw_text": "Prier, Wotton, & Co.; 2,185 deals, 1,544 deals and battens-Order"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "record_id": "c7cb00cd-8172-4bd6-bcf6-0d30574b3820",
+        "value": "J. W. Uloth & Co.; 2,185 deals, 1,544 deals and battens",
+        "length": 55,
+        "raw_text": "J. W. Uloth & Co.; 2,185 deals, 1,544 deals and battens-Order"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "cd006a7b-e184-4860-9295-4fac05ddb10c",
+        "value": "May 29 Jeanne - St. Malo-140 lds. pitwood, Jones, Heard, & Co.",
+        "length": 62,
+        "raw_text": "May 29 Jeanne - St. Malo-140 lds. pitwood, Jones, Heard, & Co."
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "7dcfb9b9-3c18-4ccc-9890-2bbe6e71dc53",
+        "value": "June 2 Uppingham  - Riga - 22,000 half-square sleepers",
+        "length": 54,
+        "raw_text": "June 2 Uppingham (s) - Riga - 22,000 half-square sleepers-Burt, Boulton, & Haywood, 5,915 square sleeper blocks-Burt, Boulton, & Haywood"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "49e8ebbf-9653-47cf-b6f3-2b32bd14a917",
+        "value": "May 29 City of Rotterdam-1,400 bdls. wood hoops",
+        "length": 47,
+        "raw_text": "May 29 City of Rotterdam-1,400 bdls. wood hoops-J. C. Pinkerton"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18830609p.398_p002_parsed.json",
+        "record_id": "0a9dc869-c3ea-4726-8e01-752690d86242",
+        "value": "May 29 City of Rotterdam-1,400 bdls. wood hoops",
+        "length": 47,
+        "raw_text": "May 29 City of Rotterdam-1,400 bdls. wood hoops-J. C. Pinkerton"
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18971211p.845_p001_parsed.json",
+        "record_id": "593a6c8c-e0e7-49d4-b057-9519e412915c",
+        "value": "W [?]",
+        "raw_text": "Dec. 2 W [?] (s)-Gothenburg-12 lds. boxboards-C. O. Swanson."
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18971211p.845_p001_parsed.json",
+        "record_id": "6a679f0b-727a-4573-b1c4-789d8e145433",
+        "value": "J. H. McLaren Pa-cagoula-424 lds hewn pitch pine, 378 lds sawn pitch pine H. Owen & Son",
+        "length": 87,
+        "raw_text": "Dec. 3 J. H. McLaren Pa-cagoula-424 lds hewn pitch pine, 378 lds sawn pitch pine H. Owen & Son"
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18971211p.845_p001_parsed.json",
+        "record_id": "f0e130ef-66ad-46ba-b42a-fbc36af88eba",
+        "value": "T. W. [?]",
+        "raw_text": "T. W. [?]-Gothenburg-22 lds i t props-Wilson, Sons & Co. ; 150 lds. t t p ops-Wilson, Sons & Co. ; 25 lds. laths Knoo[?] Ba ker"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "12. p. 284-286 - Imports - September 17 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "record_id": "c377f57d-5fb7-427b-a15d-15f668936d41",
+        "value": "Carlotte - Rugenwalde - 13,235 pit-props - Order",
+        "length": 48,
+        "raw_text": "Carlotte - Rugenwalde - 13,235 pit-props - Order"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "1229d317-c3ab-4d9e-a118-75d53cfd1a8e",
+        "value": "Lynger-16,341 pit props, 1,668 pcs. round",
+        "length": 41,
+        "raw_text": "Lynger-16,341 pit props, 1,668 pcs. round"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "b717a50c-4231-4cb2-8e60-db2f4dbb4100",
+        "value": "bdls. trellis, qnty. boxboards, 5 prs. oars,",
+        "length": 44,
+        "raw_text": "bdls. trellis, qnty. boxboards, 5 prs. oars,"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "16d5857e-aa2a-4e52-bbd4-8b9c7fc5d879",
+        "value": "bdls. dowels, 257 spars, 58 pkgs. wheels,",
+        "length": 41,
+        "raw_text": "bdls. dowels, 257 spars, 58 pkgs. wheels,"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "4ed6c037-5ea2-4e01-93dc-d5bd8f57fdbd",
+        "value": "Harald Klitgaard - Memel - 15,723 sleeper",
+        "length": 41,
+        "raw_text": "Harald Klitgaard - Memel - 15,723 sleeper"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "5fb48881-be06-473a-9924-0acc5c8bd26d",
+        "value": "Christine - Uddevalla - 180 lds. hewn pit",
+        "length": 41,
+        "raw_text": "Christine - Uddevalla - 180 lds. hewn pit"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "b4133897-ea30-4441-be0b-e7ca7e9dfde9",
+        "value": "8 Jonehild - Bergqvara - 345 lds. hewn pit",
+        "length": 42,
+        "raw_text": "8 Jonehild - Bergqvara - 345 lds. hewn pit"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "befa60d2-57ab-4d17-853f-44c71302c0e4",
+        "value": "6 lds. battens, 43 lds. deals, 3 lds. spars-",
+        "length": 44,
+        "raw_text": "6 lds. battens, 43 lds. deals, 3 lds. spars-"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "e330c83c-b547-418a-84f8-3e6c742e1de6",
+        "value": "Edith - Gothenburg - 362 lds. battens and",
+        "length": 41,
+        "raw_text": "Edith - Gothenburg - 362 lds. battens and"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18970417p.720_p002_parsed.json",
+        "record_id": "c83e765b-7109-43bc-9c0e-6376fa066aa2",
+        "value": "and sawn pitch wood, n.o.e., 49 lds. deals",
+        "length": 42,
+        "raw_text": "and sawn pitch wood, n.o.e., 49 lds. deals-B."
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18931216p.662_p002_parsed.json",
+        "record_id": "e79b1fcc-9353-4f11-8f2b-b18df25ba896",
+        "value": "Soblomsten Arendal-270 lds. fir mining timber, 10 lds. fir props",
+        "length": 64,
+        "raw_text": "7 Soblomsten Arendal-270 lds. fir mining timber, 10 lds. fir props-C. Calder & Co."
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18931216p.662_p002_parsed.json",
+        "record_id": "530f56d8-4319-4478-8f9b-c7d438cd1c41",
+        "value": "Deux Pierre-l'Orient-175 lds. fir pitwood",
+        "length": 41,
+        "raw_text": "Deux Pierre-l'Orient-175 lds. fir pitwood-E. Williams, Cook & Co."
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18931216p.662_p002_parsed.json",
+        "record_id": "3085e22f-de98-4d91-b3b1-f2929cf10ee2",
+        "value": "Endrick St. John, N.B.-577 lds. fir & deals",
+        "length": 43,
+        "raw_text": "Dec. 4 Endrick St. John, N.B.-577 lds. fir & deals-H. & T. Bellas."
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "b9fd0d59-93df-45e3-b52b-6ee9613050e2",
+        "value": "July 14 Ocean Child - Darien - 584 fir logs",
+        "length": 43,
+        "raw_text": "July 14 Ocean Child - Darien - 584 fir logs-John Williams & Sons"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "abc2e27d-4b5e-4f7c-a159-4f32cc8d33c3",
+        "value": "Achilles - Darien-514 pcs. hewn pitch pine, 217 pcs. sawn pitch pine",
+        "length": 68,
+        "raw_text": "Achilles - Darien-514 pcs. hewn pitch pine, 217 pcs. sawn pitch pine-Wintringham & Sons"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "25eb1e71-1d67-49e5-83cb-46942ca91904",
+        "value": "July 13 Henri - Bordeaux - 54 lds. firewood",
+        "length": 43,
+        "raw_text": "July 13 Henri - Bordeaux - 54 lds. firewood-Nevill, Druce, & Co."
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "23c01145-5228-44c5-98c4-22d468f3fc64",
+        "value": "[?]heit",
+        "raw_text": "[?]heit-Dantzig-5,780 oak sleepers-Order"
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "e247960d-24ab-4e98-bb85-2a8a41d72e62",
+        "value": "[?]s",
+        "raw_text": "[?]s-Dantzig-300 fms. firewood-Order"
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "0ec35591-b7a5-41b9-92a1-10334c0532d0",
+        "value": "[?] deals and boards",
+        "raw_text": "[?] deals and boards-Thompson, Bonar & Co."
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "c4e88b7d-38e2-4ade-bc7b-b2611953c360",
+        "value": "[?] deals and boards",
+        "raw_text": "[?] deals and boards-Harrison"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "90b612ac-e2da-4534-a015-9edf54509c95",
+        "value": "[?] pcs. square timber, 702 pcs. firewood",
+        "length": 41,
+        "raw_text": "[?] pcs. square timber, 702 pcs. firewood-F. Lambery"
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "90b612ac-e2da-4534-a015-9edf54509c95",
+        "value": "[?] pcs. square timber, 702 pcs. firewood",
+        "raw_text": "[?] pcs. square timber, 702 pcs. firewood-F. Lambery"
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "9ce2bfb4-6b12-4bea-a013-505b385e3a40",
+        "value": "[?] 3,233 props",
+        "raw_text": "[?] 3,233 props-G. Pearson & Co."
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "4f6a83ed-ec47-49cc-aa79-1648f21f9335",
+        "value": "[?] 1,356 pcs. round timber, 16,999 battens",
+        "length": 43,
+        "raw_text": "[?] 1,356 pcs. round timber, 16,999 battens-Pape, Dey & Co."
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "4f6a83ed-ec47-49cc-aa79-1648f21f9335",
+        "value": "[?] 1,356 pcs. round timber, 16,999 battens",
+        "raw_text": "[?] 1,356 pcs. round timber, 16,999 battens-Pape, Dey & Co."
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "dc75bfab-f26c-42bb-b768-e43e6ce33142",
+        "value": "[?] R. Wade & Sons",
+        "raw_text": "[?] R. Wade & Sons"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "a11c347e-969d-43fa-96ce-19793747c986",
+        "value": "[?] Dantzig-544 pcs. timber, 137 deals and boards",
+        "length": 49,
+        "raw_text": "[?] Dantzig-544 pcs. timber, 137 deals and boards-Harvey & Co."
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "a11c347e-969d-43fa-96ce-19793747c986",
+        "value": "[?] Dantzig-544 pcs. timber, 137 deals and boards",
+        "raw_text": "[?] Dantzig-544 pcs. timber, 137 deals and boards-Harvey & Co."
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "9fb62e86-35ec-4421-ad0f-16fc7707c2e8",
+        "value": "[?] & Sons",
+        "raw_text": "[?] & Sons"
+      },
+      {
+        "type": "long_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "9c247975-2223-46e3-9065-04ba482fb8e5",
+        "value": "[?] pcs. pitwood, 1,713 telegraph poles-4,533 pit-props",
+        "length": 55,
+        "raw_text": "[?] pcs. pitwood, 1,713 telegraph poles-4,533 pit-props-G. Horsley"
+      },
+      {
+        "type": "unusual_chars_in_ship_name",
+        "file": "18810723p.64_p001_parsed.json",
+        "record_id": "9c247975-2223-46e3-9065-04ba482fb8e5",
+        "value": "[?] pcs. pitwood, 1,713 telegraph poles-4,533 pit-props",
+        "raw_text": "[?] pcs. pitwood, 1,713 telegraph poles-4,533 pit-props-G. Horsley"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1154 @@
+{
+  "summary": {
+    "total_files": 2039,
+    "total_shipments": 159939,
+    "failed_files": 0,
+    "avg_shipments_per_file": 78.4
+  },
+  "confidence_distribution": {
+    "high": 149792,
+    "medium": 9211,
+    "low": 936,
+    "unknown": 0
+  },
+  "empty_fields": {
+    "arrival_date": 119899,
+    "origin_port": 25631,
+    "cargo": 9182,
+    "ship_name": 808,
+    "consignee": 7954
+  },
+  "empty_field_percentages": {
+    "arrival_date": 74.97,
+    "origin_port": 16.03,
+    "cargo": 5.74,
+    "ship_name": 0.51,
+    "consignee": 4.97
+  },
+  "length_anomalies": {
+    "long_ship_names_count": 2912,
+    "long_ports_count": 2694,
+    "long_consignees_count": 1,
+    "samples": {
+      "long_ship_names": [
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "ade42290-9d80-4753-85db-a39b35482f0d",
+          "value": "man & Hartenfeld; 288 pcs. ash, 30 pcs. birch, 3,385 birch props",
+          "length": 64
+        },
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "7f42b9b9-f60d-4e64-91e7-30d69a2bf143",
+          "value": "son & Cotterall; 2,185 deals, 1,544 deals and battens",
+          "length": 53
+        },
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "ab57d965-2eb8-4f74-8d1b-10f9baddb954",
+          "value": "Norwegia Batsvik-2,185 deals, 1,544 deals and battens",
+          "length": 53
+        },
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "9e01ec6a-c81e-48a3-bd18-bd7e53df9fb7",
+          "value": "Prier, Wotton, & Co.; 2,185 deals, 1,544 deals and battens",
+          "length": 58
+        },
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "c7cb00cd-8172-4bd6-bcf6-0d30574b3820",
+          "value": "J. W. Uloth & Co.; 2,185 deals, 1,544 deals and battens",
+          "length": 55
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "cd006a7b-e184-4860-9295-4fac05ddb10c",
+          "value": "May 29 Jeanne - St. Malo-140 lds. pitwood, Jones, Heard, & Co.",
+          "length": 62
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "7dcfb9b9-3c18-4ccc-9890-2bbe6e71dc53",
+          "value": "June 2 Uppingham  - Riga - 22,000 half-square sleepers",
+          "length": 54
+        },
+        {
+          "file": "18971211p.845_p001_parsed.json",
+          "record_id": "6a679f0b-727a-4573-b1c4-789d8e145433",
+          "value": "J. H. McLaren Pa-cagoula-424 lds hewn pitch pine, 378 lds sawn pitch pine H. Owen & Son",
+          "length": 87
+        },
+        {
+          "file": "18931216p.662_p002_parsed.json",
+          "record_id": "e79b1fcc-9353-4f11-8f2b-b18df25ba896",
+          "value": "Soblomsten Arendal-270 lds. fir mining timber, 10 lds. fir props",
+          "length": 64
+        },
+        {
+          "file": "18810723p.64_p001_parsed.json",
+          "record_id": "abc2e27d-4b5e-4f7c-a159-4f32cc8d33c3",
+          "value": "Achilles - Darien-514 pcs. hewn pitch pine, 217 pcs. sawn pitch pine",
+          "length": 68
+        },
+        {
+          "file": "18810723p.64_p001_parsed.json",
+          "record_id": "9c247975-2223-46e3-9065-04ba482fb8e5",
+          "value": "[?] pcs. pitwood, 1,713 telegraph poles-4,533 pit-props",
+          "length": 55
+        },
+        {
+          "file": "18880107p16-17_p001_parsed.json",
+          "record_id": "03f757b7-0a4d-45b0-b29b-ed7b5505ffc0",
+          "value": "Sleipner  - Gothenburg - qty. alder props, alder, wood-props, pit-props, ten",
+          "length": 76
+        },
+        {
+          "file": "18950608p.925_parsed.json",
+          "record_id": "d4cc89ef-9cad-489f-8c28-d6e662d69d0a",
+          "value": "29 Silvanus \u2013 Riga \u2013 15,208 deals, battens, and boards",
+          "length": 54
+        },
+        {
+          "file": "18950601p.889_p001_parsed.json",
+          "record_id": "73f4ae65-f9f8-432b-819f-5228d734487e",
+          "value": "Phonix - Oscarshamn - 17,287 pit props - Pyman, Bell, & Co.",
+          "length": 59
+        },
+        {
+          "file": "18950601p.889_p001_parsed.json",
+          "record_id": "5f7f99cb-7a4a-41f4-8acf-6f3566f99ff1",
+          "value": "Mobile - 955 pcs. hewn timber, 4,000 pcs. sawn timber, 661 deals",
+          "length": 64
+        },
+        {
+          "file": "18950921p.377_p003_parsed.json",
+          "record_id": "193569d0-76a7-4e9a-9923-413cdaa5f7f0",
+          "value": "Kongsberg-27,414 pcs. battens, 8,000 pcs. pit props, 1,000 bdls. firewood",
+          "length": 73
+        },
+        {
+          "file": "18950921p.377_p003_parsed.json",
+          "record_id": "3fc3877b-127b-44b9-af1a-49dfb951dba6",
+          "value": "Berlin Head  Riga-10,784 pcs. lathwood, 3,891 pcs. lathwood",
+          "length": 59
+        },
+        {
+          "file": "18970313p.550_p002_parsed.json",
+          "record_id": "3f602240-0bcf-4a87-a89c-1ea8045302e3",
+          "value": "Mar. 8. Pensacola-1,091 lds. sawn fir-on, Pattrick, & Woodward",
+          "length": 62
+        },
+        {
+          "file": "18970313p.550_p002_parsed.json",
+          "record_id": "c76c46bf-2fa6-4186-b80f-efe786012c66",
+          "value": "Mar. 10. Christiania - 300 poles and 100 poles, 922 scantlings.",
+          "length": 63
+        },
+        {
+          "file": "18970313p.550_p002_parsed.json",
+          "record_id": "57055194-e555-4da1-be5d-3febf1d6eea9",
+          "value": "Mar. 11. from Gothenburg-1,224 dz. boards, 206 bds. skirtings, 630 bdls.",
+          "length": 72
+        }
+      ],
+      "long_ports": [
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "3a38d570-71e3-4de6-9c68-8b08ac983d6c",
+          "field": "origin_port",
+          "value": "Wintringham & Son; 4,031 boards and ends",
+          "length": 40
+        },
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "b6df046d-b467-4cbb-bd3b-40a15e0a31fb",
+          "field": "origin_port",
+          "value": "Churchill & Sim; 2,185 deals, 1,544 deals and battens",
+          "length": 53
+        },
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "9688080e-65e2-4541-9d53-0236bf0a3ea2",
+          "field": "origin_port",
+          "value": "Rose, Smith, & Co.; 2,185 deals, 1,544 deals and battens",
+          "length": 56
+        },
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "fb213c51-0ccc-4960-9f6e-b3a418aae328",
+          "field": "origin_port",
+          "value": "Mearns & Co.; 2,185 deals, 1,544 deals and battens",
+          "length": 50
+        },
+        {
+          "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+          "record_id": "92a60198-04fb-40e6-be67-f29d7ecbd0cc",
+          "field": "origin_port",
+          "value": "J. Keen; 2,185 deals, 1,544 deals and battens",
+          "length": 45
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "7dcfb9b9-3c18-4ccc-9890-2bbe6e71dc53",
+          "field": "origin_port",
+          "value": "Burt, Boulton, & Haywood, 5,915 square sleeper blocks",
+          "length": 53
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "27ee65e9-9aa8-493d-9f59-6b0e895ba7a6",
+          "field": "origin_port",
+          "value": "Gothenburg-quantity deals, battens, boards, props, and sleepers",
+          "length": 63
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "c118f3f0-918c-43f5-9f2b-8a3dbd8ba80a",
+          "field": "origin_port",
+          "value": "Gothenburg-quantity pit-props, sleepers, deals, and battens",
+          "length": 59
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "f2576f8e-cfd1-422a-802e-188d42634360",
+          "field": "origin_port",
+          "value": "Goteborg-quantity deals, boards, and battens, 414 sleepers, 7,620 splits, 31,133 props, 2,292 pcs. birchwood",
+          "length": 108
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "85ced215-42f7-45eb-b632-86f1643f5eea",
+          "field": "origin_port",
+          "value": "Gothenburg-quantity deals, battens, boards, props, and sleepers",
+          "length": 63
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "738a4f11-8f80-4323-8403-7a39571773d9",
+          "field": "origin_port",
+          "value": "Gothenburg-quantity pit-props, sleepers, deals, and battens",
+          "length": 59
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "a5bed988-9fc2-40b1-975e-3a09eab8b227",
+          "field": "origin_port",
+          "value": "Goteborg-quantity deals, boards, and battens, 414 sleepers, 7,620 splits, 31,133 props, 2,292 pcs. birchwood",
+          "length": 108
+        },
+        {
+          "file": "18830609p.398_p002_parsed.json",
+          "record_id": "1d1b944e-076e-441b-8222-d441a7b44f59",
+          "field": "origin_port",
+          "value": "Aagaards-strand - 21,790 pit-props",
+          "length": 34
+        },
+        {
+          "file": "18971211p.845_p001_parsed.json",
+          "record_id": "09f8c234-f2bc-4b5b-b485-aeabd29b6691",
+          "field": "origin_port",
+          "value": "Dalhousie, N B. 1,450 lds. deals",
+          "length": 32
+        },
+        {
+          "file": "18971211p.845_p001_parsed.json",
+          "record_id": "140749d0-1442-4682-b7f9-635c064f0198",
+          "field": "origin_port",
+          "value": "Pernovcken 1,372 lds deal- battens, boards, &c.",
+          "length": 47
+        },
+        {
+          "file": "12. p. 284-286 - Imports - September 17 1887 - Timber Trades Journal 1887_p002_parsed.json",
+          "record_id": "e9215933-afdc-4460-b977-dae42e1cca25",
+          "field": "origin_port",
+          "value": "Pitea 38,386 battens and boards, 50 lds. hewn fir",
+          "length": 49
+        },
+        {
+          "file": "18810723p.64_p001_parsed.json",
+          "record_id": "7c3df468-392e-4f48-8bf1-f1627947e341",
+          "field": "origin_port",
+          "value": "Baltimore - 10 lds. firwood sawn",
+          "length": 32
+        },
+        {
+          "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+          "record_id": "bcfceb36-5b52-4748-bf98-41133482bf98",
+          "field": "origin_port",
+          "value": "Fredrikshald \u2013 38,094 pit-props",
+          "length": 31
+        },
+        {
+          "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+          "record_id": "ed6fae7a-1fed-4f37-96a4-8bf23276b2d6",
+          "field": "origin_port",
+          "value": "Gothenburg \u2013 32,303 fir pit-props",
+          "length": 33
+        },
+        {
+          "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+          "record_id": "61bd94ec-db8a-486a-9c20-85d5378b92d0",
+          "field": "origin_port",
+          "value": "Christiansand \u2013 4,800 pit-props",
+          "length": 31
+        }
+      ],
+      "long_consignees": [
+        {
+          "file": "18951207p.745_p001_parsed.json",
+          "record_id": "99c038fd-ed9d-45a7-a30b-bc0c39c2f719",
+          "value": "Heaven & Kesterton, Horsley, Smith, & Co., M. Chaplin, Henry Smith & Co., W. Young, and J. Marsland & Sons",
+          "length": 106
+        }
+      ]
+    }
+  },
+  "worst_files": [
+    {
+      "filename": "18910801p.3_p003_parsed.json",
+      "year": "1891",
+      "shipments": 5,
+      "status": "success",
+      "issues": {
+        "empty_origin": 5,
+        "empty_cargo": 5,
+        "empty_arrival_date": 5,
+        "long_ship_name": 5
+      },
+      "error_rate": 4.0
+    },
+    {
+      "filename": "18970417p.726_p002_parsed.json",
+      "year": "1897",
+      "shipments": 50,
+      "status": "success",
+      "issues": {
+        "empty_origin": 50,
+        "empty_cargo": 50,
+        "empty_arrival_date": 50,
+        "long_ship_name": 41
+      },
+      "error_rate": 3.82
+    },
+    {
+      "filename": "18930515p.619_p002_parsed.json",
+      "year": "1893",
+      "shipments": 126,
+      "status": "success",
+      "issues": {
+        "empty_origin": 126,
+        "empty_cargo": 126,
+        "empty_arrival_date": 126,
+        "long_ship_name": 86
+      },
+      "error_rate": 3.6825396825396823
+    },
+    {
+      "filename": "18910801p.3_p002_parsed.json",
+      "year": "1891",
+      "shipments": 50,
+      "status": "success",
+      "issues": {
+        "empty_origin": 50,
+        "empty_cargo": 50,
+        "empty_arrival_date": 50,
+        "long_ship_name": 32
+      },
+      "error_rate": 3.64
+    },
+    {
+      "filename": "18931011p.3_p002_parsed.json",
+      "year": "1893",
+      "shipments": 26,
+      "status": "success",
+      "issues": {
+        "empty_origin": 26,
+        "empty_cargo": 26,
+        "long_ship_name": 21,
+        "empty_arrival_date": 13
+      },
+      "error_rate": 3.3076923076923075
+    },
+    {
+      "filename": "18990715p.61_p001_parsed.json",
+      "year": "1899",
+      "shipments": 20,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 20,
+        "empty_origin": 18,
+        "empty_cargo": 18,
+        "long_ship_name": 9
+      },
+      "error_rate": 3.25
+    },
+    {
+      "filename": "18930902p.3_parsed.json",
+      "year": "1893",
+      "shipments": 68,
+      "status": "success",
+      "issues": {
+        "empty_origin": 68,
+        "empty_cargo": 68,
+        "empty_arrival_date": 26,
+        "long_ship_name": 56
+      },
+      "error_rate": 3.2058823529411766
+    },
+    {
+      "filename": "7. 106-110 - July 21 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 5 1877_p005_parsed.json",
+      "year": "1877",
+      "shipments": 126,
+      "status": "success",
+      "issues": {
+        "empty_origin": 126,
+        "empty_cargo": 126,
+        "empty_arrival_date": 126
+      },
+      "error_rate": 3.0
+    },
+    {
+      "filename": "18990311p.317_p002_parsed.json",
+      "year": "1899",
+      "shipments": 60,
+      "status": "success",
+      "issues": {
+        "empty_origin": 58,
+        "empty_cargo": 48,
+        "long_ship_name": 39,
+        "empty_arrival_date": 32
+      },
+      "error_rate": 2.95
+    },
+    {
+      "filename": "18990204p.153_p002_parsed.json",
+      "year": "1899",
+      "shipments": 32,
+      "status": "success",
+      "issues": {
+        "empty_origin": 32,
+        "empty_cargo": 32,
+        "long_ship_name": 23,
+        "empty_arrival_date": 7
+      },
+      "error_rate": 2.9375
+    },
+    {
+      "filename": "8. 122-126 - August 4 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 5 1877_p005_parsed.json",
+      "year": "1877",
+      "shipments": 173,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 173,
+        "long_origin_port": 8,
+        "empty_origin": 165,
+        "empty_cargo": 161
+      },
+      "error_rate": 2.930635838150289
+    },
+    {
+      "filename": "18810827p.143_p001_parsed.json",
+      "year": "1881",
+      "shipments": 41,
+      "status": "success",
+      "issues": {
+        "empty_origin": 41,
+        "empty_cargo": 41,
+        "long_ship_name": 18,
+        "empty_arrival_date": 20
+      },
+      "error_rate": 2.926829268292683
+    },
+    {
+      "filename": "10. 153-157 - September 1 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 5 1877_p005_parsed.json",
+      "year": "1877",
+      "shipments": 107,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 107,
+        "long_origin_port": 6,
+        "empty_origin": 101,
+        "empty_cargo": 98
+      },
+      "error_rate": 2.9158878504672896
+    },
+    {
+      "filename": "18990311p.330_p001_parsed.json",
+      "year": "1899",
+      "shipments": 24,
+      "status": "success",
+      "issues": {
+        "empty_origin": 24,
+        "empty_cargo": 24,
+        "empty_arrival_date": 21
+      },
+      "error_rate": 2.875
+    },
+    {
+      "filename": "18811203p.374_p002_parsed.json",
+      "year": "1881",
+      "shipments": 101,
+      "status": "success",
+      "issues": {
+        "empty_origin": 96,
+        "empty_arrival_date": 89,
+        "empty_cargo": 93
+      },
+      "error_rate": 2.7524752475247523
+    },
+    {
+      "filename": "12. 187-191 - September 29 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 5 1877_p005_parsed.json",
+      "year": "1877",
+      "shipments": 107,
+      "status": "success",
+      "issues": {
+        "empty_origin": 107,
+        "empty_arrival_date": 107,
+        "empty_cargo": 69,
+        "long_ship_name": 3
+      },
+      "error_rate": 2.6728971962616823
+    },
+    {
+      "filename": "12. p. 181-184 - October 2 1875 - Imports of Timber, &c. Timber Trades Journal Vol. 3 1875_p002_parsed.json",
+      "year": "1875",
+      "shipments": 110,
+      "status": "success",
+      "issues": {
+        "empty_consignee": 110,
+        "empty_arrival_date": 110,
+        "low_confidence": 15,
+        "empty_origin": 35,
+        "empty_cargo": 18,
+        "long_origin_port": 1
+      },
+      "error_rate": 2.6272727272727274
+    },
+    {
+      "filename": "18990211p.187_p002_parsed.json",
+      "year": "1899",
+      "shipments": 48,
+      "status": "success",
+      "issues": {
+        "empty_origin": 48,
+        "empty_cargo": 40,
+        "long_ship_name": 24,
+        "empty_arrival_date": 12
+      },
+      "error_rate": 2.5833333333333335
+    },
+    {
+      "filename": "18990930p.384_p003_parsed.json",
+      "year": "1899",
+      "shipments": 66,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 66,
+        "empty_origin": 38,
+        "empty_cargo": 38,
+        "long_ship_name": 28
+      },
+      "error_rate": 2.5757575757575757
+    },
+    {
+      "filename": "18810924p.215_p003_parsed.json",
+      "year": "1881",
+      "shipments": 77,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 77,
+        "empty_origin": 61,
+        "long_ship_name": 1,
+        "long_origin_port": 1,
+        "empty_cargo": 57
+      },
+      "error_rate": 2.5584415584415585
+    },
+    {
+      "filename": "18810917p.198_p004_parsed.json",
+      "year": "1881",
+      "shipments": 230,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 230,
+        "empty_origin": 182,
+        "empty_cargo": 161,
+        "long_ship_name": 5,
+        "low_confidence": 1,
+        "empty_ship_name": 1
+      },
+      "error_rate": 2.5217391304347827
+    },
+    {
+      "filename": "18830804p.86_p004_parsed.json",
+      "year": "1883",
+      "shipments": 161,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 161,
+        "long_origin_port": 1,
+        "empty_origin": 141,
+        "empty_cargo": 100,
+        "long_ship_name": 1
+      },
+      "error_rate": 2.5093167701863353
+    },
+    {
+      "filename": "6. p. 378 - March 17 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 4 1877_parsed.json",
+      "year": "1877",
+      "shipments": 66,
+      "status": "success",
+      "issues": {
+        "empty_origin": 58,
+        "empty_cargo": 34,
+        "empty_arrival_date": 66,
+        "long_origin_port": 7
+      },
+      "error_rate": 2.5
+    },
+    {
+      "filename": "13. p. 197-200 - October 16 1875 - Timber Trades Journal Vol. 3 1875_p003_parsed.json",
+      "year": "1875",
+      "shipments": 117,
+      "status": "success",
+      "issues": {
+        "empty_consignee": 117,
+        "empty_arrival_date": 117,
+        "empty_origin": 28,
+        "low_confidence": 16,
+        "empty_cargo": 7
+      },
+      "error_rate": 2.4358974358974357
+    },
+    {
+      "filename": "18980115p.98_p001_parsed.json",
+      "year": "1898",
+      "shipments": 37,
+      "status": "success",
+      "issues": {
+        "empty_origin": 30,
+        "empty_cargo": 29,
+        "empty_arrival_date": 30
+      },
+      "error_rate": 2.4054054054054053
+    },
+    {
+      "filename": "15. p. 228-230 - November 13 1875 - Timber Trades Journal Vol. 3 1875_p001_parsed.json",
+      "year": "1875",
+      "shipments": 94,
+      "status": "success",
+      "issues": {
+        "empty_consignee": 94,
+        "empty_arrival_date": 94,
+        "low_confidence": 10,
+        "empty_cargo": 10,
+        "empty_origin": 18
+      },
+      "error_rate": 2.404255319148936
+    },
+    {
+      "filename": "18830317p.193_p001_parsed.json",
+      "year": "1883",
+      "shipments": 48,
+      "status": "success",
+      "issues": {
+        "empty_origin": 38,
+        "empty_arrival_date": 48,
+        "long_ship_name": 19,
+        "long_origin_port": 5,
+        "low_confidence": 2,
+        "empty_ship_name": 2
+      },
+      "error_rate": 2.375
+    },
+    {
+      "filename": "17. 267-271 - December 8 1877 - Imports of Timber, &c. Timber Trades Journal Vol. 5 1877_p005_parsed.json",
+      "year": "1877",
+      "shipments": 46,
+      "status": "success",
+      "issues": {
+        "empty_origin": 46,
+        "empty_arrival_date": 46,
+        "empty_cargo": 17
+      },
+      "error_rate": 2.369565217391304
+    },
+    {
+      "filename": "9. p. 131-134 - August 22 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p002_parsed.json",
+      "year": "1874",
+      "shipments": 36,
+      "status": "success",
+      "issues": {
+        "empty_consignee": 36,
+        "empty_arrival_date": 27,
+        "empty_origin": 13,
+        "low_confidence": 7,
+        "empty_cargo": 2
+      },
+      "error_rate": 2.361111111111111
+    },
+    {
+      "filename": "18950105p.26_p002_parsed.json",
+      "year": "1895",
+      "shipments": 73,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 65,
+        "empty_origin": 58,
+        "empty_cargo": 44,
+        "low_confidence": 2,
+        "empty_ship_name": 2,
+        "long_origin_port": 1
+      },
+      "error_rate": 2.356164383561644
+    },
+    {
+      "filename": "18910704p.3_p002_parsed.json",
+      "year": "1891",
+      "shipments": 31,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 31,
+        "empty_origin": 17,
+        "empty_cargo": 12,
+        "long_ship_name": 12,
+        "long_origin_port": 1
+      },
+      "error_rate": 2.3548387096774195
+    },
+    {
+      "filename": "18990715p.54_p004_parsed.json",
+      "year": "1899",
+      "shipments": 154,
+      "status": "success",
+      "issues": {
+        "empty_origin": 116,
+        "empty_arrival_date": 154,
+        "empty_cargo": 83,
+        "low_confidence": 2,
+        "empty_ship_name": 2
+      },
+      "error_rate": 2.3181818181818183
+    },
+    {
+      "filename": "18930930p.2_p002_parsed.json",
+      "year": "1893",
+      "shipments": 69,
+      "status": "success",
+      "issues": {
+        "empty_origin": 53,
+        "empty_cargo": 37,
+        "empty_arrival_date": 69
+      },
+      "error_rate": 2.3043478260869565
+    },
+    {
+      "filename": "7. p. 59-161 - Imports - August 13 1887 - Timber Trades Journal 1887_p003_parsed.json",
+      "year": "1887",
+      "shipments": 73,
+      "status": "success",
+      "issues": {
+        "empty_origin": 59,
+        "empty_arrival_date": 66,
+        "empty_cargo": 35,
+        "low_confidence": 4,
+        "empty_ship_name": 4
+      },
+      "error_rate": 2.3013698630136985
+    },
+    {
+      "filename": "18891221p.2_p002_parsed.json",
+      "year": "1889",
+      "shipments": 55,
+      "status": "success",
+      "issues": {
+        "empty_origin": 48,
+        "empty_cargo": 28,
+        "empty_arrival_date": 50
+      },
+      "error_rate": 2.290909090909091
+    },
+    {
+      "filename": "18930520p.646_p003_parsed.json",
+      "year": "1893",
+      "shipments": 14,
+      "status": "success",
+      "issues": {
+        "empty_origin": 10,
+        "empty_arrival_date": 14,
+        "long_origin_port": 1,
+        "empty_cargo": 7
+      },
+      "error_rate": 2.2857142857142856
+    },
+    {
+      "filename": "18971016p.552_p004_parsed.json",
+      "year": "1897",
+      "shipments": 151,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 121,
+        "empty_origin": 133,
+        "empty_cargo": 86,
+        "low_confidence": 2,
+        "empty_ship_name": 2
+      },
+      "error_rate": 2.2781456953642385
+    },
+    {
+      "filename": "2. p. 315-316 - January 20 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 4 1877_p002_parsed.json",
+      "year": "1877",
+      "shipments": 18,
+      "status": "success",
+      "issues": {
+        "empty_origin": 18,
+        "empty_arrival_date": 18,
+        "empty_cargo": 5
+      },
+      "error_rate": 2.2777777777777777
+    },
+    {
+      "filename": "18810122p.59_p002_parsed.json",
+      "year": "1881",
+      "shipments": 29,
+      "status": "success",
+      "issues": {
+        "empty_origin": 22,
+        "empty_cargo": 22,
+        "empty_arrival_date": 22
+      },
+      "error_rate": 2.2758620689655173
+    },
+    {
+      "filename": "18930826p.229_p003_parsed.json",
+      "year": "1893",
+      "shipments": 111,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 107,
+        "empty_origin": 81,
+        "empty_cargo": 52,
+        "low_confidence": 6,
+        "empty_ship_name": 6
+      },
+      "error_rate": 2.27027027027027
+    },
+    {
+      "filename": "10. 152-155 - September 4 1875 - Imports Timber, &c. - Timber Trades Journal Vol. 3 1875_p004_parsed.json",
+      "year": "1875",
+      "shipments": 44,
+      "status": "success",
+      "issues": {
+        "empty_consignee": 44,
+        "empty_arrival_date": 40,
+        "empty_origin": 2,
+        "empty_cargo": 13
+      },
+      "error_rate": 2.25
+    },
+    {
+      "filename": "18990701p.993_p003_parsed.json",
+      "year": "1899",
+      "shipments": 149,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 149,
+        "empty_origin": 100,
+        "empty_cargo": 72,
+        "low_confidence": 7,
+        "empty_ship_name": 7
+      },
+      "error_rate": 2.248322147651007
+    },
+    {
+      "filename": "5. p. 363 - March 8 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 4 1877_parsed.json",
+      "year": "1877",
+      "shipments": 29,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 29,
+        "empty_origin": 21,
+        "long_origin_port": 6,
+        "long_ship_name": 2,
+        "empty_cargo": 7
+      },
+      "error_rate": 2.2413793103448274
+    },
+    {
+      "filename": "5. 75-77 - June 23 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 5 1877_p002_parsed.json",
+      "year": "1877",
+      "shipments": 87,
+      "status": "success",
+      "issues": {
+        "empty_origin": 80,
+        "empty_arrival_date": 87,
+        "low_confidence": 2,
+        "empty_ship_name": 2,
+        "empty_cargo": 10,
+        "long_origin_port": 7,
+        "long_ship_name": 7
+      },
+      "error_rate": 2.2413793103448274
+    },
+    {
+      "filename": "20. p. 356-358 - Imports - May 16 1885 - Timber Trades Journal 1885_p003_parsed.json",
+      "year": "1885",
+      "shipments": 71,
+      "status": "success",
+      "issues": {
+        "empty_arrival_date": 71,
+        "empty_origin": 46,
+        "empty_cargo": 42
+      },
+      "error_rate": 2.23943661971831
+    },
+    {
+      "filename": "9. p. 137-140 - August 21 1875 - Imports of Timber, &c. - Timber Trades Journal Vol. 3 1875_p004_parsed.json",
+      "year": "1875",
+      "shipments": 60,
+      "status": "success",
+      "issues": {
+        "empty_consignee": 60,
+        "empty_arrival_date": 60,
+        "low_confidence": 5,
+        "empty_cargo": 8,
+        "empty_origin": 1
+      },
+      "error_rate": 2.2333333333333334
+    },
+    {
+      "filename": "9. 138-142 - August 18 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 5 1877_p003_parsed.json",
+      "year": "1877",
+      "shipments": 13,
+      "status": "success",
+      "issues": {
+        "empty_origin": 4,
+        "empty_arrival_date": 13,
+        "long_origin_port": 9,
+        "long_ship_name": 2,
+        "empty_cargo": 1
+      },
+      "error_rate": 2.230769230769231
+    },
+    {
+      "filename": "8. 122-126 - August 4 1877 - Imports of Timber, &c. - Timber Trades Journal Vol. 5 1877_p003_parsed.json",
+      "year": "1877",
+      "shipments": 123,
+      "status": "success",
+      "issues": {
+        "empty_origin": 123,
+        "empty_arrival_date": 123,
+        "low_confidence": 13,
+        "empty_ship_name": 13,
+        "empty_cargo": 1
+      },
+      "error_rate": 2.2195121951219514
+    },
+    {
+      "filename": "19000113p.55_p003_parsed.json",
+      "year": "unknown",
+      "shipments": 39,
+      "status": "success",
+      "issues": {
+        "empty_origin": 31,
+        "empty_arrival_date": 33,
+        "empty_cargo": 20,
+        "low_confidence": 1,
+        "empty_ship_name": 1
+      },
+      "error_rate": 2.2051282051282053
+    },
+    {
+      "filename": "18910801p.3_p001_parsed.json",
+      "year": "1891",
+      "shipments": 128,
+      "status": "success",
+      "issues": {
+        "empty_origin": 79,
+        "empty_cargo": 65,
+        "empty_arrival_date": 128,
+        "low_confidence": 5,
+        "empty_ship_name": 5
+      },
+      "error_rate": 2.203125
+    }
+  ],
+  "by_year": {
+    "1874": {
+      "shipments": 4029,
+      "empty_origin": 123,
+      "empty_destination": 0,
+      "empty_cargo": 41,
+      "low_confidence": 44
+    },
+    "1875": {
+      "shipments": 3925,
+      "empty_origin": 223,
+      "empty_destination": 0,
+      "empty_cargo": 116,
+      "low_confidence": 84
+    },
+    "1877": {
+      "shipments": 3546,
+      "empty_origin": 3215,
+      "empty_destination": 0,
+      "empty_cargo": 635,
+      "low_confidence": 22
+    },
+    "1878": {
+      "shipments": 85,
+      "empty_origin": 76,
+      "empty_destination": 0,
+      "empty_cargo": 5,
+      "low_confidence": 0
+    },
+    "1879": {
+      "shipments": 6874,
+      "empty_origin": 439,
+      "empty_destination": 0,
+      "empty_cargo": 6,
+      "low_confidence": 1
+    },
+    "1880": {
+      "shipments": 328,
+      "empty_origin": 36,
+      "empty_destination": 0,
+      "empty_cargo": 0,
+      "low_confidence": 0
+    },
+    "1881": {
+      "shipments": 13178,
+      "empty_origin": 1661,
+      "empty_destination": 0,
+      "empty_cargo": 987,
+      "low_confidence": 28
+    },
+    "1882": {
+      "shipments": 234,
+      "empty_origin": 36,
+      "empty_destination": 0,
+      "empty_cargo": 28,
+      "low_confidence": 0
+    },
+    "1883": {
+      "shipments": 14996,
+      "empty_origin": 1805,
+      "empty_destination": 0,
+      "empty_cargo": 505,
+      "low_confidence": 61
+    },
+    "1884": {
+      "shipments": 709,
+      "empty_origin": 87,
+      "empty_destination": 0,
+      "empty_cargo": 41,
+      "low_confidence": 0
+    },
+    "1885": {
+      "shipments": 15110,
+      "empty_origin": 1975,
+      "empty_destination": 0,
+      "empty_cargo": 474,
+      "low_confidence": 79
+    },
+    "1886": {
+      "shipments": 225,
+      "empty_origin": 12,
+      "empty_destination": 0,
+      "empty_cargo": 1,
+      "low_confidence": 0
+    },
+    "1887": {
+      "shipments": 13991,
+      "empty_origin": 2164,
+      "empty_destination": 0,
+      "empty_cargo": 347,
+      "low_confidence": 39
+    },
+    "1888": {
+      "shipments": 295,
+      "empty_origin": 29,
+      "empty_destination": 0,
+      "empty_cargo": 2,
+      "low_confidence": 0
+    },
+    "1889": {
+      "shipments": 14078,
+      "empty_origin": 1001,
+      "empty_destination": 0,
+      "empty_cargo": 199,
+      "low_confidence": 58
+    },
+    "1890": {
+      "shipments": 457,
+      "empty_origin": 8,
+      "empty_destination": 0,
+      "empty_cargo": 2,
+      "low_confidence": 0
+    },
+    "1891": {
+      "shipments": 13109,
+      "empty_origin": 2396,
+      "empty_destination": 0,
+      "empty_cargo": 838,
+      "low_confidence": 76
+    },
+    "1892": {
+      "shipments": 705,
+      "empty_origin": 68,
+      "empty_destination": 0,
+      "empty_cargo": 16,
+      "low_confidence": 1
+    },
+    "1893": {
+      "shipments": 11370,
+      "empty_origin": 1588,
+      "empty_destination": 0,
+      "empty_cargo": 751,
+      "low_confidence": 110
+    },
+    "1895": {
+      "shipments": 12586,
+      "empty_origin": 1872,
+      "empty_destination": 0,
+      "empty_cargo": 827,
+      "low_confidence": 68
+    },
+    "1896": {
+      "shipments": 430,
+      "empty_origin": 126,
+      "empty_destination": 0,
+      "empty_cargo": 67,
+      "low_confidence": 4
+    },
+    "1897": {
+      "shipments": 13791,
+      "empty_origin": 3129,
+      "empty_destination": 0,
+      "empty_cargo": 1470,
+      "low_confidence": 129
+    },
+    "1898": {
+      "shipments": 808,
+      "empty_origin": 211,
+      "empty_destination": 0,
+      "empty_cargo": 107,
+      "low_confidence": 3
+    },
+    "1899": {
+      "shipments": 14466,
+      "empty_origin": 3298,
+      "empty_destination": 0,
+      "empty_cargo": 1694,
+      "low_confidence": 127
+    },
+    "unknown": {
+      "shipments": 614,
+      "empty_origin": 53,
+      "empty_destination": 0,
+      "empty_cargo": 23,
+      "low_confidence": 2
+    }
+  }
+}

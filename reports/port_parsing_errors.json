@@ -1,0 +1,3635 @@
+{
+  "summary": {
+    "total_files": 2039,
+    "total_shipments": 159939,
+    "port_cargo_combined": 4437,
+    "truncated_ports": 8424,
+    "headers_as_ports": 27065,
+    "ocr_variants": 37156,
+    "unmatched_short": 1074
+  },
+  "port_cargo_combined": {
+    "total": 4437,
+    "unique_patterns": 1796,
+    "top_patterns": [
+      [
+        "Cronstadt-lathwood",
+        105
+      ],
+      [
+        "Quebec-deals, &c.",
+        101
+      ],
+      [
+        "Riga-sleepers",
+        95
+      ],
+      [
+        "Gefle-deals, &c.",
+        86
+      ],
+      [
+        "Archangel-deals, &c.",
+        66
+      ],
+      [
+        "Archangel-deals",
+        55
+      ],
+      [
+        "St. John-deals, &c.",
+        54
+      ],
+      [
+        "Cronstadt-deals",
+        45
+      ],
+      [
+        "Riga-deals",
+        44
+      ],
+      [
+        "Riga-lathwood",
+        43
+      ],
+      [
+        "Cronstadt-deals, &c.",
+        41
+      ],
+      [
+        "Konigsberg-sleepers",
+        40
+      ],
+      [
+        "Soderhamn-deals",
+        39
+      ],
+      [
+        "Gefle-deals",
+        38
+      ],
+      [
+        "Quebec-deals",
+        35
+      ],
+      [
+        "Soderhamn-deals, &c.",
+        34
+      ],
+      [
+        "Miramichi-deals, &c.",
+        33
+      ],
+      [
+        "Uleaborg-deals, &c.",
+        31
+      ],
+      [
+        "Riga-deals and ends",
+        27
+      ],
+      [
+        "Christiania-props",
+        24
+      ],
+      [
+        "Christiansand-props",
+        21
+      ],
+      [
+        "Falkenburg-props",
+        21
+      ],
+      [
+        "P'burg-lathwood",
+        19
+      ],
+      [
+        "Sundswall-firewood",
+        19
+      ],
+      [
+        "Memel-sleepers",
+        19
+      ],
+      [
+        "Gefle-battens",
+        18
+      ],
+      [
+        "G'burg-props",
+        18
+      ],
+      [
+        "Riga-deals, &c.",
+        18
+      ],
+      [
+        "Laurvig-pit props",
+        18
+      ],
+      [
+        "G'burg-battens",
+        17
+      ],
+      [
+        "Laurvig-props",
+        17
+      ],
+      [
+        "Christiania, &c.",
+        17
+      ],
+      [
+        "Kotka-staves",
+        17
+      ],
+      [
+        "Sundswall-deals",
+        17
+      ],
+      [
+        "Miramichi-deals",
+        16
+      ],
+      [
+        "Danzig-sleepers",
+        16
+      ],
+      [
+        "Sundswall-deals, &c.",
+        16
+      ],
+      [
+        "Onega-deals, &c.",
+        16
+      ],
+      [
+        "Xiania-props",
+        16
+      ],
+      [
+        "Bjorneborg-deals, &c.",
+        16
+      ],
+      [
+        "Memel-staves",
+        15
+      ],
+      [
+        "Memel-deals",
+        15
+      ],
+      [
+        "Richibucto-deals, &c.",
+        15
+      ],
+      [
+        "Shediac-deals, &c.",
+        14
+      ],
+      [
+        "Drammen-boards",
+        14
+      ],
+      [
+        "Gothenburg-pit props",
+        14
+      ],
+      [
+        "Windau-sleepers",
+        13
+      ],
+      [
+        "G'burg-boards",
+        13
+      ],
+      [
+        "Gothenburg-props",
+        13
+      ],
+      [
+        "Bordeaux-props",
+        13
+      ]
+    ],
+    "samples": [
+      {
+        "original": "Gothenburg-quantity pit-props, sleepers, deals, and battens",
+        "clean_port": "Gothenburg-quantity pit",
+        "cargo_part": "props, sleepers, deals, and battens",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Moss-quantity pit-props",
+        "clean_port": "Moss-quantity pit",
+        "cargo_part": "props",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg-quantity pit-props, sleepers, deals, and battens",
+        "clean_port": "Gothenburg-quantity pit",
+        "cargo_part": "props, sleepers, deals, and battens",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Moss-quantity pit-props",
+        "clean_port": "Moss-quantity pit",
+        "cargo_part": "props",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Aagaards-strand - 21,790 pit-props",
+        "clean_port": "Aagaards-strand - 21,790 pit",
+        "cargo_part": "props",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Pernovcken 1,372 lds deal- battens, boards, &c.",
+        "clean_port": "Pernovcken 1,372 lds deal- battens, boards",
+        "cargo_part": "&c.",
+        "file": "18971211p.845_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Valencia, &c.",
+        "clean_port": "Valencia",
+        "cargo_part": "&c.",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Vannes - 93 lds. pit-props",
+        "clean_port": "Vannes - 93 lds. pit",
+        "cargo_part": "props",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Bordeaux-pit-props",
+        "clean_port": "Bordeaux-pit",
+        "cargo_part": "props",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Fredrikshald \u2013 38,094 pit-props",
+        "clean_port": "Fredrikshald \u2013 38,094 pit",
+        "cargo_part": "props",
+        "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania \u2013 46,641 pit-props",
+        "clean_port": "Christiania \u2013 46,641 pit",
+        "cargo_part": "props",
+        "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania \u2013 46,035 pit-props",
+        "clean_port": "Christiania \u2013 46,035 pit",
+        "cargo_part": "props",
+        "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg \u2013 32,303 fir pit-props",
+        "clean_port": "Gothenburg \u2013 32,303 fir pit",
+        "cargo_part": "props",
+        "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiansand \u2013 4,800 pit-props",
+        "clean_port": "Christiansand \u2013 4,800 pit",
+        "cargo_part": "props",
+        "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania \u2013 14,045 pit-props",
+        "clean_port": "Christiania \u2013 14,045 pit",
+        "cargo_part": "props",
+        "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania \u2013 7,621 fir pit-props",
+        "clean_port": "Christiania \u2013 7,621 fir pit",
+        "cargo_part": "props",
+        "file": "15. p. 265-267 - Imports - April 11 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gefle-deals, &c.",
+        "clean_port": "Gefle",
+        "cargo_part": "deals, &c.",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga-deals",
+        "clean_port": "Riga",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig-timber",
+        "clean_port": "Danzig",
+        "cargo_part": "timber",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Drammen-boards, &c.",
+        "clean_port": "Drammen",
+        "cargo_part": "boards, &c.",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt-deals, &c.",
+        "clean_port": "Cronstadt",
+        "cargo_part": "deals, &c.",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig-timber",
+        "clean_port": "Danzig",
+        "cargo_part": "timber",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "P'burg-lathwood",
+        "clean_port": "P'burg",
+        "cargo_part": "lathwood",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Skonvik-deals",
+        "clean_port": "Skonvik",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Memel-timber",
+        "clean_port": "Memel",
+        "cargo_part": "timber",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Bollsta-deals",
+        "clean_port": "Bollsta",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Aarhuus-ash",
+        "clean_port": "Aarhuus",
+        "cargo_part": "ash",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig-timber",
+        "clean_port": "Danzig",
+        "cargo_part": "timber",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Krageroe-battens",
+        "clean_port": "Krageroe",
+        "cargo_part": "battens",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt-lathwood",
+        "clean_port": "Cronstadt",
+        "cargo_part": "lathwood",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga-sleepers",
+        "clean_port": "Riga",
+        "cargo_part": "sleepers",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "G'burg-deals",
+        "clean_port": "G'burg",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Darien-deals, &c.",
+        "clean_port": "Darien",
+        "cargo_part": "deals, &c.",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Miramichi-deals",
+        "clean_port": "Miramichi",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Iggesund-deals",
+        "clean_port": "Iggesund",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt-deals, &c.",
+        "clean_port": "Cronstadt",
+        "cargo_part": "deals, &c.",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Memel-timber, staves",
+        "clean_port": "Memel",
+        "cargo_part": "timber, staves",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Quebec-deals",
+        "clean_port": "Quebec",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "G'burg-battens",
+        "clean_port": "G'burg",
+        "cargo_part": "battens",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "G'burg-deals, &c.",
+        "clean_port": "G'burg",
+        "cargo_part": "deals, &c.",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Three Rivers-dls., &c.",
+        "clean_port": "Three Rivers-dls.",
+        "cargo_part": "&c.",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Skonvik-deals, battens",
+        "clean_port": "Skonvik",
+        "cargo_part": "deals, battens",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Quebec-deals and ends",
+        "clean_port": "Quebec",
+        "cargo_part": "deals and ends",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Quebec-deals, &c.",
+        "clean_port": "Quebec",
+        "cargo_part": "deals, &c.",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig-timber, staves",
+        "clean_port": "Danzig",
+        "cargo_part": "timber, staves",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig-staves",
+        "clean_port": "Danzig",
+        "cargo_part": "staves",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Chatham-deals and ends",
+        "clean_port": "Chatham",
+        "cargo_part": "deals and ends",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "G'burg-battens",
+        "clean_port": "G'burg",
+        "cargo_part": "battens",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt-deals & battens",
+        "clean_port": "Cronstadt",
+        "cargo_part": "deals & battens",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Chatham-deals & ends",
+        "clean_port": "Chatham",
+        "cargo_part": "deals & ends",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt-deals & ends",
+        "clean_port": "Cronstadt",
+        "cargo_part": "deals & ends",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Memel-sleepers, staves",
+        "clean_port": "Memel",
+        "cargo_part": "sleepers, staves",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gefle-deals",
+        "clean_port": "Gefle",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Three Rivers-deals, &c.",
+        "clean_port": "Three Rivers",
+        "cargo_part": "deals, &c.",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Quebec-deals",
+        "clean_port": "Quebec",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig-timber, lathwood",
+        "clean_port": "Danzig",
+        "cargo_part": "timber, lathwood",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Narva-deals",
+        "clean_port": "Narva",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Saltvik-deals",
+        "clean_port": "Saltvik",
+        "cargo_part": "deals",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Saguenay-deals & ends",
+        "clean_port": "Saguenay",
+        "cargo_part": "deals & ends",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Quebec-deals & ends",
+        "clean_port": "Quebec",
+        "cargo_part": "deals & ends",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Quebec-deals & ends",
+        "clean_port": "Quebec",
+        "cargo_part": "deals & ends",
+        "file": "18790705p.90_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Nederkalix-[?] lds deals, battens, &c.",
+        "clean_port": "Nederkalix-[?] lds deals, battens",
+        "cargo_part": "&c.",
+        "file": "18990722p.81_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Bergqvara-props",
+        "clean_port": "Bergqvara",
+        "cargo_part": "props",
+        "file": "18991118p.611_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Halmstad-props",
+        "clean_port": "Halmstad",
+        "cargo_part": "props",
+        "file": "18991118p.611_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "W. C. Africa, &c.",
+        "clean_port": "W. C. Africa",
+        "cargo_part": "&c.",
+        "file": "18840105p.14_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Odense, &c.",
+        "clean_port": "Odense",
+        "cargo_part": "&c.",
+        "file": "18950831p.282_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Stockholm - 8,898 pit-props - Pyman, Bell, & Co.; 35,877 pit-props",
+        "clean_port": "Stockholm - 8,898 pit",
+        "cargo_part": "props - Pyman, Bell, & Co.; 35,877 pit-props",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Concarneau - 115 lds. pit-props",
+        "clean_port": "Concarneau - 115 lds. pit",
+        "cargo_part": "props",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga - 10,136 pit-props - Fife Iron & Coal",
+        "clean_port": "Riga - 10,136 pit",
+        "cargo_part": "props - Fife Iron & Coal",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Halmstad-quantity pit-props",
+        "clean_port": "Halmstad-quantity pit",
+        "cargo_part": "props",
+        "file": "18830908p.181_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Drammen-spruce",
+        "clean_port": "Drammen",
+        "cargo_part": "spruce",
+        "file": "18910530p.3_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Sandefjord - 2,940 props, 2,008 pit-props-quantity deals, and ends",
+        "clean_port": "Sandefjord - 2,940 props, 2,008 pit",
+        "cargo_part": "props-quantity deals, and ends",
+        "file": "18830915p.200_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg-qty. pit-props, splits, and sleepers",
+        "clean_port": "Gothenburg-qty. pit",
+        "cargo_part": "props, splits, and sleepers",
+        "file": "4. p. 464-467 - Imports - June 27 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Halmstadt and Warberg-qty. pit-props",
+        "clean_port": "Halmstadt and Warberg-qty. pit",
+        "cargo_part": "props",
+        "file": "5. p. 103 - Imports - January 31 1885 - Timber Trades Journal 1885_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Quebec, &c.",
+        "clean_port": "Quebec",
+        "cargo_part": "&c.",
+        "file": "18810702p.14_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga, &c.",
+        "clean_port": "Riga",
+        "cargo_part": "&c.",
+        "file": "18810702p.14_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Hern\u00f6sund-battens",
+        "clean_port": "Hern\u00f6sund",
+        "cargo_part": "battens",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Huddickwall-battens",
+        "clean_port": "Huddickwall",
+        "cargo_part": "battens",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Hern\u00f6sand-battens",
+        "clean_port": "Hern\u00f6sand",
+        "cargo_part": "battens",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Arendal-props",
+        "clean_port": "Arendal",
+        "cargo_part": "props",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Laurvig-props",
+        "clean_port": "Laurvig",
+        "cargo_part": "props",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt-deals",
+        "clean_port": "Cronstadt",
+        "cargo_part": "deals",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Dram-battens",
+        "clean_port": "Dram",
+        "cargo_part": "battens",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga-sleepers",
+        "clean_port": "Riga",
+        "cargo_part": "sleepers",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga-sleepers",
+        "clean_port": "Riga",
+        "cargo_part": "sleepers",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga-deals",
+        "clean_port": "Riga",
+        "cargo_part": "deals",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga-deals",
+        "clean_port": "Riga",
+        "cargo_part": "deals",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga-sleepers",
+        "clean_port": "Riga",
+        "cargo_part": "sleepers",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Sundswall-battens",
+        "clean_port": "Sundswall",
+        "cargo_part": "battens",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christianand-props",
+        "clean_port": "Christianand",
+        "cargo_part": "props",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Krageroe-props",
+        "clean_port": "Krageroe",
+        "cargo_part": "props",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Windau-sleepers",
+        "clean_port": "Windau",
+        "cargo_part": "sleepers",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga-sleepers",
+        "clean_port": "Riga",
+        "cargo_part": "sleepers",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Laurvig-props",
+        "clean_port": "Laurvig",
+        "cargo_part": "props",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania-props",
+        "clean_port": "Christiania",
+        "cargo_part": "props",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Porsgrund-props",
+        "clean_port": "Porsgrund",
+        "cargo_part": "props",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiansand-props, &c.",
+        "clean_port": "Christiansand",
+        "cargo_part": "props, &c.",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiansand-props",
+        "clean_port": "Christiansand",
+        "cargo_part": "props",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Windau-sleepers",
+        "clean_port": "Windau",
+        "cargo_part": "sleepers",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Sach Kallan-props",
+        "clean_port": "Sach Kallan",
+        "cargo_part": "props",
+        "file": "18790830p.156_p003_parsed.json",
+        "field": "origin"
+      }
+    ]
+  },
+  "truncated_ports": {
+    "total": 8424,
+    "unique_patterns": 9,
+    "known_fixes": {
+      "BO": "Bo'ness",
+      "KING": "King's Lynn",
+      "NEWPORT (MON": "Newport (Monmouthshire)",
+      "NEWPORT (MON.": "Newport (Monmouthshire)",
+      "HARTLEPOOL (WEST": "Hartlepool (West)",
+      "HARTLEPOOL (WEST:": "Hartlepool (West)",
+      "HARTLEPOOL (WEST)": "Hartlepool (West)",
+      "HARTLEPOOL (WEST):": "Hartlepool (West)",
+      "SOUTH SHIELDS (": "South Shields",
+      "NORTH SHIELDS (": "North Shields"
+    },
+    "top_patterns": [
+      [
+        "HARTLEPOOL (WEST)",
+        6107
+      ],
+      [
+        "BO",
+        1699
+      ],
+      [
+        "NEWPORT (MON",
+        326
+      ],
+      [
+        "KING",
+        114
+      ],
+      [
+        "DON",
+        56
+      ],
+      [
+        "ST",
+        42
+      ],
+      [
+        "NSEA",
+        42
+      ],
+      [
+        "HARTLEPOOL (WEST",
+        36
+      ],
+      [
+        "St",
+        2
+      ]
+    ],
+    "samples": [
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18970417p.720_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "original": "HARTLEPOOL (WEST)",
+        "fix": "Hartlepool (West)",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      }
+    ]
+  },
+  "headers_as_ports": {
+    "total": 27065,
+    "unique_patterns": 2533,
+    "top_patterns": [
+      [
+        "LONDON",
+        20836
+      ],
+      [
+        "Redon",
+        679
+      ],
+      [
+        "DOVER",
+        232
+      ],
+      [
+        "LONDONDERRY",
+        220
+      ],
+      [
+        "Dordt",
+        151
+      ],
+      [
+        "Doboy",
+        114
+      ],
+      [
+        "DOUGLAS",
+        110
+      ],
+      [
+        "Quebec-deals, &c.",
+        101
+      ],
+      [
+        "Domsjo",
+        89
+      ],
+      [
+        "Gefle-deals, &c.",
+        86
+      ],
+      [
+        "Domsjo and Nordmaling",
+        85
+      ],
+      [
+        "PITWOOD",
+        81
+      ],
+      [
+        "Archangel-deals, &c.",
+        66
+      ],
+      [
+        "DON",
+        56
+      ],
+      [
+        "Archangel-deals",
+        55
+      ],
+      [
+        "St. John-deals, &c.",
+        54
+      ],
+      [
+        "Dordrecht",
+        53
+      ],
+      [
+        "Cronstadt-deals",
+        45
+      ],
+      [
+        "Riga-deals",
+        44
+      ],
+      [
+        "Cronstadt-deals, &c.",
+        41
+      ],
+      [
+        "Soderhamn-deals",
+        39
+      ],
+      [
+        "Gefle-deals",
+        38
+      ],
+      [
+        "Donelan",
+        36
+      ],
+      [
+        "Quebec-deals",
+        35
+      ],
+      [
+        "Soderhamn-deals, &c.",
+        34
+      ],
+      [
+        "Miramichi-deals, &c.",
+        33
+      ],
+      [
+        "Uleaborg-deals, &c.",
+        31
+      ],
+      [
+        "SURREY COMMERCIAL DOCKS",
+        31
+      ],
+      [
+        "St. Domingo",
+        30
+      ],
+      [
+        "IMPORTS",
+        30
+      ]
+    ],
+    "samples": [
+      {
+        "value": "DOVER",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "DOVER",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "DOVER",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "DOVER",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "DOUGLAS",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Libau 3 250 bdls. deals, hoops",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Rafso-qtv. deals",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Churchill & Sim; 2,185 deals, 1,544 deals and battens",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Rose, Smith, & Co.; 2,185 deals, 1,544 deals and battens",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Mearns & Co.; 2,185 deals, 1,544 deals and battens",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "J. Keen; 2,185 deals, 1,544 deals and battens",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Bayonne - 185 lds. pitwood",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Donelan",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Donelan - 120 lds. pitwood",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "St. Malo - 140 lds. pitwood",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Redon",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Redon",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Redon",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Gothenburg-quantity deals, battens, boards, props, and sleepers",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Gothenburg-quantity pit-props, sleepers, deals, and battens",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Goteborg-quantity deals, boards, and battens, 414 sleepers, 7,620 splits, 31,133 props, 2,292 pcs. birchwood",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Miramichi-\u00a30,473 deals",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Redon",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Redon",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Redon",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Gothenburg-quantity deals, battens, boards, props, and sleepers",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Gothenburg-quantity pit-props, sleepers, deals, and battens",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Goteborg-quantity deals, boards, and battens, 414 sleepers, 7,620 splits, 31,133 props, 2,292 pcs. birchwood",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Miramichi-\u00a30,473 deals",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "LONDONDERRY",
+        "file": "18830609p.398_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Pauillac 950 lds. pitwood",
+        "file": "18971211p.845_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Bordeaux 850 lds pitwood",
+        "file": "18971211p.845_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Dalhousie, N B. 1,450 lds. deals",
+        "file": "18971211p.845_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Dordt",
+        "file": "12. p. 284-286 - Imports - September 17 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "DOUGLAS",
+        "file": "12. p. 284-286 - Imports - September 17 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "DOUGLAS",
+        "file": "12. p. 284-286 - Imports - September 17 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Redon",
+        "file": "18931216p.662_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "St. Domingo",
+        "file": "18931216p.662_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "LONDON",
+        "file": "18931216p.662_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Doboy",
+        "file": "1. p. 6 a\u2560\u00c7 8 - May 2 1874 - Imports of Timber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "LONDON",
+        "file": "18810723p.64_p001_parsed.json",
+        "field": "destination"
+      }
+    ]
+  },
+  "ocr_variants": {
+    "total": 37156,
+    "unique_patterns": 35,
+    "top_patterns": [
+      [
+        "Riga",
+        6835
+      ],
+      [
+        "Gothenburg",
+        5825
+      ],
+      [
+        "Cronstadt",
+        3131
+      ],
+      [
+        "Christiania",
+        2789
+      ],
+      [
+        "Memel",
+        2270
+      ],
+      [
+        "Danzig",
+        2242
+      ],
+      [
+        "Gefle",
+        1867
+      ],
+      [
+        "Stettin",
+        1760
+      ],
+      [
+        "Archangel",
+        1701
+      ],
+      [
+        "Soderhamn",
+        1257
+      ],
+      [
+        "St. Petersburg",
+        920
+      ],
+      [
+        "Bjorneborg",
+        866
+      ],
+      [
+        "Konigsberg",
+        840
+      ],
+      [
+        "Libau",
+        651
+      ],
+      [
+        "Wyborg",
+        614
+      ],
+      [
+        "Drontheim",
+        584
+      ],
+      [
+        "Hernosand",
+        523
+      ],
+      [
+        "Abo",
+        458
+      ],
+      [
+        "Hern\u00f6sand",
+        442
+      ],
+      [
+        "Helsingfors",
+        426
+      ],
+      [
+        "Kragero",
+        377
+      ],
+      [
+        "Dantzic",
+        275
+      ],
+      [
+        "Swartvik",
+        136
+      ],
+      [
+        "Sundsvall",
+        98
+      ],
+      [
+        "Dantzig",
+        84
+      ],
+      [
+        "Swartwik",
+        48
+      ],
+      [
+        "Malmo",
+        39
+      ],
+      [
+        "Reval",
+        33
+      ],
+      [
+        "Goteborg",
+        32
+      ],
+      [
+        "Wiborg",
+        12
+      ]
+    ],
+    "samples": [
+      {
+        "original": "Bjorneborg",
+        "canonical": "Pori",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gefle",
+        "canonical": "G\u00e4vle",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Abo",
+        "canonical": "Turku",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig",
+        "canonical": "Gda\u0144sk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig",
+        "canonical": "Gda\u0144sk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania",
+        "canonical": "Oslo",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania",
+        "canonical": "Oslo",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Soderhamn",
+        "canonical": "S\u00f6derhamn",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig",
+        "canonical": "Gda\u0144sk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Bjorneborg",
+        "canonical": "Pori",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Memel",
+        "canonical": "Klaip\u0117da",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Stettin",
+        "canonical": "Szczecin",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania",
+        "canonical": "Oslo",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Konigsberg",
+        "canonical": "Kaliningrad",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Wyborg",
+        "canonical": "Vyborg",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania",
+        "canonical": "Oslo",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Memel",
+        "canonical": "Klaip\u0117da",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "St. Petersburg",
+        "canonical": "Saint Petersburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig",
+        "canonical": "Gda\u0144sk",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig",
+        "canonical": "Gda\u0144sk",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Konigsberg",
+        "canonical": "Kaliningrad",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Konigsberg",
+        "canonical": "Kaliningrad",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Bjorneborg",
+        "canonical": "Pori",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig",
+        "canonical": "Gda\u0144sk",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Memel",
+        "canonical": "Klaip\u0117da",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Stettin",
+        "canonical": "Szczecin",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gefle",
+        "canonical": "G\u00e4vle",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Bjorneborg",
+        "canonical": "Pori",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Stettin",
+        "canonical": "Szczecin",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Stettin",
+        "canonical": "Szczecin",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Swartvik",
+        "canonical": "Svartvik",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Memel",
+        "canonical": "Klaip\u0117da",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Stettin",
+        "canonical": "Szczecin",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Bjorneborg",
+        "canonical": "Pori",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gefle",
+        "canonical": "G\u00e4vle",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Archangel",
+        "canonical": "Arkhangelsk",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Danzig",
+        "canonical": "Gda\u0144sk",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Drontheim",
+        "canonical": "Trondheim",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Soderhamn",
+        "canonical": "S\u00f6derhamn",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Christiania",
+        "canonical": "Oslo",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Hernosand",
+        "canonical": "H\u00e4rn\u00f6sand",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Bjorneborg",
+        "canonical": "Pori",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Soderhamn",
+        "canonical": "S\u00f6derhamn",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Soderhamn",
+        "canonical": "S\u00f6derhamn",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Soderhamn",
+        "canonical": "S\u00f6derhamn",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Soderhamn",
+        "canonical": "S\u00f6derhamn",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Riga",
+        "canonical": "Riga",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Gothenburg",
+        "canonical": "Gothenburg",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "original": "Cronstadt",
+        "canonical": "Kronstadt",
+        "file": "9. p. 84-87 - Imports - July 25 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      }
+    ]
+  },
+  "unmatched_short": {
+    "total": 1074,
+    "unique_patterns": 49,
+    "top_patterns": [
+      [
+        "Abo",
+        458
+      ],
+      [
+        "AYR",
+        370
+      ],
+      [
+        "Mem",
+        78
+      ],
+      [
+        "Kem",
+        50
+      ],
+      [
+        "LIV",
+        19
+      ],
+      [
+        "Uto",
+        15
+      ],
+      [
+        "Dal",
+        10
+      ],
+      [
+        "ON",
+        7
+      ],
+      [
+        "Mo",
+        7
+      ],
+      [
+        "RYE",
+        6
+      ],
+      [
+        "LIVERPOOL (",
+        5
+      ],
+      [
+        "ION",
+        5
+      ],
+      [
+        "BON",
+        3
+      ],
+      [
+        "Rio",
+        2
+      ],
+      [
+        "Zic",
+        2
+      ],
+      [
+        "New",
+        2
+      ],
+      [
+        "Oak",
+        2
+      ],
+      [
+        "Bio",
+        2
+      ],
+      [
+        "Fau",
+        1
+      ],
+      [
+        "Ed",
+        1
+      ],
+      [
+        "Via",
+        1
+      ],
+      [
+        "Bic",
+        1
+      ],
+      [
+        "Foy",
+        1
+      ],
+      [
+        "Aby",
+        1
+      ],
+      [
+        "Obe",
+        1
+      ],
+      [
+        "Rod",
+        1
+      ],
+      [
+        "Mal",
+        1
+      ],
+      [
+        "N",
+        1
+      ],
+      [
+        "Ayr",
+        1
+      ],
+      [
+        "Moe",
+        1
+      ],
+      [
+        "Atu",
+        1
+      ],
+      [
+        "Law",
+        1
+      ],
+      [
+        "Man",
+        1
+      ],
+      [
+        "Amo",
+        1
+      ],
+      [
+        "Ida",
+        1
+      ],
+      [
+        "Soo",
+        1
+      ],
+      [
+        "Ny",
+        1
+      ],
+      [
+        "Her",
+        1
+      ],
+      [
+        "Hal",
+        1
+      ],
+      [
+        "To",
+        1
+      ],
+      [
+        "pcs",
+        1
+      ],
+      [
+        "Koy",
+        1
+      ],
+      [
+        "Arm",
+        1
+      ],
+      [
+        "Shy",
+        1
+      ],
+      [
+        "ASH",
+        1
+      ],
+      [
+        "OAK",
+        1
+      ],
+      [
+        "Sia",
+        1
+      ],
+      [
+        "Ors",
+        1
+      ],
+      [
+        "Dan",
+        1
+      ]
+    ],
+    "samples": [
+      {
+        "value": "Abo",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Kem",
+        "file": "18970918p.408_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18950608p.925_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "14. p. 207-209 - October 31 1874 - Imports of TImber, &c. - Timber Trades Journal Vol. 2 1875_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18950921p.377_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18950831p.287_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18950831p.287_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18950831p.287_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18950831p.287_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18950831p.287_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18950831p.287_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "ON",
+        "file": "18970313p.550_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "18991028p.510_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18831201p.406_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18831103p.329_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18831103p.329_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "18910620p.771_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18910620p.771_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18810319p.188_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "7. p. 59-161 - Imports - August 13 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "7. p. 59-161 - Imports - August 13 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "7. p. 59-161 - Imports - August 13 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "7. p. 59-161 - Imports - August 13 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18800103_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Fau",
+        "file": "18990311p.317_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Rio",
+        "file": "18890209p.106_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Ed",
+        "file": "18890907p.197_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18890907p.197_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18890907p.197_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18930708p.3_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18930708p.3_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18930708p.3_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18930708p.3_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18930708p.3_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18911205p.4_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18911205p.4_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "18811029p.295_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Uto",
+        "file": "18810716p.48_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18840105p.14_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Kem",
+        "file": "18971002p.479_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18990701p.1002_p001_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "18950831p.282_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "11. p. 256-259 - Imports - September 10 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "18890928p.4_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18890928p.4_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18830929p.235_p005_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "13. p. 153-155 - Imports - August 29 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18830721p.52_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18810813p.114_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Mem",
+        "file": "4. p. 464-467 - Imports - June 27 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "4. p. 464-467 - Imports - June 27 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "4. p. 464-467 - Imports - June 27 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "4. p. 464-467 - Imports - June 27 1885 - Timber Trades Journal 1885_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Uto",
+        "file": "18810702p.14_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Mem",
+        "file": "18810702p.14_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18990311p.330_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18990311p.330_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "18991223p.775_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18991223p.775_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18910808p.4_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18991028p.517_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18970925p.446_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Via",
+        "file": "18970703p.30_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Mem",
+        "file": "18831124p.382_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18831124p.382_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18831006p.254_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18831006p.254_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18831006p.254_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18831006p.254_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "5. p. 14-18 - Imports - July 4 1885 - Timber Trades Journal 1885_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "17. p. 225-227 - Imports - September 26 1885 - Timber Trades Journal 1885_p001_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18910516p.4_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "18910516p.4_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Mem",
+        "file": "4. p. 93-95 - Imports - July 23 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "4. p. 93-95 - Imports - July 23 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "4. p. 93-95 - Imports - July 23 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "4. p. 93-95 - Imports - July 23 1887 - Timber Trades Journal 1887_p002_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "18950817p.219_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Kem",
+        "file": "18950817p.219_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Kem",
+        "file": "18950817p.219_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18951102p.583_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Kem",
+        "file": "18950817p.219_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18950817p.219_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18990624p.965_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18810716p.48_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "18810716p.48_p003_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "AYR",
+        "file": "18810716p.48_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "AYR",
+        "file": "5. p. 119-121 - Imports - July 30 1887 - Timber Trades Journal 1887_p003_parsed.json",
+        "field": "destination"
+      },
+      {
+        "value": "Abo",
+        "file": "18810101p.10_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Mo",
+        "file": "18971113p.705_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Bic",
+        "file": "18971113p.705_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Foy",
+        "file": "20. p. 278-280 - Imports - October 17 1885 - Timber Trades Journal 1885_p002_parsed.json",
+        "field": "origin"
+      },
+      {
+        "value": "Abo",
+        "file": "20. p. 278-280 - Imports - October 17 1885 - Timber Trades Journal 1885_p002_parsed.json",
+        "field": "origin"
+      }
+    ]
+  }
+}
