@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Build compact JSON for the interactive visualizations (viz/).
+"""Build compact JSON for the interactive visualizations (docs/).
 
-Reads normalized/*.json, writes viz/data.json:
+Reads normalized/*.json, writes docs/data.json:
   ports:   [[name, lat, lon, region], ...]           (indexed)
   forms:   [form, ...]                               (top N + 'other')
   years:   [y0, y1]
@@ -140,12 +140,12 @@ def main():
         'imports': [[pidx[d], fi, y, n] for (d, fi, y), n in sorted(imports.items())],
         'exports': [[pidx[o], fi, y, n] for (o, fi, y), n in sorted(exports.items())],
     }
-    (BASE / 'viz').mkdir(exist_ok=True)
-    with open(BASE / 'viz' / 'data.json', 'w') as fh:
+    (BASE / 'docs').mkdir(exist_ok=True)
+    with open(BASE / 'docs' / 'data.json', 'w') as fh:
         json.dump(out, fh, separators=(',', ':'))
     import os
     print(f"ports={len(ports)} routes={len(out['routes']):,} imports={len(out['imports']):,} "
-          f"exports={len(out['exports']):,} size={os.path.getsize(BASE/'viz'/'data.json')//1024}KB")
+          f"exports={len(out['exports']):,} size={os.path.getsize(BASE/'docs'/'data.json')//1024}KB")
     regs = Counter(p[3] for p in ports)
     print('regions:', dict(regs))
 

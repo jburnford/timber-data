@@ -13,7 +13,7 @@ pipeline in this repository.
 | Path | Contents |
 |------|----------|
 | `kg/` | **Knowledge graph** — Ladybug graph DB (`timber.lbdb`, Cypher-queryable) + aggregate JSON graph + schema/query docs ([kg/README.md](kg/README.md)) |
-| `viz/` | Interactive visualizations of geographic change over time |
+| `docs/` | Interactive visualizations of geographic change over time |
 | `exports/` | Analysis-ready CSVs: shipment counts by port × commodity × year, routes, merchants |
 | `scripts/` | The full parsing/normalization/graph pipeline (deterministic, no LLM calls) |
 | `reference_data/` | Port authority (variant→canonical), geocoding DB, merchant authority, coverage reports |
