@@ -129,6 +129,12 @@ All stages are deterministic and re-runnable (no LLM calls).
 }
 ```
 
+Each document also carries a doc-level `issue_date` (ISO, from the source
+filename — compact `18760108...` prefix or verbose "May 1 1875"; 100% of files).
+Use it as the date when `arrival_date` is null: the 1870s @ format prints dates
+as run headers so most lines carry none (only ~47% of records have arrival_date),
+and 95% of dated arrivals fall within 2 weeks before the issue date.
+
 Port status: `mapped | canonical | error | unmapped | empty`.
 Commodity status: `ok | merchant_leak | origin_leak | empty | unclassified`.
 `commodity_forms` is the counting key ("deals and battens" → both forms).
@@ -200,6 +206,11 @@ timber_data/
 
 ## Version History
 
+- **2026-07-07**: Trade-geography statistics (scripts/analysis/trade_geography_stats.py
+  → reports/trade_geography/): partner-concentration null model, commodity LQs,
+  route persistence, steam/sail split, seasonality. Doc-level `issue_date` added
+  to parser output + backfilled into parsed/deduped/normalized
+  (scripts/stamp_issue_dates.py, one-off).
 - **2026-07-03 (c)**: Knowledge graph built (kg/): Ladybug DB `timber.lbdb`
   (~80 MB single file; 158,918 Shipment nodes, 613 Ports, ARRIVED_FROM/AT,
   CARRIED, CONSIGNED_TO, BY_SHIP, ROUTE rels) + aggregate `timber_kg.json`

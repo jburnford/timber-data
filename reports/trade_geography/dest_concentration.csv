@@ -1,0 +1,118 @@
+dest,n,n_years,top_origin,top_origin_region,top_share,null_top_share,excess_top,p_top,hhi,eff_partners,n_partners
+Arbroath,147,10,Riga,Russia & Baltic,0.449,0.069,0.38,0.0,0.226,4.4,30
+Greenock,979,13,Quebec City,British North America,0.413,0.061,0.352,0.0,0.198,5.0,84
+Dundalk,144,10,Riga,Russia & Baltic,0.368,0.07,0.299,0.0,0.195,5.1,26
+Port Glasgow,61,9,Quebec City,British North America,0.377,0.082,0.295,0.0,0.2,5.0,20
+WIGTOWN,109,7,Quebec City,British North America,0.358,0.072,0.285,0.0,0.148,6.7,35
+Goole,752,11,Rotterdam,France & Low Countries,0.344,0.061,0.283,0.0,0.131,7.6,106
+Cardiff,6205,11,Bordeaux,France & Low Countries,0.307,0.059,0.248,0.0,0.107,9.3,204
+Londonderry,178,10,St. John,British North America,0.309,0.068,0.241,0.0,0.146,6.8,31
+Glasgow,2900,13,New York,USA & Gulf,0.287,0.06,0.227,0.0,0.12,8.4,124
+Chester,285,10,Porsgrund,Scandinavia,0.288,0.065,0.223,0.0,0.108,9.2,53
+NEWHAVEN,519,10,Dieppe,Britain & Ireland,0.276,0.062,0.213,0.0,0.095,10.6,84
+Charlestown,58,4,Christiania,Scandinavia,0.276,0.083,0.193,0.0,0.117,8.5,22
+CARLISLE,31,9,Miramichi,British North America,0.29,0.1,0.19,0.0,0.12,8.4,18
+Wexford,63,10,St. John,British North America,0.27,0.081,0.189,0.0,0.152,6.6,19
+LOWESTOFT,396,10,Riga,Russia & Baltic,0.25,0.063,0.187,0.0,0.094,10.6,73
+Boston,460,10,Arendal,Scandinavia,0.25,0.063,0.187,0.0,0.093,10.7,73
+Granton,1140,13,Gothenburg,Scandinavia,0.243,0.06,0.182,0.0,0.09,11.1,102
+DARTMOUTH,36,10,Gothenburg,Scandinavia,0.278,0.096,0.182,0.0,0.128,7.8,15
+Swansea,2649,11,Bordeaux,France & Low Countries,0.241,0.06,0.181,0.0,0.076,13.2,142
+BLYTH,225,9,Gothenburg,Scandinavia,0.244,0.066,0.178,0.0,0.087,11.5,47
+Tralee,41,9,St. John,British North America,0.268,0.092,0.177,0.0,0.124,8.0,16
+Limerick,191,10,St. John,British North America,0.241,0.067,0.174,0.0,0.104,9.6,33
+Dundee,1514,13,Riga,Russia & Baltic,0.233,0.06,0.173,0.0,0.092,10.8,116
+Inverness,238,10,Sundswall,Scandinavia,0.231,0.065,0.166,0.0,0.081,12.4,61
+Banff,133,10,Sundswall,Scandinavia,0.233,0.071,0.162,0.0,0.1,10.0,28
+Cork,316,10,St. John,British North America,0.225,0.064,0.161,0.0,0.1,10.0,47
+BARNSTAPLE,71,10,Fredrikstad,Scandinavia,0.239,0.079,0.16,0.0,0.099,10.1,29
+FOWEY,181,10,Fredrikstad,Scandinavia,0.227,0.067,0.159,0.0,0.097,10.4,40
+Waterford,135,10,Riga,Russia & Baltic,0.23,0.071,0.159,0.0,0.121,8.3,32
+Ardrossan,143,10,Riga,Russia & Baltic,0.224,0.069,0.155,0.0,0.106,9.5,30
+Montrose,532,10,Cronstadt,Russia & Baltic,0.214,0.062,0.152,0.0,0.076,13.1,68
+Grangemouth,3158,13,Riga,Russia & Baltic,0.206,0.06,0.146,0.0,0.069,14.5,147
+Galway,58,10,St. John,British North America,0.224,0.083,0.141,0.0,0.099,10.1,20
+DOUGLAS,93,9,Sundswall,Scandinavia,0.215,0.075,0.14,0.0,0.106,9.5,25
+PENZANCE,123,10,Fredrikstad,Scandinavia,0.211,0.071,0.14,0.0,0.085,11.7,36
+Newport,3326,11,Bordeaux,France & Low Countries,0.199,0.06,0.139,0.0,0.082,12.2,141
+Aberystwyth,91,10,Riga,Russia & Baltic,0.209,0.075,0.134,0.0,0.109,9.2,28
+Milford Haven,91,10,Gothenburg,Scandinavia,0.209,0.075,0.134,0.0,0.094,10.6,24
+MANCHESTER,398,5,Gothenburg,Scandinavia,0.196,0.064,0.132,0.0,0.064,15.7,74
+Sligo,92,10,St. John,British North America,0.207,0.075,0.132,0.0,0.081,12.3,33
+SCARBOROUGH,139,10,Sundswall,Scandinavia,0.201,0.07,0.131,0.0,0.071,14.1,42
+Caernarfon,131,10,Fredrikstad,Scandinavia,0.198,0.07,0.128,0.0,0.085,11.8,32
+Teignmouth,90,10,Gothenburg,Scandinavia,0.2,0.075,0.125,0.0,0.085,11.8,32
+QUEENBOROUGH,64,8,Mobile,USA & Gulf,0.203,0.081,0.122,0.0,0.105,9.5,25
+Belfast,1551,10,Rotterdam,France & Low Countries,0.173,0.06,0.112,0.0,0.071,14.1,99
+Newry,122,10,St. John,British North America,0.18,0.071,0.11,0.0,0.085,11.7,40
+WISBEACH,30,5,Wyborg,Russia & Baltic,0.2,0.101,0.099,0.013,0.084,11.8,20
+Sunderland,3409,11,Gothenburg,Scandinavia,0.154,0.06,0.094,0.0,0.045,22.4,157
+Quebec City,31,4,London,Britain & Ireland,0.194,0.101,0.093,0.02,0.086,11.6,19
+EXETER,182,10,Riga,Russia & Baltic,0.159,0.068,0.091,0.0,0.066,15.1,46
+PERTH,91,8,Cronstadt,Russia & Baltic,0.165,0.075,0.09,0.001,0.066,15.3,31
+Whitehaven,178,10,Skelleftea,Scandinavia,0.157,0.067,0.09,0.0,0.049,20.4,52
+Middlesbrough,1063,10,Riga,Russia & Baltic,0.15,0.061,0.089,0.0,0.061,16.3,111
+Whitby,58,10,Gothenburg,Scandinavia,0.172,0.083,0.089,0.003,0.068,14.6,27
+Shoreham,348,10,Gefle,Scandinavia,0.152,0.064,0.089,0.0,0.052,19.2,66
+Truro,157,10,Porsgrund,Scandinavia,0.153,0.069,0.084,0.0,0.048,20.9,48
+Lynn,89,5,Sundswall,Scandinavia,0.157,0.075,0.082,0.0,0.066,15.1,30
+Le Havre,240,4,New York,USA & Gulf,0.146,0.065,0.08,0.0,0.072,13.8,45
+LERWICK,76,10,Drammen,Scandinavia,0.158,0.079,0.079,0.001,0.083,12.1,21
+Bridgwater,293,10,Archangel,Russia & Baltic,0.143,0.065,0.079,0.0,0.051,19.8,61
+Liverpool,12131,13,New York,USA & Gulf,0.137,0.06,0.078,0.0,0.046,21.7,260
+Leith,3538,13,Rotterdam,France & Low Countries,0.137,0.06,0.077,0.0,0.049,20.5,170
+Newcastle,86,9,Bordeaux,France & Low Countries,0.151,0.077,0.075,0.0005,0.051,19.6,37
+Weymouth,80,10,Riga,Russia & Baltic,0.15,0.077,0.073,0.004,0.058,17.2,35
+Fraserburgh,167,10,Porsgrund,Scandinavia,0.138,0.068,0.069,0.0,0.058,17.1,33
+STORNOWAY,98,10,Quebec City,British North America,0.143,0.074,0.069,0.0005,0.057,17.5,39
+GRAVESEND,44,3,Sundswall,Scandinavia,0.159,0.09,0.069,0.0225,0.068,14.7,24
+Newcastle upon Tyne,228,2,Laurvig,Scandinavia,0.132,0.066,0.065,0.0,0.049,20.4,56
+Northfleet,46,3,Kotka,Scandinavia,0.152,0.088,0.064,0.0275,0.062,16.0,25
+Bristol,1869,13,New York,USA & Gulf,0.118,0.06,0.058,0.0,0.04,24.7,163
+LANCASTER,143,10,Richibouctou,Other,0.126,0.069,0.057,0.0015,0.058,17.3,42
+Folkestone,145,10,Boulogne,France & Low Countries,0.124,0.07,0.054,0.0025,0.061,16.4,45
+FAVERSHAM,148,10,Christiania,Scandinavia,0.122,0.069,0.053,0.0035,0.057,17.4,43
+Falmouth,103,10,Porsgrund,Scandinavia,0.126,0.073,0.053,0.009,0.058,17.1,38
+Tyne Ports,6019,12,Gothenburg,Scandinavia,0.111,0.06,0.051,0.0,0.031,32.0,190
+COWES,105,10,Gothenburg,Scandinavia,0.124,0.073,0.051,0.011,0.053,18.8,41
+LITTLEHAMPTON,213,10,Gefle,Scandinavia,0.117,0.066,0.051,0.0015,0.036,27.6,61
+Southampton,1131,12,Riga,Russia & Baltic,0.11,0.061,0.049,0.0,0.034,29.4,124
+Dublin,725,10,Riga,Russia & Baltic,0.11,0.061,0.049,0.0,0.056,17.9,82
+Poole,506,11,Fredrikstad,Scandinavia,0.111,0.062,0.048,0.0,0.037,26.7,82
+Kirkcaldy,815,10,Riga,Russia & Baltic,0.108,0.061,0.047,0.0,0.044,23.0,96
+Methil,165,5,Riga,Russia & Baltic,0.115,0.068,0.047,0.007,0.049,20.6,56
+Preston,146,6,Fredrikstad,Scandinavia,0.116,0.069,0.047,0.0055,0.054,18.6,39
+Alloa,2513,11,Halmstad,Germany & Prussia,0.105,0.06,0.045,0.0,0.043,23.4,113
+Wick,588,10,Risoer,Scandinavia,0.105,0.062,0.043,0.0,0.037,27.0,93
+Grimsby,3582,12,Riga,Russia & Baltic,0.101,0.059,0.041,0.0,0.035,28.5,188
+Peterhead,453,10,Sundswall,Scandinavia,0.102,0.063,0.039,0.001,0.041,24.6,75
+Llanelli,393,11,Bordeaux,France & Low Countries,0.099,0.063,0.036,0.0005,0.037,27.1,98
+Rochester,532,10,Kotka,Scandinavia,0.098,0.062,0.036,0.0005,0.035,28.5,88
+WISBECH,773,10,Wyborg,Russia & Baltic,0.097,0.061,0.036,0.0,0.04,25.2,100
+Gloucester,1314,11,Archangel,Russia & Baltic,0.094,0.06,0.033,0.0,0.028,35.3,133
+Borrowstounness,3034,13,Christiansand,Scandinavia,0.092,0.06,0.033,0.0,0.044,22.7,104
+Aberdeen,878,10,Sundswall,Scandinavia,0.093,0.061,0.032,0.0,0.035,28.6,116
+Ayr,300,10,Sundswall,Scandinavia,0.097,0.064,0.032,0.0055,0.041,24.4,70
+Plymouth,948,10,Riga,Russia & Baltic,0.092,0.061,0.031,0.0,0.034,29.8,102
+Maryport,84,10,Quebec City,British North America,0.107,0.076,0.031,0.089,0.045,22.5,36
+RAMSGATE,130,10,Gothenburg,Scandinavia,0.1,0.07,0.03,0.0535,0.04,24.8,48
+London (Surrey Commercial Docks),31,1,New York,USA & Gulf,0.129,0.1,0.029,0.277,0.059,16.9,23
+Colchester,180,10,Fredrikstad,Scandinavia,0.094,0.067,0.027,0.054,0.037,26.9,54
+Stockton,133,10,Riga,Russia & Baltic,0.098,0.07,0.027,0.083,0.044,22.7,51
+Fleetwood,485,10,St. John,British North America,0.089,0.063,0.026,0.0055,0.035,28.9,89
+Portsmouth,415,10,Danzig,Germany & Prussia,0.087,0.063,0.024,0.011,0.033,30.4,75
+BEAUMARIS,114,10,Fredrikstad,Scandinavia,0.096,0.072,0.024,0.124,0.043,23.0,41
+Hartlepool (West),6506,13,Gothenburg,Scandinavia,0.082,0.06,0.023,0.0,0.026,38.0,202
+Yarmouth,1039,11,Gothenburg,Scandinavia,0.084,0.061,0.023,0.0015,0.034,29.6,117
+Troon,200,10,Quebec City,British North America,0.09,0.067,0.023,0.0725,0.048,20.9,50
+Hull,9091,13,Gothenburg,Scandinavia,0.082,0.059,0.022,0.0,0.027,36.5,241
+Ipswich,310,10,Fredrikstad,Scandinavia,0.081,0.065,0.016,0.1015,0.034,29.7,81
+Berwick-upon-Tweed,221,10,Bjorneborg,Scandinavia,0.072,0.066,0.006,0.345,0.033,30.6,74
+Bo'ness,90,5,Christiansand,Scandinavia,0.078,0.075,0.003,0.512,0.047,21.3,32
+Hartlepool,367,6,Gothenburg,Scandinavia,0.065,0.063,0.002,0.441,0.028,35.9,79
+London,14348,13,New York,USA & Gulf,0.061,0.059,0.001,0.2885,0.022,44.9,302
+Dover,183,10,Gefle,Scandinavia,0.066,0.067,-0.002,0.593,0.027,37.2,64
+Barrow-in-Furness,555,11,Pensacola,USA & Gulf,0.058,0.062,-0.005,0.72,0.025,40.6,94
+Harwich,258,10,Cronstadt,Russia & Baltic,0.058,0.065,-0.007,0.7755,0.021,48.1,86
+King's Lynn,822,10,Danzig,Germany & Prussia,0.051,0.061,-0.01,0.9495,0.024,41.9,130
+Runcorn,34,5,New York,USA & Gulf,0.059,0.098,-0.039,0.999,0.038,26.3,29
