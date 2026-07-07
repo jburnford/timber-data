@@ -24,6 +24,26 @@ Intermediate pipeline outputs (`ocr_results/`, `parsed/`, `deduped/`,
 `normalized/`) are not committed — they are regenerable by running the
 pipeline, and the OCR corpus is distributed as a release asset.
 
+### Cross-repo dependency: [uk-trade-db](https://github.com/jburnford/uk-trade-db)
+
+The Canada triangulation layer joins this repo's TTJ shipment counts with the
+official UK customs series from a **sibling repository**,
+[`uk-trade-db`](https://github.com/jburnford/uk-trade-db) (UK Annual
+Statements of Trade, 1868–1900, double-keyed OCR, gold-validated):
+
+- `scripts/analysis/canada_annual_official.py` reads
+  `../uk_trade_db/exports/wood_country_year.csv` (path currently hard-coded
+  as `/home/jic823/uk_trade_db/`) — clone `uk-trade-db` alongside this repo
+  and adjust the path to rerun it.
+- Derived outputs committed here: `exports/canada_annual_triangulation.csv`,
+  `exports/country_shares_year.csv`, `exports/country_shares_calibrated.csv`,
+  and the reports `reports/triangulation_annual.md`,
+  `reports/canada_statistical_analysis.md`,
+  `reports/market_structure_analysis.md`.
+
+The TTJ pipeline itself (parsing → exports → knowledge graph) has **no**
+dependency on `uk-trade-db`; only the triangulation analyses do.
+
 ## The one rule for using this data
 
 **Count shipments; never sum quantities.** OCR'd quantity digits are
