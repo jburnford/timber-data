@@ -32,6 +32,32 @@ CLASSIFICATION_DIR = Path("/home/jic823/timber_data/classification")
 OUTPUT_DIR = Path("/home/jic823/timber_data/parsed")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
+# --- journal issue date from the source filename ------------------------------
+# Filenames carry the weekly issue date in one of two styles:
+#   compact prefix:  "18760108TTJt_p001"          -> 1876-01-08
+#   verbose:         "... - May 1 1875 - ..."      -> 1875-05-01
+# Month names are prefix-matched so OCR'd/typo'd names ("Augus 7 1875") resolve.
+_MONTH_NAMES = ['january', 'february', 'march', 'april', 'may', 'june', 'july',
+                'august', 'september', 'october', 'november', 'december']
+_COMPACT_DATE_RE = re.compile(r'^(18\d{2}|1900)(\d{2})(\d{2})')
+_VERBOSE_DATE_RE = re.compile(r'\b([A-Z][a-z]{2,})\.?\s+(\d{1,2})[,.]?\s+(18\d{2}|1900)\b')
+
+
+def issue_date_of(filename: str) -> Optional[str]:
+    """ISO date (YYYY-MM-DD) of the journal issue, from the source filename."""
+    m = _COMPACT_DATE_RE.match(filename)
+    if m:
+        y, mo, dy = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if 1 <= mo <= 12 and 1 <= dy <= 31:
+            return f'{y:04d}-{mo:02d}-{dy:02d}'
+    m = _VERBOSE_DATE_RE.search(filename)
+    if m:
+        tok = m.group(1).lower()
+        for i, name in enumerate(_MONTH_NAMES, 1):
+            if name.startswith(tok) or tok.startswith(name[:4]):
+                return f'{int(m.group(3)):04d}-{i:02d}-{int(m.group(2)):02d}'
+    return None
+
 
 @dataclass
 class CargoItem:
@@ -583,6 +609,7 @@ def parse_file(ocr_path: Path, classification_path: Path) -> Dict:
     return {
         'source_file': ocr_path.name,
         'status': 'success',
+        'issue_date': issue_date_of(ocr_path.name),
         'shipments': [asdict(s) for s in shipments],
         'shipment_count': len(shipments),
         'ports_found': sorted(set(s.destination_port for s in shipments if s.destination_port)),
